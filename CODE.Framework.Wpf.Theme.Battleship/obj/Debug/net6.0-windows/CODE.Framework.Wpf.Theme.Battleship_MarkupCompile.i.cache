@@ -1,0 +1,20 @@
+﻿CODE.Framework.Wpf.Theme.Battleship
+6.0.0.0
+
+library
+C#
+.cs
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Battleship\obj\Debug\net6.0-windows\
+CODE.Framework.Wpf.Theme.Battleship
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+
+38-482655283
+
+5-1219750995
+197-511448858
+Battleship-Control-Button.xaml;Battleship-Control-CapsLockWarning.xaml;Battleship-Control-ComboBox.xaml;Battleship-Control-FlowDocumentReader.xaml;Battleship-Control-Label.xaml;Battleship-Control-ListBox.xaml;Battleship-Control-Menu.xaml;Battleship-Control-PasswordBox.xaml;Battleship-Control-ScrollBar.xaml;Battleship-Control-TabControl.xaml;Battleship-Control-TextBlock.xaml;Battleship-Control-Textbox.xaml;Battleship-Icon-Standard.xaml;Battleship-Layout-BladePanel.xaml;Battleship-Layout-EditForm.xaml;Battleship-Layout-FlowForm.xaml;Battleship-Layout-MultiPanel.xaml;Battleship-Layout-OneToManyPanel.xaml;Battleship-Layout-PrimarySecondaryForm.xaml;Battleship-Layout-SimpleForm.xaml;Battleship-Layout-StandardForm.xaml;Battleship-Layout-Tabs.xaml;Battleship-MessageBox-Icon-Asterisk.xaml;Battleship-MessageBox-Icon-Error.xaml;Battleship-MessageBox-Icon-Exclamation.xaml;Battleship-MessageBox-Icon-Hand.xaml;Battleship-MessageBox-Icon-Information.xaml;Battleship-MessageBox-Icon-Question.xaml;Battleship-MessageBox-Icon-Stop.xaml;Battleship-MessageBox-Icon-Warning.xaml;Battleship-Print.xaml;Battleship-Shell.xaml;Battleship-StandardDataTemplates.xaml;Battleship-StandardTypes.xaml;Colors.xaml;Fonts.xaml;Standard\Notification.xaml;ThemeRoot.xaml;
+
+False
+

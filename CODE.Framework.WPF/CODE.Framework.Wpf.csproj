@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<LangVersion>preview</LangVersion>
+		<AssemblyVersion>6.0.0.0</AssemblyVersion>
+		<FileVersion>6.0.0.0</FileVersion>
+		<Version>6.0.0-preview</Version>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>Markus Egger Inc.</Authors>
+		<Company>Markus Egger Inc.</Company>
+		<Product>CODE Framework</Product>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/CODEFramework</RepositoryUrl>
+		<RepositoryType>Git</RepositoryType>
+		<PackageIconUrl>http://www.codemag.com/Images/Logos/CodeFramework_Small.png</PackageIconUrl>
+		<!--<PackageIcon>CodeFramework_Small.png</PackageIcon>-->
+		<PackageProjectUrl>https://codeframework.io</PackageProjectUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Update="Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+</Project>

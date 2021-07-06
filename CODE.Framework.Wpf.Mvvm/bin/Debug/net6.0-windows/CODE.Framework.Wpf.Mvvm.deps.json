@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CODE.Framework.Wpf.Mvvm/6.0.0-preview": {
+        "dependencies": {
+          "CODE.Framework.Wpf": "6.0.0-preview"
+        },
+        "runtime": {
+          "CODE.Framework.Wpf.Mvvm.dll": {}
+        }
+      },
+      "CODE.Framework.Wpf/6.0.0-preview": {
+        "runtime": {
+          "CODE.Framework.Wpf.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CODE.Framework.Wpf.Mvvm/6.0.0-preview": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CODE.Framework.Wpf/6.0.0-preview": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
