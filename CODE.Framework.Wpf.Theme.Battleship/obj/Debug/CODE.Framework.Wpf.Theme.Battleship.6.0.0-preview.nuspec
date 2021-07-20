@@ -22,6 +22,6 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="C:\Projects\CODE Framework\Wpf\CODE.Framework.WPF\CODE.Framework.Wpf.Theme.Battleship\bin\Debug\net6.0-windows\CODE.Framework.Wpf.Theme.Battleship.dll" target="lib\net6.0-windows7.0\CODE.Framework.Wpf.Theme.Battleship.dll" />
+    <file src="C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Battleship\bin\Debug\net6.0-windows\CODE.Framework.Wpf.Theme.Battleship.dll" target="lib\net6.0-windows7.0\CODE.Framework.Wpf.Theme.Battleship.dll" />
   </files>
 </package>

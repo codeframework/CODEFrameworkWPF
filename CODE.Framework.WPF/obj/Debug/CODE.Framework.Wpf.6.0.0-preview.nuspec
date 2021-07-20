@@ -20,6 +20,6 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="C:\Projects\CODE Framework\Wpf\CODE.Framework.WPF\CODE.Framework.Wpf\bin\Debug\net6.0-windows\CODE.Framework.Wpf.dll" target="lib\net6.0-windows7.0\CODE.Framework.Wpf.dll" />
+    <file src="C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf\bin\Debug\net6.0-windows\CODE.Framework.Wpf.dll" target="lib\net6.0-windows7.0\CODE.Framework.Wpf.dll" />
   </files>
 </package>

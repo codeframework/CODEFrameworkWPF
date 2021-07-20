@@ -184,6 +184,159 @@ namespace CODE.Framework.Wpf.Controls
         /// <returns>True or false</returns>
         [Browsable(false)]
         public static bool GetInAutoSorting(DependencyObject d) => (bool)d.GetValue(InAutoSortingProperty);
+
+        /// <summary>Required for internal use only</summary>
+        [Browsable(false)] public static readonly DependencyProperty ListEx_InChangeProperty = DependencyProperty.RegisterAttached("ListEx_InChange", typeof(bool), typeof(ListEx), new PropertyMetadata(false));
+        /// <summary>Required for internal use only</summary>
+        [Browsable(false)] public static readonly DependencyProperty ListEx_SelectionChangedEventWiredUpProperty = DependencyProperty.RegisterAttached("ListEx_SelectionChangedEventWiredUp", typeof(bool), typeof(ListEx), new PropertyMetadata(false));
+
+        /// <summary>Gets SelectedValueEx</summary>
+        /// <param name="d">The object to get the value on</param>
+        /// <returns>Value</returns>
+        public static object GetSelectedValueEx(DependencyObject d) => d.GetValue(SelectedValueExProperty);
+
+        /// <summary>Sets the SelectedValueEx property</summary>
+        /// <param name="d">The object toset the value on</param>
+        /// <param name="value">The value.</param>
+        public static void SetSelectedValueEx(DependencyObject d, object value) => d.SetValue(SelectedValueExProperty, value);
+
+        /// <summary>SelectedValueEx property</summary>
+        public static readonly DependencyProperty SelectedValueExProperty = DependencyProperty.RegisterAttached("SelectedValueEx", typeof(object), typeof(ListEx), new FrameworkPropertyMetadata(null, OnSelectedValueExChanged) { BindsTwoWayByDefault = true });
+
+        /// <summary>
+        /// Called when SelectedValueEx changed
+        /// </summary>
+        /// <param name="d">The dependency object the change happened on</param>
+        /// <param name="e">The <see cref="DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
+        private static void OnSelectedValueExChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            if (!(d is Selector selector)) return;
+
+            if (!selector.IsInitialized && selector.SelectedValue != e.NewValue)
+            {
+                selector.SelectedValue = e.NewValue; // Still early enough to not worry about UI interactions
+                return;
+            }
+            if (selector.SelectedValue == null && selector.SelectedValue != e.NewValue)
+            {
+                selector.SelectedValue = e.NewValue; // If the value is null, we can always assign (this is the rule we make... this may have to be adjusted if it isn't what we want).
+                return;
+            }
+            if (selector.SelectedValue != e.NewValue)
+            {
+                selector.SelectedValue = e.NewValue; // This is what most calls will go to. We only allow updates when it is specifically allowed
+                return;
+            }
+        }
+
+        /// <summary>Gets the confirmation text.</summary>
+        /// <param name="d">The object to get the value for.</param>
+        /// <returns>Confirmation text</returns>
+        public static string GetConfirmationText(DependencyObject d) => (string)d.GetValue(ConfirmationTextProperty);
+
+        /// <summary>Sets the confirmation text.</summary>
+        /// <param name="d">The object to set the value on.</param>
+        /// <param name="value">Confirmation Text</param>
+        /// <returns>Confirmation text</returns>
+        public static void SetConfirmationText(DependencyObject d, string value) => d.SetValue(ConfirmationTextProperty, value);
+
+        /// <summary>Backing field for confirmation text property</summary>
+        public static readonly DependencyProperty ConfirmationTextProperty = DependencyProperty.RegisterAttached("ConfirmationText", typeof(string), typeof(ListEx), new PropertyMetadata("Are you sure?"));
+
+        /// <summary>Gets the confirmation text messagebox window caption.</summary>
+        /// <param name="d">The object to get the value for.</param>
+        /// <returns>Confirmation header text</returns>
+        public static string GetConfirmationTextCaption(DependencyObject d) => (string)d.GetValue(ConfirmationTextCaptionProperty);
+
+        /// <summary>Sets the confirmation text messagebox window caption.</summary>
+        /// <param name="d">The object to set the value on.</param>
+        /// <param name="value">Confirmation Text Caption</param>
+        /// <returns>Confirmation text caption</returns>
+        public static void SetConfirmationTextCaption(DependencyObject d, string value) => d.SetValue(ConfirmationTextCaptionProperty, value);
+
+        /// <summary>Backing field for confirmation text caption</summary>
+        public static readonly DependencyProperty ConfirmationTextCaptionProperty = DependencyProperty.RegisterAttached("ConfirmationTextCaption", typeof(string), typeof(ListEx), new PropertyMetadata("Change Value"));
+
+        /// <summary>Toggles whether confirmation is active or not.</summary>
+        /// <param name="d">The object to get the value for.</param>
+        /// <returns>True or false</returns>
+        public static bool GetConfirmationEnabled(DependencyObject d) => (bool)d.GetValue(ConfirmationEnabledProperty);
+
+        /// <summary>Toggles whether confirmation is active or not.</summary>
+        /// <param name="d">The object to set the value on.</param>
+        /// <param name="value">True or false</param>
+        /// <returns>True or false</returns>
+        public static void SetConfirmationEnabled(DependencyObject d, bool value) => d.SetValue(ConfirmationEnabledProperty, value);
+
+        /// <summary>Backing field for confirmation active property.</summary>
+        public static readonly DependencyProperty ConfirmationEnabledProperty = DependencyProperty.RegisterAttached("ConfirmationEnabled", typeof(bool), typeof(ListEx), new PropertyMetadata(false, OnConfirmationEnabledChanged));
+
+        /// <summary>Confirmation Active change handler</summary>
+        /// <param name="d">The dependency object the change happened on.</param>
+        /// <param name="e">The <see cref="DependencyPropertyChangedEventArgs" /> instance containing the event data.</param>
+        private static void OnConfirmationEnabledChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            if (!(d is Selector selector)) return;
+
+            if (!(bool)selector.GetValue(ListEx_SelectionChangedEventWiredUpProperty))
+            {
+                selector.SelectionChanged += (s, e2) =>
+                {
+                    if (!(e2.Source is Selector selector2)) return;
+
+                    if (GetConfirmationActive(selector))
+                    {
+                        if (!(bool)selector2.GetValue(ListEx_InChangeProperty) && selector2.IsInitialized && selector2.SelectedValue != null && e2.RemovedItems.Count > 0)
+                        {
+                            if (MessageBox.Show(GetConfirmationText(selector2), GetConfirmationTextCaption(selector2), MessageBoxButton.YesNo) != MessageBoxResult.Yes)
+                            {
+                                if (e2.RemovedItems.Count > 0)
+                                {
+                                    var removedIndex = -1;
+                                    foreach (var item in selector2.Items)
+                                    {
+                                        removedIndex++;
+                                        if (item == e2.RemovedItems[0])
+                                        {
+                                            e2.Handled = true;
+                                            selector2.SetValue(ListEx_InChangeProperty, true);
+                                            selector2.SelectedIndex = removedIndex;
+                                            selector2.SetValue(ListEx_InChangeProperty, false);
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                e2.Handled = true;
+                                SetSelectedValueEx(selector2, selector2.SelectedValue);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        e2.Handled = true;
+                        SetSelectedValueEx(selector2, selector2.SelectedValue);
+                    }
+                };
+
+                selector.SetValue(ListEx_SelectionChangedEventWiredUpProperty, true); // We want to make sure we only have a single event handler for each dependency object this gets set on
+            }
+        }
+
+        /// <summary>Toggles whether confirmation is active or not.</summary>
+        /// <param name="d">The object to get the value for.</param>
+        /// <returns>True or false</returns>
+        public static bool GetConfirmationActive(DependencyObject d) => (bool)d.GetValue(ConfirmationActiveProperty);
+
+        /// <summary>Toggles whether confirmation is active or not.</summary>
+        /// <param name="d">The object to set the value on.</param>
+        /// <param name="value">True or false</param>
+        /// <returns>True or false</returns>
+        public static void SetConfirmationActive(DependencyObject d, bool value) => d.SetValue(ConfirmationActiveProperty, value);
+
+        /// <summary>Backing field for confirmation active property.</summary>
+        public static readonly DependencyProperty ConfirmationActiveProperty = DependencyProperty.RegisterAttached("ConfirmationActive", typeof(bool), typeof(ListEx), new PropertyMetadata(true));
     }
 
     /// <summary>

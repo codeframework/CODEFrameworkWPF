@@ -22,6 +22,6 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="C:\Projects\CODE Framework\Wpf\CODE.Framework.WPF\CODE.Framework.Wpf.Mvvm\bin\Debug\net6.0-windows\CODE.Framework.Wpf.Mvvm.dll" target="lib\net6.0-windows7.0\CODE.Framework.Wpf.Mvvm.dll" />
+    <file src="C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\bin\Debug\net6.0-windows\CODE.Framework.Wpf.Mvvm.dll" target="lib\net6.0-windows7.0\CODE.Framework.Wpf.Mvvm.dll" />
   </files>
 </package>
