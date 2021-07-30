@@ -1,6 +1,4 @@
-﻿// TODO: Clean this file up!
-
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
@@ -75,8 +73,7 @@ namespace CODE.Framework.Wpf.Controls
         private static void OnAutoEnableListColumnsChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
             if (!(bool)args.NewValue) return;
-            var list = d as ListBox;
-            if (list == null) return;
+            if (d is not ListBox list) return;
 
             var dictionaryFound = false;
             foreach (var resource in list.Resources.OfType<ResourceDictionary>())
@@ -210,7 +207,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="e">The <see cref="DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void OnSelectedValueExChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            if (!(d is Selector selector)) return;
+            if (d is not Selector selector) return;
 
             if (!selector.IsInitialized && selector.SelectedValue != e.NewValue)
             {
@@ -276,7 +273,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="e">The <see cref="DependencyPropertyChangedEventArgs" /> instance containing the event data.</param>
         private static void OnConfirmationEnabledChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            if (!(d is Selector selector)) return;
+            if (d is not Selector selector) return;
 
             if (!(bool)selector.GetValue(ListEx_SelectionChangedEventWiredUpProperty))
             {
@@ -539,10 +536,7 @@ namespace CODE.Framework.Wpf.Controls
         protected virtual void NotifyChanged(string propertyName = "")
         {
             OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
-
-            var handler = PropertyChangedPublic;
-            if (handler != null)
-                handler(this, new PropertyChangedEventArgs(propertyName));
+            PropertyChangedPublic?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
         /// <summary>
@@ -724,11 +718,8 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="args">Event arguments</param>
         private static void OnWidthChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var column = d as ListColumn;
-            if (column == null) return;
-
-            if (column.WidthChanged != null)
-                column.WidthChanged(column, new EventArgs());
+            if (d is not ListColumn column) return;
+            column.WidthChanged?.Invoke(column, new EventArgs());
         }
 
         /// <summary>
@@ -1489,7 +1480,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="args">Event args</param>
         private static void OnVisibilityChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            if (!(d is ListColumn column)) return;
+            if (d is not ListColumn column) return;
             column.VisibilityChanged?.Invoke(column, new EventArgs());
         }
 

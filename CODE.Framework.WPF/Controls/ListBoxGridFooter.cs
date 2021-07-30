@@ -1,6 +1,4 @@
-﻿// TODO: Clean up this file
-
-using System.Collections.Specialized;
+﻿using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Data;
@@ -27,8 +25,8 @@ namespace CODE.Framework.Wpf.Controls
         /// <summary>Generic column definition</summary>
         public ListColumnsCollection Columns
         {
-            get { return (ListColumnsCollection)GetValue(ColumnsProperty); }
-            set { SetValue(ColumnsProperty, value); }
+            get => (ListColumnsCollection)GetValue(ColumnsProperty);
+            set => SetValue(ColumnsProperty, value);
         }
 
         /// <summary>Generic column definition</summary>
@@ -39,11 +37,9 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="args">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void OnColumnsChanged(DependencyObject o, DependencyPropertyChangedEventArgs args)
         {
-            var footer = o as ListBoxGridFooter;
-            if (footer == null) return;
+            if (o is not ListBoxGridFooter footer) return;
             footer.TriggerConsolidatedColumnRepopulate();
-            var columns = args.NewValue as ListColumnsCollection;
-            if (columns == null) return;
+            if (args.NewValue is not ListColumnsCollection columns) return;
             columns.CollectionChangedDelayed -= footer.HandleColumnCollectionChanged;
             columns.CollectionChangedDelayed += footer.HandleColumnCollectionChanged;
             foreach (var column in columns)
@@ -58,15 +54,9 @@ namespace CODE.Framework.Wpf.Controls
             };
         }
 
-        private void HandleColumnVisibilityChanged(object sender, EventArgs e)
-        {
-            TriggerConsolidatedColumnRepopulate();
-        }
+        private void HandleColumnVisibilityChanged(object sender, EventArgs e) => TriggerConsolidatedColumnRepopulate();
 
-        private void HandleColumnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-        {
-            RepopulateFooters(); // This handler is already triggered delayed, so we can go right ahead
-        }
+        private void HandleColumnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e) => RepopulateFooters(); // This handler is already triggered delayed, so we can go right ahead
 
         private DispatcherTimer _delayTimer;
 
@@ -92,8 +82,8 @@ namespace CODE.Framework.Wpf.Controls
         /// <value>The parent ListBox.</value>
         public ListBox ParentListBox
         {
-            get { return (ListBox)GetValue(ParentListBoxProperty); }
-            set { SetValue(ParentListBoxProperty, value); }
+            get => (ListBox)GetValue(ParentListBoxProperty);
+            set => SetValue(ParentListBoxProperty, value);
         }
 
         /// <summary>Reference to the parent listbox this footer belongs to</summary>
@@ -105,11 +95,9 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="args">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void ParentListBoxChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var footer = d as ListBoxGridFooter;
-            if (footer == null) return;
+            if (d is not ListBoxGridFooter footer) return;
             if (args.NewValue == null) return;
-            var listBox = args.NewValue as ListBox;
-            if (listBox == null) return;
+            if (args.NewValue is not ListBox listBox) return;
 
             footer.SetEditControlVisibility(ListEx.GetShowFooterEditControls(listBox));
 
@@ -124,20 +112,17 @@ namespace CODE.Framework.Wpf.Controls
                 {
                     grid.RowDefinitions[0].Height = visible ? new GridLength(1d, GridUnitType.Star) : new GridLength(0d, GridUnitType.Star);
                     foreach (var child in grid.Children)
-                    {
-                        var element = child as UIElement;
-                        if (element != null)
+                        if (child is UIElement element)
                             if (Grid.GetRow(element) == 0)
                                 element.Visibility = visible ? Visibility.Visible : Visibility.Collapsed;
-                    }
                 }
         }
 
         /// <summary>Horizontal offset of the footer</summary>
         public double HorizontalFooterOffset
         {
-            get { return (double)GetValue(HorizontalFooterOffsetProperty); }
-            set { SetValue(HorizontalFooterOffsetProperty, value); }
+            get => (double)GetValue(HorizontalFooterOffsetProperty);
+            set => SetValue(HorizontalFooterOffsetProperty, value);
         }
 
         /// <summary>Horizontal offset of the footer</summary>
@@ -148,8 +133,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="args">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void HorizontalFooterOffsetChanged(DependencyObject o, DependencyPropertyChangedEventArgs args)
         {
-            var footer = o as ListBoxGridFooter;
-            if (footer == null || footer.Content == null) return;
+            if (o is not ListBoxGridFooter footer || footer.Content == null) return;
             footer.InvalidateHorizontalFooterOffset();
         }
 
@@ -159,15 +143,13 @@ namespace CODE.Framework.Wpf.Controls
         public void InvalidateHorizontalFooterOffset()
         {
             if (Content == null) return;
-            var content = Content as Grid;
-            if (content == null) return;
+            if (Content is not Grid content) return;
             content.Margin = new Thickness(HorizontalFooterOffset * -1, 0, 0, 0);
         }
         private void ForceParentRefresh()
         {
             if (Parent == null) return;
-            var element = Parent as FrameworkElement;
-            if (element == null) return;
+            if (Parent is not FrameworkElement element) return;
             element.InvalidateMeasure();
             element.InvalidateArrange();
             element.InvalidateVisual();
@@ -211,8 +193,7 @@ namespace CODE.Framework.Wpf.Controls
 
             if (Content != null)
             {
-                var oldGrid = Content as Grid;
-                if (oldGrid != null)
+                if (Content is Grid oldGrid)
                 {
                     foreach (var gridColumn in oldGrid.ColumnDefinitions)
                         BindingOperations.ClearBinding(gridColumn, ColumnDefinition.WidthProperty);
@@ -416,8 +397,8 @@ namespace CODE.Framework.Wpf.Controls
         /// <remarks>This is usually populated by means of a binding</remarks>
         public ICommand FooterClickCommand
         {
-            get { return (ICommand)GetValue(FooterClickCommandProperty); }
-            set { SetValue(FooterClickCommandProperty, value); }
+            get => (ICommand)GetValue(FooterClickCommandProperty);
+            set => SetValue(FooterClickCommandProperty, value);
         }
 
         /// <summary>Footer click command</summary>
@@ -429,8 +410,8 @@ namespace CODE.Framework.Wpf.Controls
         /// </summary>
         public bool ColumnIsFiltered
         {
-            get { return (bool)GetValue(ColumnIsFilteredProperty); }
-            set { SetValue(ColumnIsFilteredProperty, value); }
+            get => (bool)GetValue(ColumnIsFilteredProperty);
+            set => SetValue(ColumnIsFilteredProperty, value);
         }
 
         /// <summary>

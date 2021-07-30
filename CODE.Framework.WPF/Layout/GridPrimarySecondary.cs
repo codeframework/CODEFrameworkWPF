@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up
-
-using System.Windows.Media;
+﻿using System.Windows.Media;
 using CODE.Framework.Wpf.BindingConverters;
 using CODE.Framework.Wpf.Controls;
 using System.Globalization;
@@ -32,8 +30,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Size of the secondary UI element (height only for horizontal splits)</summary>
         public GridLength SecondaryUIElementSize
         {
-            get { return (GridLength)GetValue(SecondaryUIElementSizeProperty); }
-            set { SetValue(SecondaryUIElementSizeProperty, value); }
+            get => (GridLength)GetValue(SecondaryUIElementSizeProperty);
+            set => SetValue(SecondaryUIElementSizeProperty, value);
         }
 
         /// <summary>Size of the secondary UI element (could be height or height)</summary>
@@ -42,8 +40,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Spacing between primary and secondary UI elements (both horizontal and vertical)</summary>
         public double UIElementSpacing
         {
-            get { return (double)GetValue(UIElementSpacingProperty); }
-            set { SetValue(UIElementSpacingProperty, value); }
+            get => (double)GetValue(UIElementSpacingProperty);
+            set => SetValue(UIElementSpacingProperty, value);
         }
 
         /// <summary>Spacing between primary and secondary UI elements (both horizontal and vertical)</summary>
@@ -54,16 +52,15 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="args">Event arguments</param>
         private static void OnUIElementSpacingChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
-            var grid = obj as GridPrimarySecondary;
-            if (grid == null) return;
+            if (obj is not GridPrimarySecondary grid) return;
             grid.InvalidateMeasure();
         }
 
         /// <summary>Margin wrap around all elements flagged as primary UI elements</summary>
         public Thickness PrimaryUIElementMargin
         {
-            get { return (Thickness)GetValue(PrimaryUIElementMarginProperty); }
-            set { SetValue(PrimaryUIElementMarginProperty, value); }
+            get => (Thickness)GetValue(PrimaryUIElementMarginProperty);
+            set => SetValue(PrimaryUIElementMarginProperty, value);
         }
 
         /// <summary>Margin wrap around all elements flagged as primary UI elements</summary>
@@ -72,8 +69,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Margin wrap around all elements flagged as secondary UI elements</summary>
         public Thickness SecondaryUIElementMargin
         {
-            get { return (Thickness)GetValue(SecondaryUIElementMarginProperty); }
-            set { SetValue(SecondaryUIElementMarginProperty, value); }
+            get => (Thickness)GetValue(SecondaryUIElementMarginProperty);
+            set => SetValue(SecondaryUIElementMarginProperty, value);
         }
 
         /// <summary>Margin wrap around all elements flagged as secondary UI elements</summary>
@@ -82,8 +79,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Defines the size at which the layout automatically switches from primary (usually top/bottom) orientation to secondary (usually left/right) orientation</summary>
         public double SecondaryUIElementAlignmentChangeSize
         {
-            get { return (double)GetValue(SecondaryUIElementAlignmentChangeSizeProperty); }
-            set { SetValue(SecondaryUIElementAlignmentChangeSizeProperty, value); }
+            get => (double)GetValue(SecondaryUIElementAlignmentChangeSizeProperty);
+            set => SetValue(SecondaryUIElementAlignmentChangeSizeProperty, value);
         }
 
         /// <summary>Defines the size at which the layout automatically switches from primary (usually top/bottom) orientation to secondary (usually left/right) orientation</summary>
@@ -93,8 +90,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <remarks>Each style/skin/theme can choose to interpret this setting differently</remarks>
         public PrimarySecondaryOrientation UIElementOrder
         {
-            get { return (PrimarySecondaryOrientation)GetValue(UIElementOrderProperty); }
-            set { SetValue(UIElementOrderProperty, value); }
+            get => (PrimarySecondaryOrientation)GetValue(UIElementOrderProperty);
+            set => SetValue(UIElementOrderProperty, value);
         }
 
         /// <summary>Defines the logical orientation of primary and secondary UI elements</summary>
@@ -105,8 +102,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The secondary area background brush.</value>
         public Brush SecondaryAreaBackgroundBrush
         {
-            get { return (Brush)GetValue(SecondaryAreaBackgroundBrushProperty); }
-            set { SetValue(SecondaryAreaBackgroundBrushProperty, value); }
+            get => (Brush)GetValue(SecondaryAreaBackgroundBrushProperty);
+            set => SetValue(SecondaryAreaBackgroundBrushProperty, value);
         }
 
         /// <summary>Brush used for the background area of the secondary UI area</summary>
@@ -117,16 +114,15 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="args">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void SecondaryAreaBackgroundBrushPropertyChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
-            var grid = obj as GridPrimarySecondary;
-            if (grid != null) grid.SetInternalSecondaryAreaBackgroundBrush();
+            if (obj is GridPrimarySecondary grid) grid.SetInternalSecondaryAreaBackgroundBrush();
         }
 
         /// <summary>Brush opacity used for the background area of the secondary UI area</summary>
         /// <value>The secondary area background brush opacity.</value>
         public double SecondaryAreaBackgroundBrushOpacity
         {
-            get { return (double)GetValue(SecondaryAreaBackgroundBrushOpacityProperty); }
-            set { SetValue(SecondaryAreaBackgroundBrushOpacityProperty, value); }
+            get => (double)GetValue(SecondaryAreaBackgroundBrushOpacityProperty);
+            set => SetValue(SecondaryAreaBackgroundBrushOpacityProperty, value);
         }
 
         /// <summary>Brush opacity used for the background area of the secondary UI area</summary>
@@ -137,16 +133,15 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="args">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void SecondaryAreaBackgroundBrushOpacityPropertyChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
-            var grid = obj as GridPrimarySecondary;
-            if (grid != null) grid.SetInternalSecondaryAreaBackgroundBrush();
+            if (obj is GridPrimarySecondary grid) grid.SetInternalSecondaryAreaBackgroundBrush();
         }
 
         /// <summary>Brush LightFactor used for the background area of the secondary UI area</summary>
         /// <value>The secondary area background brush LightFactor.</value>
         public double SecondaryAreaBackgroundBrushLightFactor
         {
-            get { return (double)GetValue(SecondaryAreaBackgroundBrushLightFactorProperty); }
-            set { SetValue(SecondaryAreaBackgroundBrushLightFactorProperty, value); }
+            get => (double)GetValue(SecondaryAreaBackgroundBrushLightFactorProperty);
+            set => SetValue(SecondaryAreaBackgroundBrushLightFactorProperty, value);
         }
 
         /// <summary>Brush LightFactor used for the background area of the secondary UI area</summary>
@@ -157,8 +152,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="args">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void SecondaryAreaBackgroundBrushLightFactorPropertyChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
-            var grid = obj as GridPrimarySecondary;
-            if (grid != null) grid.SetInternalSecondaryAreaBackgroundBrush();
+            if (obj is GridPrimarySecondary grid) grid.SetInternalSecondaryAreaBackgroundBrush();
         }
 
         /// <summary>Updates the internal settings for the primary secondary brush</summary>
@@ -185,8 +179,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The primary area background brush.</value>
         public Brush PrimaryAreaBackgroundBrush
         {
-            get { return (Brush)GetValue(PrimaryAreaBackgroundBrushProperty); }
-            set { SetValue(PrimaryAreaBackgroundBrushProperty, value); }
+            get => (Brush)GetValue(PrimaryAreaBackgroundBrushProperty);
+            set => SetValue(PrimaryAreaBackgroundBrushProperty, value);
         }
 
         /// <summary>Brush used for the background area of the primary UI area</summary>
@@ -197,16 +191,15 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="args">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void PrimaryAreaBackgroundBrushPropertyChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
-            var grid = obj as GridPrimarySecondary;
-            if (grid != null) grid.SetInternalPrimaryAreaBackgroundBrush();
+            if (obj is GridPrimarySecondary grid) grid.SetInternalPrimaryAreaBackgroundBrush();
         }
 
         /// <summary>Brush opacity used for the background area of the primary UI area</summary>
         /// <value>The secondary area background brush opacity.</value>
         public double PrimaryAreaBackgroundBrushOpacity
         {
-            get { return (double)GetValue(PrimaryAreaBackgroundBrushOpacityProperty); }
-            set { SetValue(PrimaryAreaBackgroundBrushOpacityProperty, value); }
+            get => (double)GetValue(PrimaryAreaBackgroundBrushOpacityProperty);
+            set => SetValue(PrimaryAreaBackgroundBrushOpacityProperty, value);
         }
 
         /// <summary>Brush opacity used for the background area of the primary UI area</summary>
@@ -217,16 +210,15 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="args">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void PrimaryAreaBackgroundBrushOpacityPropertyChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
-            var grid = obj as GridPrimarySecondary;
-            if (grid != null) grid.SetInternalPrimaryAreaBackgroundBrush();
+            if (obj is GridPrimarySecondary grid) grid.SetInternalPrimaryAreaBackgroundBrush();
         }
 
         /// <summary>Brush LightFactor used for the background area of the primary UI area</summary>
         /// <value>The secondary area background brush LightFactor.</value>
         public double PrimaryAreaBackgroundBrushLightFactor
         {
-            get { return (double)GetValue(PrimaryAreaBackgroundBrushLightFactorProperty); }
-            set { SetValue(PrimaryAreaBackgroundBrushLightFactorProperty, value); }
+            get => (double)GetValue(PrimaryAreaBackgroundBrushLightFactorProperty);
+            set => SetValue(PrimaryAreaBackgroundBrushLightFactorProperty, value);
         }
 
         /// <summary>Brush LightFactor used for the background area of the primary UI area</summary>
@@ -237,8 +229,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="args">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void PrimaryAreaBackgroundBrushLightFactorPropertyChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
-            var grid = obj as GridPrimarySecondary;
-            if (grid != null) grid.SetInternalPrimaryAreaBackgroundBrush();
+            if (obj is GridPrimarySecondary grid) grid.SetInternalPrimaryAreaBackgroundBrush();
         }
 
         /// <summary>Updates the internal settings for the primary secondary brush</summary>
@@ -417,8 +408,7 @@ namespace CODE.Framework.Wpf.Layout
             var noMargin = new Thickness();
             foreach (var child in Children.OfType<UIElement>().Where(e => e.Visibility != Visibility.Collapsed))
             {
-                var element = child as FrameworkElement;
-                if (element == null) continue;
+                if (child is not FrameworkElement element) continue;
                 var mode = SimpleView.GetUIElementType(element);
                 if (mode == UIElementTypes.Primary)
                 {

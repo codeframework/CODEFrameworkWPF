@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up!
-
-using System.Globalization;
+﻿using System.Globalization;
 using System.Linq;
 using System.Windows.Media;
 using CODE.Framework.Wpf.Utilities;
@@ -31,8 +29,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <remarks>Only applicable when the label is positioned to the left of the edit control</remarks>
         public double EditControlLeftSpacing
         {
-            get { return (double)GetValue(EditControlLeftSpacingProperty); }
-            set { SetValue(EditControlLeftSpacingProperty, value); }
+            get => (double)GetValue(EditControlLeftSpacingProperty);
+            set => SetValue(EditControlLeftSpacingProperty, value);
         }
         /// <summary>Left padding/margin that separates the label from the edit control</summary>
         /// <remarks>Only applicable when the label is positioned to the left of the edit control</remarks>
@@ -42,8 +40,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <remarks>Only applicable when the label is positioned to the left of the edit control</remarks>
         public double MinEditControlLeftSpacing
         {
-            get { return (double)GetValue(MinEditControlLeftSpacingProperty); }
-            set { SetValue(MinEditControlLeftSpacingProperty, value); }
+            get => (double)GetValue(MinEditControlLeftSpacingProperty);
+            set => SetValue(MinEditControlLeftSpacingProperty, value);
         }
         /// <summary>Minimum left padding/margin that separates the label from the edit control (only applies for elastic layouts)</summary>
         /// <remarks>Only applicable when the label is positioned to the left of the edit control</remarks>
@@ -53,8 +51,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <remarks>Only applicable when the label is positioned to the top of the edit control</remarks>
         public double EditControlTopSpacing
         {
-            get { return (double)GetValue(EditControlTopSpacingProperty); }
-            set { SetValue(EditControlTopSpacingProperty, value); }
+            get => (double)GetValue(EditControlTopSpacingProperty);
+            set => SetValue(EditControlTopSpacingProperty, value);
         }
         /// <summary>Top padding/margin that separates the label from the edit control</summary>
         /// <remarks>Only applicable when the label is positioned to the top of the edit control</remarks>
@@ -63,8 +61,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Left padding/margin that separates the edit control from the next label</summary>
         public double LabelControlLeftSpacing
         {
-            get { return (double)GetValue(LabelControlLeftSpacingProperty); }
-            set { SetValue(LabelControlLeftSpacingProperty, value); }
+            get => (double)GetValue(LabelControlLeftSpacingProperty);
+            set => SetValue(LabelControlLeftSpacingProperty, value);
         }
         /// <summary>Left padding/margin that separates the edit control from the next label</summary>
         public static readonly DependencyProperty LabelControlLeftSpacingProperty = DependencyProperty.Register("LabelControlLeftSpacing", typeof(double), typeof(FlowForm), new UIPropertyMetadata(20d, (s, e) => InvalidateAllVisuals(s)));
@@ -72,8 +70,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Minimum left padding/margin that separates the edit control from the next label (only applies for elastic layouts)</summary>
         public double MinLabelControlLeftSpacing
         {
-            get { return (double)GetValue(MinLabelControlLeftSpacingProperty); }
-            set { SetValue(MinLabelControlLeftSpacingProperty, value); }
+            get => (double)GetValue(MinLabelControlLeftSpacingProperty);
+            set => SetValue(MinLabelControlLeftSpacingProperty, value);
         }
         /// <summary>Minimum left padding/margin that separates the edit control from the next label (only applies for elastic layouts)</summary>
         public static readonly DependencyProperty MinLabelControlLeftSpacingProperty = DependencyProperty.Register("MinLabelControlLeftSpacing", typeof(double), typeof(FlowForm), new UIPropertyMetadata(2d, (s, e) => InvalidateAllVisuals(s)));
@@ -81,8 +79,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Object used to render the group headers</summary>
         public AutoLayoutHeaderRenderer GroupHeaderRenderer
         {
-            get { return (AutoLayoutHeaderRenderer)GetValue(GroupHeaderRendererProperty); }
-            set { SetValue(GroupHeaderRendererProperty, value); }
+            get => (AutoLayoutHeaderRenderer)GetValue(GroupHeaderRendererProperty);
+            set => SetValue(GroupHeaderRendererProperty, value);
         }
         /// <summary>Object used to render the group headers</summary>
         public static readonly DependencyProperty GroupHeaderRendererProperty = DependencyProperty.Register("GroupHeaderRenderer", typeof(AutoLayoutHeaderRenderer), typeof(FlowForm), new UIPropertyMetadata(null));
@@ -90,8 +88,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Vertical additional spacing before new groups</summary>
         public double GroupHeaderTopSpacing
         {
-            get { return (double)GetValue(GroupHeaderTopSpacingProperty); }
-            set { SetValue(GroupHeaderTopSpacingProperty, value); }
+            get => (double)GetValue(GroupHeaderTopSpacingProperty);
+            set => SetValue(GroupHeaderTopSpacingProperty, value);
         }
         /// <summary>Vertical additional spacing before new groups</summary>
         public static readonly DependencyProperty GroupHeaderTopSpacingProperty = DependencyProperty.Register("GroupHeaderTopSpacing", typeof(double), typeof(FlowForm), new UIPropertyMetadata(15d, (s, e) => InvalidateAllVisuals(s)));
@@ -99,8 +97,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Vertical additional spacing before new groups</summary>
         public double GroupHeaderBottomSpacing
         {
-            get { return (double)GetValue(GroupHeaderBottomSpacingProperty); }
-            set { SetValue(GroupHeaderBottomSpacingProperty, value); }
+            get => (double)GetValue(GroupHeaderBottomSpacingProperty);
+            set => SetValue(GroupHeaderBottomSpacingProperty, value);
         }
         /// <summary>Vertical additional spacing before new groups</summary>
         public static readonly DependencyProperty GroupHeaderBottomSpacingProperty = DependencyProperty.Register("GroupHeaderBottomSpacing", typeof(double), typeof(FlowForm), new UIPropertyMetadata(7d, (s, e) => InvalidateAllVisuals(s)));
@@ -108,8 +106,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Minimum vertical additional spacing after new group headers (only used if elastic layout is enabled)</summary>
         public double MinGroupHeaderBottomSpacing
         {
-            get { return (double)GetValue(MinGroupHeaderBottomSpacingProperty); }
-            set { SetValue(MinGroupHeaderBottomSpacingProperty, value); }
+            get => (double)GetValue(MinGroupHeaderBottomSpacingProperty);
+            set => SetValue(MinGroupHeaderBottomSpacingProperty, value);
         }
         /// <summary>Minimum vertical additional spacing after new group headers (only used if elastic layout is enabled)</summary>
         public static readonly DependencyProperty MinGroupHeaderBottomSpacingProperty = DependencyProperty.Register("MinGroupHeaderBottomSpacing", typeof(double), typeof(FlowForm), new UIPropertyMetadata(3d, (s, e) => InvalidateAllVisuals(s)));
@@ -117,8 +115,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Minimum vertical additional spacing before new group headers (only used if elastic layout is enabled)</summary>
         public double MinGroupHeaderTopSpacing
         {
-            get { return (double)GetValue(MinGroupHeaderTopSpacingProperty); }
-            set { SetValue(MinGroupHeaderTopSpacingProperty, value); }
+            get => (double)GetValue(MinGroupHeaderTopSpacingProperty);
+            set => SetValue(MinGroupHeaderTopSpacingProperty, value);
         }
         /// <summary>Minimum vertical additional spacing before new group headers (only used if elastic layout is enabled)</summary>
         public static readonly DependencyProperty MinGroupHeaderTopSpacingProperty = DependencyProperty.Register("MinGroupHeaderTopSpacing", typeof(double), typeof(FlowForm), new UIPropertyMetadata(5d, (s, e) => InvalidateAllVisuals(s)));
@@ -126,8 +124,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font family used to render group headers</summary>
         public FontFamily GroupHeaderFontFamily
         {
-            get { return (FontFamily)GetValue(GroupHeaderFontFamilyProperty); }
-            set { SetValue(GroupHeaderFontFamilyProperty, value); }
+            get => (FontFamily)GetValue(GroupHeaderFontFamilyProperty);
+            set => SetValue(GroupHeaderFontFamilyProperty, value);
         }
         /// <summary>Font family used to render group headers</summary>
         public static readonly DependencyProperty GroupHeaderFontFamilyProperty = DependencyProperty.Register("GroupHeaderFontFamily", typeof(FontFamily), typeof(FlowForm), new UIPropertyMetadata(new FontFamily("Segoe UI"), (s, e) => InvalidateAllVisuals(s)));
@@ -135,8 +133,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font style used to render group headers</summary>
         public FontStyle GroupHeaderFontStyle
         {
-            get { return (FontStyle)GetValue(GroupHeaderFontStyleProperty); }
-            set { SetValue(GroupHeaderFontStyleProperty, value); }
+            get => (FontStyle)GetValue(GroupHeaderFontStyleProperty);
+            set => SetValue(GroupHeaderFontStyleProperty, value);
         }
         /// <summary>Font style used to render group headers</summary>
         public static readonly DependencyProperty GroupHeaderFontStyleProperty = DependencyProperty.Register("GroupHeaderFontStyle", typeof(FontStyle), typeof(FlowForm), new UIPropertyMetadata(FontStyles.Normal, (s, e) => InvalidateAllVisuals(s)));
@@ -144,8 +142,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font weight used to render group headers</summary>
         public FontWeight GroupHeaderFontWeight
         {
-            get { return (FontWeight)GetValue(GroupHeaderFontWeightProperty); }
-            set { SetValue(GroupHeaderFontWeightProperty, value); }
+            get => (FontWeight)GetValue(GroupHeaderFontWeightProperty);
+            set => SetValue(GroupHeaderFontWeightProperty, value);
         }
         /// <summary>Font weight used to render group headers</summary>
         public static readonly DependencyProperty GroupHeaderFontWeightProperty = DependencyProperty.Register("GroupHeaderFontWeight", typeof(FontWeight), typeof(FlowForm), new UIPropertyMetadata(FontWeights.Bold, (s, e) => InvalidateAllVisuals(s)));
@@ -153,8 +151,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font size used to render group headers</summary>
         public double GroupHeaderFontSize
         {
-            get { return (double)GetValue(GroupHeaderFontSizeProperty); }
-            set { SetValue(GroupHeaderFontSizeProperty, value); }
+            get => (double)GetValue(GroupHeaderFontSizeProperty);
+            set => SetValue(GroupHeaderFontSizeProperty, value);
         }
         /// <summary>Font size used to render group headers</summary>
         public static readonly DependencyProperty GroupHeaderFontSizeProperty = DependencyProperty.Register("GroupHeaderFontSize", typeof(double), typeof(FlowForm), new UIPropertyMetadata(12d, (s, e) => InvalidateAllVisuals(s)));
@@ -162,8 +160,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Foreground brush used to render group headers</summary>
         public Brush GroupHeaderForegroundBrush
         {
-            get { return (Brush)GetValue(GroupHeaderForegroundBrushProperty); }
-            set { SetValue(GroupHeaderForegroundBrushProperty, value); }
+            get => (Brush)GetValue(GroupHeaderForegroundBrushProperty);
+            set => SetValue(GroupHeaderForegroundBrushProperty, value);
         }
         /// <summary>Foreground brush used to render group headers</summary>
         public static readonly DependencyProperty GroupHeaderForegroundBrushProperty = DependencyProperty.Register("GroupHeaderForegroundBrush", typeof(Brush), typeof(FlowForm), new UIPropertyMetadata(Brushes.Black, (s, e) => InvalidateAllVisuals(s)));
@@ -171,8 +169,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font family used to render labels</summary>
         public FontFamily LabelFontFamily
         {
-            get { return (FontFamily)GetValue(LabelFontFamilyProperty); }
-            set { SetValue(LabelFontFamilyProperty, value); }
+            get => (FontFamily)GetValue(LabelFontFamilyProperty);
+            set => SetValue(LabelFontFamilyProperty, value);
         }
         /// <summary>Font family used to render labels</summary>
         public static readonly DependencyProperty LabelFontFamilyProperty = DependencyProperty.Register("LabelFontFamily", typeof(FontFamily), typeof(FlowForm), new UIPropertyMetadata(new FontFamily("Segoe UI"), (s, e) => InvalidateAllVisuals(s)));
@@ -180,8 +178,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font style used to render labels</summary>
         public FontStyle LabelFontStyle
         {
-            get { return (FontStyle)GetValue(LabelFontStyleProperty); }
-            set { SetValue(LabelFontStyleProperty, value); }
+            get => (FontStyle)GetValue(LabelFontStyleProperty);
+            set => SetValue(LabelFontStyleProperty, value);
         }
         /// <summary>Font style used to render labels</summary>
         public static readonly DependencyProperty LabelFontStyleProperty = DependencyProperty.Register("LabelFontStyle", typeof(FontStyle), typeof(FlowForm), new UIPropertyMetadata(FontStyles.Normal, (s, e) => InvalidateAllVisuals(s)));
@@ -189,8 +187,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font weight used to render labels</summary>
         public FontWeight LabelFontWeight
         {
-            get { return (FontWeight)GetValue(LabelFontWeightProperty); }
-            set { SetValue(LabelFontWeightProperty, value); }
+            get => (FontWeight)GetValue(LabelFontWeightProperty);
+            set => SetValue(LabelFontWeightProperty, value);
         }
         /// <summary>Font weight used to render labels</summary>
         public static readonly DependencyProperty LabelFontWeightProperty = DependencyProperty.Register("LabelFontWeight", typeof(FontWeight), typeof(FlowForm), new UIPropertyMetadata(FontWeights.Normal, (s, e) => InvalidateAllVisuals(s)));
@@ -198,8 +196,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font size used to render labels</summary>
         public double LabelFontSize
         {
-            get { return (double)GetValue(LabelFontSizeProperty); }
-            set { SetValue(LabelFontSizeProperty, value); }
+            get => (double)GetValue(LabelFontSizeProperty);
+            set => SetValue(LabelFontSizeProperty, value);
         }
         /// <summary>Font size used to render labels</summary>
         public static readonly DependencyProperty LabelFontSizeProperty = DependencyProperty.Register("LabelFontSize", typeof(double), typeof(FlowForm), new UIPropertyMetadata(12d, (s, e) => InvalidateAllVisuals(s)));
@@ -207,8 +205,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Text alignment used to render labels</summary>
         public TextAlignment LabelTextAlignment
         {
-            get { return (TextAlignment)GetValue(LabelTextAlignmentProperty); }
-            set { SetValue(LabelTextAlignmentProperty, value); }
+            get => (TextAlignment)GetValue(LabelTextAlignmentProperty);
+            set => SetValue(LabelTextAlignmentProperty, value);
         }
         /// <summary>Text alignment used to render labels</summary>
         public static readonly DependencyProperty LabelTextAlignmentProperty = DependencyProperty.Register("LabelTextAlignment", typeof(TextAlignment), typeof(FlowForm), new UIPropertyMetadata(TextAlignment.Left, (s, e) => InvalidateAllVisuals(s)));
@@ -216,8 +214,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Foreground brush used to render labels</summary>
         public Brush LabelForegroundBrush
         {
-            get { return (Brush)GetValue(LabelForegroundBrushProperty); }
-            set { SetValue(LabelForegroundBrushProperty, value); }
+            get => (Brush)GetValue(LabelForegroundBrushProperty);
+            set => SetValue(LabelForegroundBrushProperty, value);
         }
         /// <summary>Foreground brush used to render group headers</summary>
         public static readonly DependencyProperty LabelForegroundBrushProperty = DependencyProperty.Register("LabelForegroundBrush", typeof(Brush), typeof(FlowForm), new UIPropertyMetadata(Brushes.Black, (s, e) => InvalidateAllVisuals(s)));
@@ -225,8 +223,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Number of pixels the label is offset down when the layout uses labels to the left of the edit control</summary>
         public double VerticalLabelControlOffset
         {
-            get { return (double)GetValue(VerticalLabelControlOffsetProperty); }
-            set { SetValue(VerticalLabelControlOffsetProperty, value); }
+            get => (double)GetValue(VerticalLabelControlOffsetProperty);
+            set => SetValue(VerticalLabelControlOffsetProperty, value);
         }
         /// <summary>Number of pixels the label is offset down when the layout uses labels to the left of the edit control</summary>
         public static readonly DependencyProperty VerticalLabelControlOffsetProperty = DependencyProperty.Register("VerticalLabelControlOffset", typeof(double), typeof(FlowForm), new UIPropertyMetadata(5d, (s, e) => InvalidateAllVisuals(s)));
@@ -234,8 +232,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Vertical spacing in between individual elements</summary>
         public double VerticalSpacing
         {
-            get { return (double)GetValue(VerticalSpacingProperty); }
-            set { SetValue(VerticalSpacingProperty, value); }
+            get => (double)GetValue(VerticalSpacingProperty);
+            set => SetValue(VerticalSpacingProperty, value);
         }
         /// <summary>Vertical spacing in between individual elements</summary>
         public static readonly DependencyProperty VerticalSpacingProperty = DependencyProperty.Register("VerticalSpacing", typeof(double), typeof(FlowForm), new UIPropertyMetadata(5d, (s, e) => InvalidateAllVisuals(s)));
@@ -243,8 +241,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Minimum vertical spacing in between individual elements (only used if elastic layout is enabled)</summary>
         public double MinVerticalSpacing
         {
-            get { return (double)GetValue(MinVerticalSpacingProperty); }
-            set { SetValue(MinVerticalSpacingProperty, value); }
+            get => (double)GetValue(MinVerticalSpacingProperty);
+            set => SetValue(MinVerticalSpacingProperty, value);
         }
         /// <summary>Minimum vertical spacing in between individual elements (only used if elastic layout is enabled)</summary>
         public static readonly DependencyProperty MinVerticalSpacingProperty = DependencyProperty.Register("MinVerticalSpacing", typeof(double), typeof(FlowForm), new UIPropertyMetadata(1d, (s, e) => InvalidateAllVisuals(s)));
@@ -252,8 +250,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Vertical additional spacing before new groups</summary>
         public double GroupSpacing
         {
-            get { return (double)GetValue(GroupSpacingProperty); }
-            set { SetValue(GroupSpacingProperty, value); }
+            get => (double)GetValue(GroupSpacingProperty);
+            set => SetValue(GroupSpacingProperty, value);
         }
         /// <summary>Vertical additional spacing before new groups</summary>
         public static readonly DependencyProperty GroupSpacingProperty = DependencyProperty.Register("GroupSpacing", typeof(double), typeof(FlowForm), new UIPropertyMetadata(15d, (s, e) => InvalidateAllVisuals(s)));
@@ -261,8 +259,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Minimum vertical additional spacing before new groups (only used if elastic layout is enabled)</summary>
         public double MinGroupSpacing
         {
-            get { return (double)GetValue(MinGroupSpacingProperty); }
-            set { SetValue(MinGroupSpacingProperty, value); }
+            get => (double)GetValue(MinGroupSpacingProperty);
+            set => SetValue(MinGroupSpacingProperty, value);
         }
         /// <summary>Minimum vertical additional spacing before new groups (only used if elastic layout is enabled)</summary>
         public static readonly DependencyProperty MinGroupSpacingProperty = DependencyProperty.Register("MinGroupSpacing", typeof(double), typeof(FlowForm), new UIPropertyMetadata(4d, (s, e) => InvalidateAllVisuals(s)));
@@ -270,8 +268,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Indicates whether or not checkboxes shoudl be handled special (typically kept together as groups)</summary>
         public bool SpecialCheckBoxBehaviorActive
         {
-            get { return (bool)GetValue(SpecialCheckBoxBehaviorActiveProperty); }
-            set { SetValue(SpecialCheckBoxBehaviorActiveProperty, value); }
+            get => (bool)GetValue(SpecialCheckBoxBehaviorActiveProperty);
+            set => SetValue(SpecialCheckBoxBehaviorActiveProperty, value);
         }
         /// <summary>Indicates whether or not checkboxes shoudl be handled special (typically kept together as groups)</summary>
         public static readonly DependencyProperty SpecialCheckBoxBehaviorActiveProperty = DependencyProperty.Register("SpecialCheckBoxBehaviorActive", typeof(bool), typeof(FlowForm), new PropertyMetadata(true, (s, e) => InvalidateAllVisuals(s)));
@@ -279,8 +277,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Indicates whether or not radio buttons shoudl be handled special (typically kept together as groups)</summary>
         public bool SpecialRadioButtonBehaviorActive
         {
-            get { return (bool)GetValue(SpecialRadioButtonActiveProperty); }
-            set { SetValue(SpecialRadioButtonActiveProperty, value); }
+            get => (bool)GetValue(SpecialRadioButtonActiveProperty);
+            set => SetValue(SpecialRadioButtonActiveProperty, value);
         }
         /// <summary>Indicates whether or not checkboxes shoudl be handled special (typically kept together as groups)</summary>
         public static readonly DependencyProperty SpecialRadioButtonActiveProperty = DependencyProperty.Register("SpecialRadioButtonActive", typeof(bool), typeof(FlowForm), new PropertyMetadata(true, (s, e) => InvalidateAllVisuals(s)));
@@ -291,8 +289,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The minimum width of the edit control.</value>
         public double EditControlMinimumWidth
         {
-            get { return (double)GetValue(EditControlMinimumWidthProperty); }
-            set { SetValue(EditControlMinimumWidthProperty, value); }
+            get => (double)GetValue(EditControlMinimumWidthProperty);
+            set => SetValue(EditControlMinimumWidthProperty, value);
         }
         /// <summary>
         /// Minimum Width to be used for edit controls
@@ -304,8 +302,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="source">Reference to an instance of the form itself</param>
         private static void InvalidateAllVisuals(DependencyObject source)
         {
-            var form = source as FlowForm;
-            if (form == null) return;
+            if (source is not FlowForm form) return;
 
             form.InvalidateArrange();
             form.InvalidateMeasure();
@@ -794,10 +791,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>
         /// Initializes a new instance of the <see cref="ControlRow"/> class.
         /// </summary>
-        public ControlRow()
-        {
-            Elements = new List<ControlRowElement>();
-        }
+        public ControlRow() => Elements = new List<ControlRowElement>();
 
         /// <summary>List of elements within the row</summary>
         public List<ControlRowElement> Elements { get; set; }

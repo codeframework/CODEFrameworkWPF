@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up
-
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Drawing.Printing;
 using System.Runtime.InteropServices;
 using System.Windows.Input;
@@ -28,7 +26,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="e">The <see cref="DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void OnWindowStartupLocationStylableChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            if (!(d is Window window)) return;
+            if (d is not Window window) return;
             window.WindowStartupLocation = (WindowStartupLocation)e.NewValue;
         }
 
@@ -64,7 +62,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="e">The <see cref="DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void OnAutoSaveWindowPositionChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            if (!(d is Window window)) return;
+            if (d is not Window window) return;
             if (!(bool)e.NewValue) return;
 
             // TODO: Put this back!
@@ -108,7 +106,7 @@ namespace CODE.Framework.Wpf.Controls
         private static void WindowDragMouseUpHandler(object sender, MouseButtonEventArgs e)
         {
             _currentDisplays = null;
-            if (!(sender is Window window)) return;
+            if (sender is not Window window) return;
             Mouse.Capture(null);
             SetCurrentDragOperationStartScreenPosition(window, new Point(double.MinValue, double.MinValue));
             SetCurrentDragOperationStartWindowPosition(window, new Point(double.MinValue, double.MinValue));
@@ -119,7 +117,7 @@ namespace CODE.Framework.Wpf.Controls
         private static void WindowDragMoveHandler(object sender, MouseEventArgs e)
         {
             if (e.LeftButton != MouseButtonState.Pressed) return;
-            if (!(sender is Window window)) return;
+            if (sender is not Window window) return;
 
             var startAbsoluteMousePosition = GetCurrentDragOperationStartScreenPosition(window);
             if (!(startAbsoluteMousePosition.X > double.MinValue)) return; // Not in a window drag operation
@@ -174,8 +172,7 @@ namespace CODE.Framework.Wpf.Controls
         private static void WindowDragMouseDownHandler(object sender, MouseButtonEventArgs mouseButtonEventArgs)
         {
             if (mouseButtonEventArgs.LeftButton != MouseButtonState.Pressed) return;
-            var window = sender as Window;
-            if (window == null) return;
+            if (sender is not Window window) return;
 
             // Get the mouse position within the current window
             var position = mouseButtonEventArgs.GetPosition(window);
@@ -316,8 +313,7 @@ namespace CODE.Framework.Wpf.Controls
             if (!GetAutoWindowMaximizeEnabled(window)) return; // Just double-checking to make sure this is still on
 
             // We need to make sure that the click actually happened on the window (or part of the window template) and not in a different control
-            var originalSource = mouseButtonEventArgs.OriginalSource as FrameworkElement;
-            if (originalSource != null && originalSource != window)
+            if (mouseButtonEventArgs.OriginalSource is FrameworkElement originalSource && originalSource != window)
             {
                 var clickRoot = FindRoot(originalSource);
                 if (clickRoot == null) return; // This couldn't possibly be a window
@@ -398,16 +394,14 @@ namespace CODE.Framework.Wpf.Controls
                 win.MouseUp += (s, a) =>
                 {
                     // Makes sure that when the mouse is released, the resize mover event is disconnected as well
-                    var win2 = Mouse.Captured as Window;
-                    if (win2 != null)
+                    if (Mouse.Captured is Window win2)
                         Mouse.Capture(null);
                     win.MouseMove -= WindowResizeMouseDownMoveHandler;
                 };
                 win.Deactivated += (s2, a2) =>
                 {
                     // Makes sure that when the mouse is released, the resize mover event is disconnected as well
-                    var win2 = Mouse.Captured as Window;
-                    if (win2 != null)
+                    if (Mouse.Captured is Window win2)
                         Mouse.Capture(null);
                     win.MouseMove -= WindowResizeMouseDownMoveHandler;
                 };
@@ -425,7 +419,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <exception cref="System.NotImplementedException"></exception>
         private static void DynamicIconChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            if (!(d is Window window)) return;
+            if (d is not Window window) return;
             var iconPath = args.NewValue.ToString();
 
             ImageSource source;
@@ -465,7 +459,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="args">The <see cref="DependencyPropertyChangedEventArgs" /> instance containing the event data.</param>
         private static void IsBorderlessChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            if (!(d is Window window)) return;
+            if (d is not Window window) return;
 
             if ((bool)args.NewValue)
             {
@@ -536,7 +530,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="args">The <see cref="DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void HasDropShadowChanged(DependencyObject source, DependencyPropertyChangedEventArgs args)
         {
-            if (!(source is Window window)) return;
+            if (source is not Window window) return;
             var effectState = (EffectActiveStates)args.NewValue;
 
             window.Activated -= WindowActivatedForDropShadow;
@@ -564,7 +558,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <exception cref="System.NotImplementedException"></exception>
         private static void WindowDeactivatedForDropShadow(object sender, EventArgs e)
         {
-            if (!(sender is Window window)) return;
+            if (sender is not Window window) return;
             HideDropShadow(window);
         }
 
@@ -576,7 +570,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <exception cref="System.NotImplementedException"></exception>
         private static void WindowActivatedForDropShadow(object sender, EventArgs eventArgs)
         {
-            if (!(sender is Window window)) return;
+            if (sender is not Window window) return;
             ShowDropShadow(window);
         }
 
@@ -649,16 +643,10 @@ namespace CODE.Framework.Wpf.Controls
             public static readonly InteropRect Empty = new InteropRect();
 
             /// <summary> Win32 </summary>
-            public int Width
-            {
-                get { return Math.Abs(right - left); } // Abs needed for BIDI OS
-            }
+            public int Width => Math.Abs(right - left);
 
             /// <summary> Win32 </summary>
-            public int Height
-            {
-                get { return bottom - top; }
-            }
+            public int Height => bottom - top;
 
             /// <summary> Win32 </summary>
             public InteropRect(int left, int top, int right, int bottom)
@@ -793,8 +781,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="mouseButtonEventArgs">The <see cref="MouseButtonEventArgs" /> instance containing the event data.</param>
         private static void WindowResizeMouseDownHandler(object sender, MouseButtonEventArgs mouseButtonEventArgs)
         {
-            var window = sender as Window;
-            if (window == null) return;
+            if (sender is not Window window) return;
             if (window.WindowState != WindowState.Normal) return;
             if (mouseButtonEventArgs.ButtonState != MouseButtonState.Pressed) return;
 
@@ -827,7 +814,7 @@ namespace CODE.Framework.Wpf.Controls
         private static bool MustHandleResize(Point position, Window window)
         {
             if (window.WindowState != WindowState.Normal) return false;
-            if (!(GetAutoWindowResizingEnabled(window))) return false;
+            if (!GetAutoWindowResizingEnabled(window)) return false;
 
             return position.X < 5 || position.X > window.Width - 5 || position.Y < 5 || position.Y > window.Height - 5 ||
                    (position.X < 20 && position.Y < 20) || (position.X > window.Width - 20 && position.Y < 20) ||
@@ -839,8 +826,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="mouseEventArgs">The <see cref="MouseEventArgs" /> instance containing the event data.</param>
         private static void WindowResizeMouseDownMoveHandler(object sender, MouseEventArgs mouseEventArgs)
         {
-            var window = sender as Window;
-            if (window == null) return;
+            if (sender is not Window window) return;
             if (window.WindowState != WindowState.Normal) return;
 
             var position = mouseEventArgs.GetPosition(window);
@@ -914,7 +900,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="mouseEventArgs">The <see cref="MouseEventArgs" /> instance containing the event data.</param>
         private static void WindowResizeMouseOverHandler(object sender, MouseEventArgs mouseEventArgs)
         {
-            if (!(sender is Window window)) return;
+            if (sender is not Window window) return;
             if (window.WindowState != WindowState.Normal) return;
 
             var position = mouseEventArgs.GetPosition(window);
@@ -995,7 +981,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private static void OnWindowSourceInitialized(object sender, EventArgs e)
         {
-            if (!(sender is Window window)) return;
+            if (sender is not Window window) return;
             DropShadow(window);
             window.SourceInitialized -= OnWindowSourceInitialized; // Done, so we do not need ourselves as a handler anymore
         }

@@ -1,6 +1,4 @@
-﻿// TODO: Clean this file up!
-
-using System.Globalization;
+﻿using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Windows.Controls.Primitives;
@@ -22,9 +20,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>The actions.</value>
         public IEnumerable<IViewAction> Actions
         {
-            get { return (IEnumerable<IViewAction>)GetValue(ActionsProperty); }
-            set { SetValue(ActionsProperty, value); }
+            get => (IEnumerable<IViewAction>)GetValue(ActionsProperty);
+            set => SetValue(ActionsProperty, value);
         }
+
         /// <summary>
         /// View actions to be displayed in the drop-down
         /// </summary>
@@ -32,8 +31,7 @@ namespace CODE.Framework.Wpf.Mvvm
 
         private static void InvalidateActions(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var button = d as ViewActionMenuButton;
-            if (button == null) return;
+            if (d is not ViewActionMenuButton button) return;
             button.GetViewActions(); // Tries to get a list of actions and handles visible/collapsed state of the button if need be
         }
 
@@ -44,9 +42,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <remarks>Used in combination with the ModelActionsBindingPath property.</remarks>
         public object Model
         {
-            get { return GetValue(ModelProperty); }
-            set { SetValue(ModelProperty, value); }
+            get => GetValue(ModelProperty);
+            set => SetValue(ModelProperty, value);
         }
+
         /// <summary>
         /// Model the view actions collection is a member of
         /// </summary>
@@ -60,9 +59,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <remarks>Used in combination with the Model property.</remarks>
         public string ModelActionsBindingPath
         {
-            get { return (string)GetValue(ModelActionsBindingPathProperty); }
-            set { SetValue(ModelActionsBindingPathProperty, value); }
+            get => (string)GetValue(ModelActionsBindingPathProperty);
+            set => SetValue(ModelActionsBindingPathProperty, value);
         }
+
         /// <summary>
         /// Binding path to the view actions collection on the model
         /// </summary>
@@ -75,9 +75,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>True (default) or false</value>
         public bool AutoHideButtonWhenNoActionsAreAvailable
         {
-            get { return (bool)GetValue(AutoHideButtonWhenNoActionsAreAvailableProperty); }
-            set { SetValue(AutoHideButtonWhenNoActionsAreAvailableProperty, value); }
+            get => (bool)GetValue(AutoHideButtonWhenNoActionsAreAvailableProperty);
+            set => SetValue(AutoHideButtonWhenNoActionsAreAvailableProperty, value);
         }
+
         /// <summary>
         /// Defines whether or not the whole button auto-hides when no bound view actions are available
         /// </summary>
@@ -93,8 +94,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>The view action policy.</value>
         public IViewActionPolicy ViewActionPolicy
         {
-            get { return (IViewActionPolicy)GetValue(ViewActionPolicyProperty); }
-            set { SetValue(ViewActionPolicyProperty, value); }
+            get => (IViewActionPolicy)GetValue(ViewActionPolicyProperty);
+            set => SetValue(ViewActionPolicyProperty, value);
         }
 
         /// <summary>

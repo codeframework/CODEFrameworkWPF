@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up!
-
-using System.Globalization;
+﻿using System.Globalization;
 using System.Linq;
 using System.Windows.Controls.Primitives;
 using System.Windows.Documents;
@@ -64,8 +62,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Defines whether the layout is elastic (smartly resizes automatically) or not</summary>
         public LayoutElasticity LayoutElasticity
         {
-            get { return (LayoutElasticity)GetValue(LayoutElasticityProperty); }
-            set { SetValue(LayoutElasticityProperty, value); }
+            get => (LayoutElasticity)GetValue(LayoutElasticityProperty);
+            set => SetValue(LayoutElasticityProperty, value);
         }
         /// <summary>Defines whether the layout is elastic (smartly resizes automatically) or not</summary>
         public static readonly DependencyProperty LayoutElasticityProperty = DependencyProperty.Register("LayoutElasticity", typeof(LayoutElasticity), typeof(EditForm), new UIPropertyMetadata(LayoutElasticity.LayoutAndScale, (s, e) => InvalidateAllVisuals(s)));
@@ -73,8 +71,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Defines the position of the label relative to the edit control</summary>
         public EditFormLabelPositions LabelPosition
         {
-            get { return (EditFormLabelPositions)GetValue(LabelPositionsProperty); }
-            set { SetValue(LabelPositionsProperty, value); }
+            get => (EditFormLabelPositions)GetValue(LabelPositionsProperty);
+            set => SetValue(LabelPositionsProperty, value);
         }
         /// <summary>Defines the position of the label relative to the edit control</summary>
         public static readonly DependencyProperty LabelPositionsProperty = DependencyProperty.Register("LabelPositions", typeof(EditFormLabelPositions), typeof(EditForm), new UIPropertyMetadata(EditFormLabelPositions.Left, (s, e) => InvalidateAllVisuals(s)));
@@ -82,8 +80,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Vertical spacing in between individual elements</summary>
         public double VerticalSpacing
         {
-            get { return (double)GetValue(VerticalSpacingProperty); }
-            set { SetValue(VerticalSpacingProperty, value); }
+            get => (double)GetValue(VerticalSpacingProperty);
+            set => SetValue(VerticalSpacingProperty, value);
         }
         /// <summary>Vertical spacing in between individual elements</summary>
         public static readonly DependencyProperty VerticalSpacingProperty = DependencyProperty.Register("VerticalSpacing", typeof(double), typeof(EditForm), new UIPropertyMetadata(5d, (s, e) => InvalidateAllVisuals(s)));
@@ -91,8 +89,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Minimum vertical spacing in between individual elements (only used if elastic layout is enabled)</summary>
         public double MinVerticalSpacing
         {
-            get { return (double)GetValue(MinVerticalSpacingProperty); }
-            set { SetValue(MinVerticalSpacingProperty, value); }
+            get => (double)GetValue(MinVerticalSpacingProperty);
+            set => SetValue(MinVerticalSpacingProperty, value);
         }
         /// <summary>Minimum vertical spacing in between individual elements (only used if elastic layout is enabled)</summary>
         public static readonly DependencyProperty MinVerticalSpacingProperty = DependencyProperty.Register("MinVerticalSpacing", typeof(double), typeof(EditForm), new UIPropertyMetadata(1d, (s, e) => InvalidateAllVisuals(s)));
@@ -100,8 +98,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Vertical additional spacing before new groups</summary>
         public double GroupSpacing
         {
-            get { return (double)GetValue(GroupSpacingProperty); }
-            set { SetValue(GroupSpacingProperty, value); }
+            get => (double)GetValue(GroupSpacingProperty);
+            set => SetValue(GroupSpacingProperty, value);
         }
         /// <summary>Vertical additional spacing before new groups</summary>
         public static readonly DependencyProperty GroupSpacingProperty = DependencyProperty.Register("GroupSpacing", typeof(double), typeof(EditForm), new UIPropertyMetadata(15d, (s, e) => InvalidateAllVisuals(s)));
@@ -109,8 +107,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Minimum vertical additional spacing before new groups (only used if elastic layout is enabled)</summary>
         public double MinGroupSpacing
         {
-            get { return (double)GetValue(MinGroupSpacingProperty); }
-            set { SetValue(MinGroupSpacingProperty, value); }
+            get => (double)GetValue(MinGroupSpacingProperty);
+            set => SetValue(MinGroupSpacingProperty, value);
         }
         /// <summary>Minimum vertical additional spacing before new groups (only used if elastic layout is enabled)</summary>
         public static readonly DependencyProperty MinGroupSpacingProperty = DependencyProperty.Register("MinGroupSpacing", typeof(double), typeof(EditForm), new UIPropertyMetadata(4d, (s, e) => InvalidateAllVisuals(s)));
@@ -118,8 +116,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Defines whether a group background should be rendered for groups</summary>
         public bool RenderGroupBackground
         {
-            get { return (bool)GetValue(RenderGroupBackgroundProperty); }
-            set { SetValue(RenderGroupBackgroundProperty, value); }
+            get => (bool)GetValue(RenderGroupBackgroundProperty);
+            set => SetValue(RenderGroupBackgroundProperty, value);
         }
         /// <summary>Defines whether a group background should be rendered for groups</summary>
         public static readonly DependencyProperty RenderGroupBackgroundProperty = DependencyProperty.Register("RenderGroupBackground", typeof(bool), typeof(EditForm), new UIPropertyMetadata(false));
@@ -130,8 +128,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value><c>true</c> if [render horizontal control separator lines]; otherwise, <c>false</c>.</value>
         public bool RenderHorizontalControlSeparatorLines
         {
-            get { return (bool)GetValue(RenderHorizontalControlSeparatorLinesProperty); }
-            set { SetValue(RenderHorizontalControlSeparatorLinesProperty, value); }
+            get => (bool)GetValue(RenderHorizontalControlSeparatorLinesProperty);
+            set => SetValue(RenderHorizontalControlSeparatorLinesProperty, value);
         }
         /// <summary>
         /// Indicates whether a horizontal separator line should be rendered after every control-pair
@@ -144,8 +142,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The vertical control separator offset.</value>
         public double VerticalControlSeparatorOffset
         {
-            get { return (double)GetValue(VerticalControlSeparatorOffsetProperty); }
-            set { SetValue(VerticalControlSeparatorOffsetProperty, value); }
+            get => (double)GetValue(VerticalControlSeparatorOffsetProperty);
+            set => SetValue(VerticalControlSeparatorOffsetProperty, value);
         }
         /// <summary>
         /// Vertical offset for a potential horizontal control separator line (if shown)
@@ -159,8 +157,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <remarks>Only used if RenderHorizontalControlSeparatorLines = true</remarks>
         public Brush HorizontalLineSeparatorBrush
         {
-            get { return (Brush)GetValue(HorizontalLineSeparatorBrushProperty); }
-            set { SetValue(HorizontalLineSeparatorBrushProperty, value); }
+            get => (Brush)GetValue(HorizontalLineSeparatorBrushProperty);
+            set => SetValue(HorizontalLineSeparatorBrushProperty, value);
         }
         /// <summary>
         /// Brush used to render horizontal separators between control pairs
@@ -172,8 +170,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <remarks>Only used of RenderGroupBackground = true</remarks>
         public Brush GroupBackgroundBrush
         {
-            get { return (Brush)GetValue(GroupBackgroundBrushProperty); }
-            set { SetValue(GroupBackgroundBrushProperty, value); }
+            get => (Brush)GetValue(GroupBackgroundBrushProperty);
+            set => SetValue(GroupBackgroundBrushProperty, value);
         }
         /// <summary>Background brush for group backgrounds</summary>
         /// <remarks>Only used of RenderGroupBackground = true</remarks>
@@ -183,8 +181,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <remarks>Only used of RenderGroupBackground = true</remarks>
         public Brush GroupBorderBrush
         {
-            get { return (Brush)GetValue(GroupBorderBrushProperty); }
-            set { SetValue(GroupBorderBrushProperty, value); }
+            get => (Brush)GetValue(GroupBorderBrushProperty);
+            set => SetValue(GroupBorderBrushProperty, value);
         }
         /// <summary>Border brush for group backgrounds</summary>
         /// <remarks>Only used of RenderGroupBackground = true</remarks>
@@ -194,8 +192,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <remarks>Only used of RenderGroupBackground = true</remarks>
         public double GroupBorderWidth
         {
-            get { return (double)GetValue(GroupBorderWidthProperty); }
-            set { SetValue(GroupBorderWidthProperty, value); }
+            get => (double)GetValue(GroupBorderWidthProperty);
+            set => SetValue(GroupBorderWidthProperty, value);
         }
         /// <summary>Drawing width for the border of group backgrounds</summary>
         /// <remarks>Only used of RenderGroupBackground = true</remarks>
@@ -205,8 +203,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <remarks>Only used of RenderGroupBackground = true</remarks>
         public Thickness GroupBorderMargin
         {
-            get { return (Thickness)GetValue(GroupBorderMarginProperty); }
-            set { SetValue(GroupBorderMarginProperty, value); }
+            get => (Thickness)GetValue(GroupBorderMarginProperty);
+            set => SetValue(GroupBorderMarginProperty, value);
         }
         /// <summary>Margin to be added between a rendered group border and the actual group elements</summary>
         /// <remarks>Only used of RenderGroupBackground = true</remarks>
@@ -216,8 +214,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <remarks>Only applicable when the label is positioned to the left of the edit control</remarks>
         public double EditControlLeftSpacing
         {
-            get { return (double)GetValue(EditControlLeftSpacingProperty); }
-            set { SetValue(EditControlLeftSpacingProperty, value); }
+            get => (double)GetValue(EditControlLeftSpacingProperty);
+            set => SetValue(EditControlLeftSpacingProperty, value);
         }
         /// <summary>Left padding/margin that separates the label from the edit control</summary>
         /// <remarks>Only applicable when the label is positioned to the left of the edit control</remarks>
@@ -227,8 +225,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <remarks>Only applicable when the label is positioned to the left of the edit control</remarks>
         public double MinEditControlLeftSpacing
         {
-            get { return (double)GetValue(MinEditControlLeftSpacingProperty); }
-            set { SetValue(MinEditControlLeftSpacingProperty, value); }
+            get => (double)GetValue(MinEditControlLeftSpacingProperty);
+            set => SetValue(MinEditControlLeftSpacingProperty, value);
         }
         /// <summary>Minimum left padding/margin that separates the label from the edit control (only applies for elastic layouts)</summary>
         /// <remarks>Only applicable when the label is positioned to the left of the edit control</remarks>
@@ -237,8 +235,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Spacing (typically horizontal) for controls that are to flow with the previous element</summary>
         public double FlowWithPreviousSpacing
         {
-            get { return (double)GetValue(FlowWithPreviousSpacingProperty); }
-            set { SetValue(FlowWithPreviousSpacingProperty, value); }
+            get => (double)GetValue(FlowWithPreviousSpacingProperty);
+            set => SetValue(FlowWithPreviousSpacingProperty, value);
         }
         /// <summary>Spacing (typically horizontal) for controls that are to flow with the previous element</summary>
         public static readonly DependencyProperty FlowWithPreviousSpacingProperty = DependencyProperty.Register("FlowWithPreviousSpacing", typeof(double), typeof(EditForm), new UIPropertyMetadata(9d, (s, e) => InvalidateAllVisuals(s)));
@@ -247,8 +245,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <remarks>Only applicable when the label is positioned to the top of the edit control</remarks>
         public double EditControlTopSpacing
         {
-            get { return (double)GetValue(EditControlTopSpacingProperty); }
-            set { SetValue(EditControlTopSpacingProperty, value); }
+            get => (double)GetValue(EditControlTopSpacingProperty);
+            set => SetValue(EditControlTopSpacingProperty, value);
         }
         /// <summary>Top padding/margin that separates the label from the edit control</summary>
         /// <remarks>Only applicable when the label is positioned to the top of the edit control</remarks>
@@ -257,8 +255,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Spacing between columns</summary>
         public double ColumnSpacing
         {
-            get { return (double)GetValue(ColumnSpacingProperty); }
-            set { SetValue(ColumnSpacingProperty, value); }
+            get => (double)GetValue(ColumnSpacingProperty);
+            set => SetValue(ColumnSpacingProperty, value);
         }
         /// <summary>Spacing between columns</summary>
         public static readonly DependencyProperty ColumnSpacingProperty = DependencyProperty.Register("ColumnSpacing", typeof(double), typeof(EditForm), new UIPropertyMetadata(30d, (s, e) => InvalidateAllVisuals(s)));
@@ -266,8 +264,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Minimum spacing between columns (only applies for elastic layouts)</summary>
         public double MinColumnSpacing
         {
-            get { return (double)GetValue(MinColumnSpacingProperty); }
-            set { SetValue(MinColumnSpacingProperty, value); }
+            get => (double)GetValue(MinColumnSpacingProperty);
+            set => SetValue(MinColumnSpacingProperty, value);
         }
         /// <summary>Minimum spacing between columns (only applies for elastic layouts)</summary>
         public static readonly DependencyProperty MinColumnSpacingProperty = DependencyProperty.Register("MinColumnSpacing", typeof(double), typeof(EditForm), new UIPropertyMetadata(5d, (s, e) => InvalidateAllVisuals(s)));
@@ -275,8 +273,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Object used to render the group headers</summary>
         public AutoLayoutHeaderRenderer GroupHeaderRenderer
         {
-            get { return (AutoLayoutHeaderRenderer)GetValue(GroupHeaderRendererProperty); }
-            set { SetValue(GroupHeaderRendererProperty, value); }
+            get => (AutoLayoutHeaderRenderer)GetValue(GroupHeaderRendererProperty);
+            set => SetValue(GroupHeaderRendererProperty, value);
         }
         /// <summary>Object used to render the group headers</summary>
         public static readonly DependencyProperty GroupHeaderRendererProperty = DependencyProperty.Register("GroupHeaderRenderer", typeof(AutoLayoutHeaderRenderer), typeof(EditForm), new UIPropertyMetadata(null));
@@ -284,8 +282,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Vertical additional spacing before new groups</summary>
         public double GroupHeaderTopSpacing
         {
-            get { return (double)GetValue(GroupHeaderTopSpacingProperty); }
-            set { SetValue(GroupHeaderTopSpacingProperty, value); }
+            get => (double)GetValue(GroupHeaderTopSpacingProperty);
+            set => SetValue(GroupHeaderTopSpacingProperty, value);
         }
         /// <summary>Vertical additional spacing before new groups</summary>
         public static readonly DependencyProperty GroupHeaderTopSpacingProperty = DependencyProperty.Register("GroupHeaderTopSpacing", typeof(double), typeof(EditForm), new UIPropertyMetadata(15d, (s, e) => InvalidateAllVisuals(s)));
@@ -293,8 +291,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Vertical additional spacing before new groups</summary>
         public double GroupHeaderBottomSpacing
         {
-            get { return (double)GetValue(GroupHeaderBottomSpacingProperty); }
-            set { SetValue(GroupHeaderBottomSpacingProperty, value); }
+            get => (double)GetValue(GroupHeaderBottomSpacingProperty);
+            set => SetValue(GroupHeaderBottomSpacingProperty, value);
         }
         /// <summary>Vertical additional spacing before new groups</summary>
         public static readonly DependencyProperty GroupHeaderBottomSpacingProperty = DependencyProperty.Register("GroupHeaderBottomSpacing", typeof(double), typeof(EditForm), new UIPropertyMetadata(7d, (s, e) => InvalidateAllVisuals(s)));
@@ -302,8 +300,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Minimum vertical additional spacing after new group headers (only used if elastic layout is enabled)</summary>
         public double MinGroupHeaderBottomSpacing
         {
-            get { return (double)GetValue(MinGroupHeaderBottomSpacingProperty); }
-            set { SetValue(MinGroupHeaderBottomSpacingProperty, value); }
+            get => (double)GetValue(MinGroupHeaderBottomSpacingProperty);
+            set => SetValue(MinGroupHeaderBottomSpacingProperty, value);
         }
         /// <summary>Minimum vertical additional spacing after new group headers (only used if elastic layout is enabled)</summary>
         public static readonly DependencyProperty MinGroupHeaderBottomSpacingProperty = DependencyProperty.Register("MinGroupHeaderBottomSpacing", typeof(double), typeof(EditForm), new UIPropertyMetadata(3d, (s, e) => InvalidateAllVisuals(s)));
@@ -311,8 +309,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Minimum vertical additional spacing before new group headers (only used if elastic layout is enabled)</summary>
         public double MinGroupHeaderTopSpacing
         {
-            get { return (double)GetValue(MinGroupHeaderTopSpacingProperty); }
-            set { SetValue(MinGroupHeaderTopSpacingProperty, value); }
+            get => (double)GetValue(MinGroupHeaderTopSpacingProperty);
+            set => SetValue(MinGroupHeaderTopSpacingProperty, value);
         }
         /// <summary>Minimum vertical additional spacing before new group headers (only used if elastic layout is enabled)</summary>
         public static readonly DependencyProperty MinGroupHeaderTopSpacingProperty = DependencyProperty.Register("MinGroupHeaderTopSpacing", typeof(double), typeof(EditForm), new UIPropertyMetadata(5d, (s, e) => InvalidateAllVisuals(s)));
@@ -320,8 +318,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font family used to render group headers</summary>
         public FontFamily GroupHeaderFontFamily
         {
-            get { return (FontFamily)GetValue(GroupHeaderFontFamilyProperty); }
-            set { SetValue(GroupHeaderFontFamilyProperty, value); }
+            get => (FontFamily)GetValue(GroupHeaderFontFamilyProperty);
+            set => SetValue(GroupHeaderFontFamilyProperty, value);
         }
         /// <summary>Font family used to render group headers</summary>
         public static readonly DependencyProperty GroupHeaderFontFamilyProperty = DependencyProperty.Register("GroupHeaderFontFamily", typeof(FontFamily), typeof(EditForm), new UIPropertyMetadata(new FontFamily("Segoe UI"), (s, e) => InvalidateAllVisuals(s)));
@@ -329,8 +327,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font style used to render group headers</summary>
         public FontStyle GroupHeaderFontStyle
         {
-            get { return (FontStyle)GetValue(GroupHeaderFontStyleProperty); }
-            set { SetValue(GroupHeaderFontStyleProperty, value); }
+            get => (FontStyle)GetValue(GroupHeaderFontStyleProperty);
+            set => SetValue(GroupHeaderFontStyleProperty, value);
         }
         /// <summary>Font style used to render group headers</summary>
         public static readonly DependencyProperty GroupHeaderFontStyleProperty = DependencyProperty.Register("GroupHeaderFontStyle", typeof(FontStyle), typeof(EditForm), new UIPropertyMetadata(FontStyles.Normal, (s, e) => InvalidateAllVisuals(s)));
@@ -338,8 +336,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font weight used to render group headers</summary>
         public FontWeight GroupHeaderFontWeight
         {
-            get { return (FontWeight)GetValue(GroupHeaderFontWeightProperty); }
-            set { SetValue(GroupHeaderFontWeightProperty, value); }
+            get => (FontWeight)GetValue(GroupHeaderFontWeightProperty);
+            set => SetValue(GroupHeaderFontWeightProperty, value);
         }
         /// <summary>Font weight used to render group headers</summary>
         public static readonly DependencyProperty GroupHeaderFontWeightProperty = DependencyProperty.Register("GroupHeaderFontWeight", typeof(FontWeight), typeof(EditForm), new UIPropertyMetadata(FontWeights.Bold, (s, e) => InvalidateAllVisuals(s)));
@@ -347,8 +345,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font size used to render group headers</summary>
         public double GroupHeaderFontSize
         {
-            get { return (double)GetValue(GroupHeaderFontSizeProperty); }
-            set { SetValue(GroupHeaderFontSizeProperty, value); }
+            get => (double)GetValue(GroupHeaderFontSizeProperty);
+            set => SetValue(GroupHeaderFontSizeProperty, value);
         }
         /// <summary>Font size used to render group headers</summary>
         public static readonly DependencyProperty GroupHeaderFontSizeProperty = DependencyProperty.Register("GroupHeaderFontSize", typeof(double), typeof(EditForm), new UIPropertyMetadata(12d, (s, e) => InvalidateAllVisuals(s)));
@@ -356,8 +354,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Foreground brush used to render group headers</summary>
         public Brush GroupHeaderForegroundBrush
         {
-            get { return (Brush)GetValue(GroupHeaderForegroundBrushProperty); }
-            set { SetValue(GroupHeaderForegroundBrushProperty, value); }
+            get => (Brush)GetValue(GroupHeaderForegroundBrushProperty);
+            set => SetValue(GroupHeaderForegroundBrushProperty, value);
         }
         /// <summary>Foreground brush used to render group headers</summary>
         public static readonly DependencyProperty GroupHeaderForegroundBrushProperty = DependencyProperty.Register("GroupHeaderForegroundBrush", typeof(Brush), typeof(EditForm), new UIPropertyMetadata(Brushes.Black, (s, e) => InvalidateAllVisuals(s)));
@@ -365,8 +363,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Number of pixels the label is offset down when the layout uses labels to the left of the edit control</summary>
         public double VerticalLabelControlOffset
         {
-            get { return (double)GetValue(VerticalLabelControlOffsetProperty); }
-            set { SetValue(VerticalLabelControlOffsetProperty, value); }
+            get => (double)GetValue(VerticalLabelControlOffsetProperty);
+            set => SetValue(VerticalLabelControlOffsetProperty, value);
         }
         /// <summary>Number of pixels the label is offset down when the layout uses labels to the left of the edit control</summary>
         public static readonly DependencyProperty VerticalLabelControlOffsetProperty = DependencyProperty.Register("VerticalLabelControlOffset", typeof(double), typeof(EditForm), new UIPropertyMetadata(5d, (s, e) => InvalidateAllVisuals(s)));
@@ -374,8 +372,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Smallest factor the layout automatically scales to (only applicable when the elasticity of the layout includes the option to scale)</summary>
         public double MinElasticScaleFactor
         {
-            get { return (double)GetValue(MinElasticScaleFactorProperty); }
-            set { SetValue(MinElasticScaleFactorProperty, value); }
+            get => (double)GetValue(MinElasticScaleFactorProperty);
+            set => SetValue(MinElasticScaleFactorProperty, value);
         }
         /// <summary>Smallest factor the layout automatically scales to (only applicable when the elasticity of the layout includes the option to scale)</summary>
         public static readonly DependencyProperty MinElasticScaleFactorProperty = DependencyProperty.Register("MinElasticScaleFactor", typeof(double), typeof(EditForm), new UIPropertyMetadata(.75d, (s, e) => InvalidateAllVisuals(s)));
@@ -383,8 +381,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Defines whether the edit form automatically handles scrollbars</summary>
         public EditFormScrollBarModes ScrollBarMode
         {
-            get { return (EditFormScrollBarModes)GetValue(ScrollBarModeProperty); }
-            set { SetValue(ScrollBarModeProperty, value); }
+            get => (EditFormScrollBarModes)GetValue(ScrollBarModeProperty);
+            set => SetValue(ScrollBarModeProperty, value);
         }
         /// <summary>Defines whether the edit form automatically handles scrollbars</summary>
         public static readonly DependencyProperty ScrollBarModeProperty = DependencyProperty.Register("ScrollBarMode", typeof(EditFormScrollBarModes), typeof(EditForm), new UIPropertyMetadata(EditFormScrollBarModes.Both, (s, e) => InvalidateAllVisuals(s)));
@@ -393,8 +391,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="source">Reference to an instance of the form itself</param>
         private static void InvalidateAllVisuals(DependencyObject source)
         {
-            var form = source as EditForm;
-            if (form == null) return;
+            if (source is not EditForm form) return;
 
             form.InvalidateArrange();
             form.InvalidateMeasure();
@@ -1129,10 +1126,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="width">The suggested width for the label.</param>
         /// <param name="customLabelOffset">Set this parameter to move the X and Y coordinates as a result of custom handling</param>
         /// <returns>Return true if custom handling code takes over and no default label handling is needed</returns>
-        protected virtual bool CustomLabelHandlingOverride(ControlPair controlPair, double currentX, double currentY, double width, Size customLabelOffset)
-        {
-            return false;
-        }
+        protected virtual bool CustomLabelHandlingOverride(ControlPair controlPair, double currentX, double currentY, double width, Size customLabelOffset) => false;
 
         private static Tuple<double, double> CalculateWidestElements(IEnumerable<ControlPair> column)
         {
@@ -1224,10 +1218,7 @@ namespace CODE.Framework.Wpf.Layout
         /// </summary>
         /// <param name="obj">The control object.</param>
         /// <returns><c>true</c> if [is control stand alone] [the specified obj]; otherwise, <c>false</c>.</returns>
-        protected virtual bool IsControlStandAlone(DependencyObject obj)
-        {
-            return SimpleView.GetIsStandAloneEditControl(obj);
-        }
+        protected virtual bool IsControlStandAlone(DependencyObject obj) => SimpleView.GetIsStandAloneEditControl(obj);
 
         /// <summary>
         /// Returns true if the passed object is a control that is meant to flow with the previous control
@@ -1235,10 +1226,7 @@ namespace CODE.Framework.Wpf.Layout
         /// </summary>
         /// <param name="obj">The obj.</param>
         /// <returns><c>true</c> if XXXX, <c>false</c> otherwise</returns>
-        protected virtual bool DoesControlFlowWithPrevious(DependencyObject obj)
-        {
-            return SimpleView.GetFlowsWithPrevious(obj);
-        }
+        protected virtual bool DoesControlFlowWithPrevious(DependencyObject obj) => SimpleView.GetFlowsWithPrevious(obj);
 
         /// <summary>
         /// Draws the content of a <see cref="T:System.Windows.Media.DrawingContext"/> object during the render pass of a <see cref="T:System.Windows.Controls.Panel"/> element.
@@ -1293,10 +1281,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="dc">The drawing context.</param>
         /// <param name="scale">The current scale that shall be applied to rendering</param>
         /// <param name="offset">The current offset that shall be applied to rendering.</param>
-        protected virtual void OnRenderCustom(DrawingContext dc, double scale, Point offset)
-        {
-
-        }
+        protected virtual void OnRenderCustom(DrawingContext dc, double scale, Point offset) { }
 
         private class ColumnRenderInformation
         {
@@ -1363,19 +1348,13 @@ namespace CODE.Framework.Wpf.Layout
         /// This method can be used to override the width of the label
         /// </summary>
         /// <param name="width">Width the label is to be forced to</param>
-        public void ForceLabelWidth(double width)
-        {
-            _desiredLabelWidthOverride = width;
-        }
+        public void ForceLabelWidth(double width) => _desiredLabelWidthOverride = width;
 
         /// <summary>
         /// Desired height for the label element
         /// </summary>
         /// <value>The height of the desired label.</value>
-        public double DesiredLabelHeight
-        {
-            get { return Label != null ? Label.DesiredSize.Height : 0d; }
-        }
+        public double DesiredLabelHeight => Label != null ? Label.DesiredSize.Height : 0d;
 
         /// <summary>
         /// Desired width of the edit control
@@ -1434,19 +1413,13 @@ namespace CODE.Framework.Wpf.Layout
         /// Desired width for a span element
         /// </summary>
         /// <value>The width of the desired span.</value>
-        public double DesiredSpanWidth
-        {
-            get { return Span != null ? Span.DesiredSize.Width : 0d; }
-        }
+        public double DesiredSpanWidth => Span != null ? Span.DesiredSize.Width : 0d;
 
         /// <summary>
         /// Desired height for a span element
         /// </summary>
         /// <value>The height of the desired span.</value>
-        public double DesiredSpanHeight
-        {
-            get { return Span != null ? Span.DesiredSize.Height : 0d; }
-        }
+        public double DesiredSpanHeight => Span != null ? Span.DesiredSize.Height : 0d;
 
         private bool _groupBreakSet;
         private bool _groupBreak;
@@ -1473,10 +1446,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>
         /// This method can be used to force a group break before this pair
         /// </summary>
-        public void ForceGroupBreak()
-        {
-            _groupBreak = true;
-        }
+        public void ForceGroupBreak() => _groupBreak = true;
 
         /// <summary>
         /// Group header text
@@ -1618,17 +1588,11 @@ namespace CODE.Framework.Wpf.Layout
 
         /// <summary>Gets the number of visual child elements within this element.</summary>
         /// <returns>The number of visual child elements for this element.</returns>
-        protected override int VisualChildrenCount
-        {
-            get { return 2; }
-        }
+        protected override int VisualChildrenCount => 2;
 
         /// <summary>Overrides <see cref="M:System.Windows.Media.Visual.GetVisualChild(System.Int32)"/>, and returns a child at the specified index from a collection of child elements.</summary>
         /// <param name="index">The zero-based index of the requested child element in the collection.</param>
         /// <returns>The requested child element. This should not return null; if the provided index is out of range, an exception is thrown.</returns>
-        protected override Visual GetVisualChild(int index)
-        {
-            return index == 0 ? _horizontal : _vertical;
-        }
+        protected override Visual GetVisualChild(int index) => index == 0 ? _horizontal : _vertical;
     }
 }

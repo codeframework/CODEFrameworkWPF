@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up!
-
-using System.Globalization;
+﻿using System.Globalization;
 using System.Windows.Media;
 using CODE.Framework.Wpf.Utilities;
 
@@ -14,8 +12,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Object used to render the captions</summary>
         public AutoLayoutHeaderRenderer CaptionRenderer
         {
-            get { return (AutoLayoutHeaderRenderer)GetValue(CaptionRendererProperty); }
-            set { SetValue(CaptionRendererProperty, value); }
+            get => (AutoLayoutHeaderRenderer)GetValue(CaptionRendererProperty);
+            set => SetValue(CaptionRendererProperty, value);
         }
         /// <summary>Object used to render the captions</summary>
         public static readonly DependencyProperty CaptionRendererProperty = DependencyProperty.Register("CaptionRenderer", typeof(AutoLayoutHeaderRenderer), typeof(OneToManyPanel), new UIPropertyMetadata(null, InvalidateEverything));
@@ -23,8 +21,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font family used to render group headers</summary>
         public FontFamily CaptionFontFamily
         {
-            get { return (FontFamily)GetValue(CaptionFontFamilyProperty); }
-            set { SetValue(CaptionFontFamilyProperty, value); }
+            get => (FontFamily)GetValue(CaptionFontFamilyProperty);
+            set => SetValue(CaptionFontFamilyProperty, value);
         }
         /// <summary>Font family used to render group headers</summary>
         public static readonly DependencyProperty CaptionFontFamilyProperty = DependencyProperty.Register("CaptionFontFamily", typeof(FontFamily), typeof(OneToManyPanel), new UIPropertyMetadata(new FontFamily("Segoe UI"), InvalidateEverything));
@@ -32,8 +30,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font style used to render group headers</summary>
         public FontStyle CaptionFontStyle
         {
-            get { return (FontStyle)GetValue(CaptionFontStyleProperty); }
-            set { SetValue(CaptionFontStyleProperty, value); }
+            get => (FontStyle)GetValue(CaptionFontStyleProperty);
+            set => SetValue(CaptionFontStyleProperty, value);
         }
         /// <summary>Font style used to render group headers</summary>
         public static readonly DependencyProperty CaptionFontStyleProperty = DependencyProperty.Register("CaptionFontStyle", typeof(FontStyle), typeof(OneToManyPanel), new UIPropertyMetadata(FontStyles.Normal, InvalidateEverything));
@@ -41,8 +39,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font weight used to render group headers</summary>
         public FontWeight CaptionFontWeight
         {
-            get { return (FontWeight)GetValue(CaptionFontWeightProperty); }
-            set { SetValue(CaptionFontWeightProperty, value); }
+            get => (FontWeight)GetValue(CaptionFontWeightProperty);
+            set => SetValue(CaptionFontWeightProperty, value);
         }
         /// <summary>Font weight used to render group headers</summary>
         public static readonly DependencyProperty CaptionFontWeightProperty = DependencyProperty.Register("CaptionFontWeight", typeof(FontWeight), typeof(OneToManyPanel), new UIPropertyMetadata(FontWeights.Bold, InvalidateEverything));
@@ -50,8 +48,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Font size used to render group headers</summary>
         public double CaptionFontSize
         {
-            get { return (double)GetValue(CaptionFontSizeProperty); }
-            set { SetValue(CaptionFontSizeProperty, value); }
+            get => (double)GetValue(CaptionFontSizeProperty);
+            set => SetValue(CaptionFontSizeProperty, value);
         }
         /// <summary>Font size used to render group headers</summary>
         public static readonly DependencyProperty CaptionFontSizeProperty = DependencyProperty.Register("CaptionFontSize", typeof(double), typeof(OneToManyPanel), new UIPropertyMetadata(12d, InvalidateEverything));
@@ -59,8 +57,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Foreground brush used to render group headers</summary>
         public Brush CaptionForegroundBrush
         {
-            get { return (Brush)GetValue(CaptionForegroundBrushProperty); }
-            set { SetValue(CaptionForegroundBrushProperty, value); }
+            get => (Brush)GetValue(CaptionForegroundBrushProperty);
+            set => SetValue(CaptionForegroundBrushProperty, value);
         }
         /// <summary>Foreground brush used to render group headers</summary>
         public static readonly DependencyProperty CaptionForegroundBrushProperty = DependencyProperty.Register("CaptionForegroundBrush", typeof(Brush), typeof(OneToManyPanel), new UIPropertyMetadata(Brushes.Black, InvalidateEverything));
@@ -68,8 +66,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Indicates whether the general layout is horizontal or vertical</summary>
         public Orientation Orientation
         {
-            get { return (Orientation)GetValue(OrientationProperty); }
-            set { SetValue(OrientationProperty, value); }
+            get => (Orientation)GetValue(OrientationProperty);
+            set => SetValue(OrientationProperty, value);
         }
         /// <summary>Indicates whether the general layout is horizontal or vertical</summary>
         public static readonly DependencyProperty OrientationProperty = DependencyProperty.Register("Orientation", typeof(Orientation), typeof(OneToManyPanel), new UIPropertyMetadata(Orientation.Vertical, InvalidateEverything));
@@ -77,8 +75,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Spacing between the 2 elements</summary>
         public double Spacing
         {
-            get { return (double)GetValue(SpacingProperty); }
-            set { SetValue(SpacingProperty, value); }
+            get => (double)GetValue(SpacingProperty);
+            set => SetValue(SpacingProperty, value);
         }
         /// <summary>Spacing between the 2 elements</summary>
         public static readonly DependencyProperty SpacingProperty = DependencyProperty.Register("Spacing", typeof(double), typeof(OneToManyPanel), new UIPropertyMetadata(8d, InvalidateEverything));
@@ -86,8 +84,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Spacing between the caption and the element</summary>
         public double CaptionSpacing
         {
-            get { return (double)GetValue(CaptionSpacingProperty); }
-            set { SetValue(CaptionSpacingProperty, value); }
+            get => (double)GetValue(CaptionSpacingProperty);
+            set => SetValue(CaptionSpacingProperty, value);
         }
         /// <summary>Spacing between the caption and the element</summary>
         public static readonly DependencyProperty CaptionSpacingProperty = DependencyProperty.Register("CaptionSpacing", typeof(double), typeof(OneToManyPanel), new UIPropertyMetadata(8d, InvalidateEverything));
@@ -107,8 +105,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="e">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void InvalidateEverything(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
         {
-            var panel = dependencyObject as OneToManyPanel;
-            if (panel != null)
+            if (dependencyObject is OneToManyPanel panel)
             {
                 panel.InvalidateArrange();
                 panel.InvalidateMeasure();

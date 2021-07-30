@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up!
-
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Data;
@@ -130,9 +128,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>The ribbon theme brush.</value>
         public Brush RibbonThemeBrush
         {
-            get { return (Brush)GetValue(RibbonThemeBrushProperty); }
-            set { SetValue(RibbonThemeBrushProperty, value); }
+            get => (Brush)GetValue(RibbonThemeBrushProperty);
+            set => SetValue(RibbonThemeBrushProperty, value);
         }
+
         /// <summary>
         /// Background/theme brush used by the ribbon
         /// </summary>
@@ -144,9 +143,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>The ribbon selected page brush.</value>
         public Brush RibbonSelectedPageBrush
         {
-            get { return (Brush)GetValue(RibbonSelectedPageBrushProperty); }
-            set { SetValue(RibbonSelectedPageBrushProperty, value); }
+            get => (Brush)GetValue(RibbonSelectedPageBrushProperty);
+            set => SetValue(RibbonSelectedPageBrushProperty, value);
         }
+
         /// <summary>
         /// Background brush for the selected ribbon page
         /// </summary>
@@ -163,24 +163,18 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>Indicates whether the user has pressed the ALT key and thus activated display of keyboard shortcuts</summary>
         /// <param name="obj">The obj.</param>
         /// <returns>System.String.</returns>
-        public static bool GetKeyboardShortcutsActive(DependencyObject obj)
-        {
-            return (bool)obj.GetValue(KeyboardShortcutsActiveProperty);
-        }
+        public static bool GetKeyboardShortcutsActive(DependencyObject obj) => (bool)obj.GetValue(KeyboardShortcutsActiveProperty);
 
         /// <summary>Indicates whether the user has pressed the ALT key and thus activated display of keyboard shortcuts</summary>
-        public static void SetKeyboardShortcutsActive(DependencyObject obj, bool value)
-        {
-            obj.SetValue(KeyboardShortcutsActiveProperty, value);
-        }
+        public static void SetKeyboardShortcutsActive(DependencyObject obj, bool value) => obj.SetValue(KeyboardShortcutsActiveProperty, value);
 
         /// <summary>
         /// Indicates whether the first ribbon page is to be handled differently as a file menu
         /// </summary>
         public bool FirstPageIsSpecial
         {
-            get { return (bool)GetValue(FirstPageIsSpecialProperty); }
-            set { SetValue(FirstPageIsSpecialProperty, value); }
+            get => (bool)GetValue(FirstPageIsSpecialProperty);
+            set => SetValue(FirstPageIsSpecialProperty, value);
         }
 
         /// <summary>
@@ -198,8 +192,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public string EmptyGlobalCategoryTitle
         {
-            get { return (string)GetValue(EmptyGlobalCategoryTitleProperty); }
-            set { SetValue(EmptyGlobalCategoryTitleProperty, value); }
+            get => (string)GetValue(EmptyGlobalCategoryTitleProperty);
+            set => SetValue(EmptyGlobalCategoryTitleProperty, value);
         }
 
         /// <summary>
@@ -212,8 +206,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public string EmptyLocalCategoryTitle
         {
-            get { return (string)GetValue(EmptyLocalCategoryTitleProperty); }
-            set { SetValue(EmptyLocalCategoryTitleProperty, value); }
+            get => (string)GetValue(EmptyLocalCategoryTitleProperty);
+            set => SetValue(EmptyLocalCategoryTitleProperty, value);
         }
 
         /// <summary>
@@ -226,8 +220,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public bool HighlightLocalCategories
         {
-            get { return (bool)GetValue(HighlightLocalCategoriesProperty); }
-            set { SetValue(HighlightLocalCategoriesProperty, value); }
+            get => (bool)GetValue(HighlightLocalCategoriesProperty);
+            set => SetValue(HighlightLocalCategoriesProperty, value);
         }
 
         /// <summary>
@@ -240,8 +234,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public bool IsSpecialFirstPageActive
         {
-            get { return (bool)GetValue(IsSpecialFirstPageActiveProperty); }
-            set { SetValue(IsSpecialFirstPageActiveProperty, value); }
+            get => (bool)GetValue(IsSpecialFirstPageActiveProperty);
+            set => SetValue(IsSpecialFirstPageActiveProperty, value);
         }
 
         /// <summary>
@@ -257,8 +251,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <exception cref="System.NotImplementedException"></exception>
         private static void IsSpecialFirstPageActiveChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var ribbon = d as ViewActionRibbon;
-            if (ribbon == null) return;
+            if (d is not ViewActionRibbon ribbon) return;
             var active = (bool)args.NewValue;
             if (!active)
             {
@@ -315,8 +308,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public object Model
         {
-            get { return GetValue(ModelProperty); }
-            set { SetValue(ModelProperty, value); }
+            get => GetValue(ModelProperty);
+            set => SetValue(ModelProperty, value);
         }
 
         /// <summary>
@@ -331,15 +324,13 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="e">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void ModelChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var ribbon = d as ViewActionRibbon;
-            if (ribbon == null) return;
+            if (d is not ViewActionRibbon ribbon) return;
             ribbon.RepopulateRibbon(e.NewValue);
         }
 
         private void RepopulateRibbon(object model)
         {
-            var actionsContainer = model as IHaveActions;
-            if (actionsContainer != null && actionsContainer.Actions != null)
+            if (model is IHaveActions actionsContainer && actionsContainer.Actions != null)
             {
                 actionsContainer.Actions.CollectionChanged += (s, e2) => PopulateRibbon(actionsContainer);
                 Visibility = Visibility.Visible;
@@ -354,8 +345,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public object SelectedView
         {
-            get { return GetValue(SelectedViewProperty); }
-            set { SetValue(SelectedViewProperty, value); }
+            get => GetValue(SelectedViewProperty);
+            set => SetValue(SelectedViewProperty, value);
         }
 
         /// <summary>
@@ -371,17 +362,14 @@ namespace CODE.Framework.Wpf.Mvvm
         private static void SelectedViewChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             if (d == null) return;
-            var ribbon = d as ViewActionRibbon;
-            if (ribbon == null) return;
-            var viewResult = e.NewValue as ViewResult;
-            if (viewResult == null)
+            if (d is not ViewActionRibbon ribbon) return;
+            if (e.NewValue is not ViewResult viewResult)
             {
                 ribbon.PopulateRibbon(ribbon.Model as IHaveActions);
                 return;
             }
 
-            var actionsContainer = viewResult.Model as IHaveActions;
-            if (actionsContainer != null)
+            if (viewResult.Model is IHaveActions actionsContainer)
             {
                 actionsContainer.Actions.CollectionChanged += (s, e2) => ribbon.PopulateRibbon(ribbon.Model as IHaveActions, actionsContainer, viewResult.ViewTitle);
                 ribbon.PopulateRibbon(ribbon.Model as IHaveActions, actionsContainer, viewResult.ViewTitle);
@@ -394,8 +382,7 @@ namespace CODE.Framework.Wpf.Mvvm
 
         private void HandleViewResultPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            var viewResult = SelectedView as ViewResult;
-            if (viewResult == null)
+            if (SelectedView is not ViewResult viewResult)
             {
                 PopulateRibbon(Model as IHaveActions);
                 return;
@@ -410,8 +397,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value><c>true</c> if [force top level menu items upper case]; otherwise, <c>false</c>.</value>
         public bool ForceTopLevelTitlesUpperCase
         {
-            get { return (bool)GetValue(ForceTopLevelTitlesUpperCaseProperty); }
-            set { SetValue(ForceTopLevelTitlesUpperCaseProperty, value); }
+            get => (bool)GetValue(ForceTopLevelTitlesUpperCaseProperty);
+            set => SetValue(ForceTopLevelTitlesUpperCaseProperty, value);
         }
 
         /// <summary>
@@ -421,8 +408,7 @@ namespace CODE.Framework.Wpf.Mvvm
 
         private static void ForceTopLevelTitlesUpperCaseChanged(DependencyObject d, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
         {
-            var ribbon = d as ViewActionRibbon;
-            if (ribbon != null) ribbon.PopulateRibbon(ribbon.Model as IHaveActions);
+            if (d is ViewActionRibbon ribbon) ribbon.PopulateRibbon(ribbon.Model as IHaveActions);
         }
 
         /// <summary>
@@ -435,20 +421,14 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         /// <param name="d">The dependency object the item is set on</param>
         /// <returns>ICommand.</returns>
-        public static ICommand GetRibbonItemCommand(DependencyObject d)
-        {
-            return (ICommand)d.GetValue(RibbonItemCommandProperty);
-        }
+        public static ICommand GetRibbonItemCommand(DependencyObject d) => (ICommand)d.GetValue(RibbonItemCommandProperty);
 
         /// <summary>
         /// Attached property used to reference the command/action on any custom ribbon item
         /// </summary>
         /// <param name="d">The dependency object the item is set on</param>
         /// <param name="value">The value.</param>
-        public static void SetRibbonItemCommand(DependencyObject d, ICommand value)
-        {
-            d.SetValue(RibbonItemCommandProperty, value);
-        }
+        public static void SetRibbonItemCommand(DependencyObject d, ICommand value) => d.SetValue(RibbonItemCommandProperty, value);
 
         /// <summary>
         /// Policy that can be applied to view-actions displayed in the ribbon.
@@ -459,8 +439,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>The view action policy.</value>
         public IViewActionPolicy ViewActionPolicy
         {
-            get { return (IViewActionPolicy)GetValue(ViewActionPolicyProperty); }
-            set { SetValue(ViewActionPolicyProperty, value); }
+            get => (IViewActionPolicy)GetValue(ViewActionPolicyProperty);
+            set => SetValue(ViewActionPolicyProperty, value);
         }
 
         /// <summary>
@@ -780,8 +760,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>Access key to be displayed for the page</summary>
         public string PageAccessKey
         {
-            get { return (string)GetValue(PageAccessKeyProperty); }
-            set { SetValue(PageAccessKeyProperty, value); }
+            get => (string)GetValue(PageAccessKeyProperty);
+            set => SetValue(PageAccessKeyProperty, value);
         }
 
         /// <summary>Access key to be displayed for the page</summary>
@@ -792,8 +772,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="args">The <see cref="DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void OnPageAccessKeyChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var page = d as RibbonPage;
-            if (page == null) return;
+            if (d is not RibbonPage page) return;
             page.PageAccessKeySet = !string.IsNullOrEmpty(args.NewValue.ToString());
         }
 
@@ -801,8 +780,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value><c>true</c> if [page access key set]; otherwise, <c>false</c>.</value>
         public bool PageAccessKeySet
         {
-            get { return (bool)GetValue(PageAccessKeySetProperty); }
-            set { SetValue(PageAccessKeySetProperty, value); }
+            get => (bool)GetValue(PageAccessKeySetProperty);
+            set => SetValue(PageAccessKeySetProperty, value);
         }
 
         /// <summary>Indicates whether a page access key has been set</summary>
@@ -831,8 +810,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>Access key to be displayed for the button</summary>
         public string AccessKey
         {
-            get { return (string)GetValue(AccessKeyProperty); }
-            set { SetValue(AccessKeyProperty, value); }
+            get => (string)GetValue(AccessKeyProperty);
+            set => SetValue(AccessKeyProperty, value);
         }
 
         /// <summary>Access key to be displayed for the button</summary>
@@ -843,8 +822,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="args">The <see cref="DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void OnAccessKeyChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var button = d as RibbonButton;
-            if (button == null) return;
+            if (d is not RibbonButton button) return;
             button.AccessKeySet = !string.IsNullOrEmpty(args.NewValue.ToString());
         }
 
@@ -852,8 +830,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value><c>true</c> if [access key set]; otherwise, <c>false</c>.</value>
         public bool AccessKeySet
         {
-            get { return (bool)GetValue(AccessKeySetProperty); }
-            set { SetValue(AccessKeySetProperty, value); }
+            get => (bool)GetValue(AccessKeySetProperty);
+            set => SetValue(AccessKeySetProperty, value);
         }
 
         /// <summary>Indicates whether a page access key has been set</summary>
@@ -862,8 +840,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>Indicates whether the button is to be rendered as "checked" (often used in Toggle-style actions)</summary>
         public bool IsChecked
         {
-            get { return (bool)GetValue(IsCheckedProperty); }
-            set { SetValue(IsCheckedProperty, value); }
+            get => (bool)GetValue(IsCheckedProperty);
+            set => SetValue(IsCheckedProperty, value);
         }
 
         /// <summary>Indicates whether the button is to be rendered as "checked" (often used in Toggle-style actions)</summary>
@@ -892,10 +870,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>
         /// Initializes a new instance of the <see cref="RibbonSeparator"/> class.
         /// </summary>
-        public RibbonSeparator()
-        {
-            Focusable = false;
-        }
+        public RibbonSeparator() => Focusable = false;
     }
 
     /// <summary>
@@ -906,8 +881,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>Font Size used to render group titles</summary>
         public double GroupTitleFontSize
         {
-            get { return (double)GetValue(GroupTitleFontSizeProperty); }
-            set { SetValue(GroupTitleFontSizeProperty, value); }
+            get => (double)GetValue(GroupTitleFontSizeProperty);
+            set => SetValue(GroupTitleFontSizeProperty, value);
         }
 
         /// <summary>Font Size used to render group titles</summary>
@@ -916,8 +891,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>Font family used to render group titles</summary>
         public FontFamily GroupTitleFontFamily
         {
-            get { return (FontFamily)GetValue(GroupTitleFontFamilyProperty); }
-            set { SetValue(GroupTitleFontFamilyProperty, value); }
+            get => (FontFamily)GetValue(GroupTitleFontFamilyProperty);
+            set => SetValue(GroupTitleFontFamilyProperty, value);
         }
 
         /// <summary>Font family used to render group titles</summary>
@@ -926,8 +901,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>Font weight used to render group titles</summary>
         public FontWeight GroupTitleFontWeight
         {
-            get { return (FontWeight)GetValue(GroupTitleFontWeightProperty); }
-            set { SetValue(GroupTitleFontWeightProperty, value); }
+            get => (FontWeight)GetValue(GroupTitleFontWeightProperty);
+            set => SetValue(GroupTitleFontWeightProperty, value);
         }
 
         /// <summary>Font weight used to render group titles</summary>
@@ -936,8 +911,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>Foreground brush used to render group titles</summary>
         public Brush GroupTitleForegroundBrush
         {
-            get { return (Brush)GetValue(GroupTitleForegroundBrushProperty); }
-            set { SetValue(GroupTitleForegroundBrushProperty, value); }
+            get => (Brush)GetValue(GroupTitleForegroundBrushProperty);
+            set => SetValue(GroupTitleForegroundBrushProperty, value);
         }
 
         /// <summary>Foreground brush used to render group titles</summary>
@@ -946,8 +921,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>Foreground brush opacity used to render group titles</summary>
         public double GroupTitleForegroundBrushOpacity
         {
-            get { return (double)GetValue(GroupTitleForegroundBrushOpacityProperty); }
-            set { SetValue(GroupTitleForegroundBrushOpacityProperty, value); }
+            get => (double)GetValue(GroupTitleForegroundBrushOpacityProperty);
+            set => SetValue(GroupTitleForegroundBrushOpacityProperty, value);
         }
 
         /// <summary>Foreground brush opacity used to render group titles</summary>
@@ -1237,24 +1212,20 @@ namespace CODE.Framework.Wpf.Mvvm
     /// <seealso cref="CODE.Framework.Wpf.Mvvm.RibbonPageLayoutPanel" />
     public class RibbonPageAsToolbar : RibbonPageLayoutPanel
     {
-
-
         public ViewActionsCollection Actions
         {
-            get { return (ViewActionsCollection)GetValue(ActionsProperty); }
-            set { SetValue(ActionsProperty, value); }
+            get => (ViewActionsCollection)GetValue(ActionsProperty);
+            set => SetValue(ActionsProperty, value);
         }
 
         public static readonly DependencyProperty ActionsProperty = DependencyProperty.Register("Actions", typeof(ViewActionsCollection), typeof(RibbonPageAsToolbar), new PropertyMetadata(null, OnActionsChanged));
 
         private static void OnActionsChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var toolbar = d as RibbonPageAsToolbar;
-            if (toolbar == null) return;
+            if (d is not RibbonPageAsToolbar toolbar) return;
             toolbar.Populate();
 
-            var newCollection = e.NewValue as ViewActionsCollection;
-            if (newCollection != null)
+            if (e.NewValue is ViewActionsCollection newCollection)
                 newCollection.CollectionChanged += (s, e2) => toolbar.Populate();
         }
 
@@ -1342,8 +1313,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public ViewActionRibbon Ribbon
         {
-            get { return (ViewActionRibbon)GetValue(RibbonProperty); }
-            set { SetValue(RibbonProperty, value); }
+            get => (ViewActionRibbon)GetValue(RibbonProperty);
+            set => SetValue(RibbonProperty, value);
         }
 
         /// <summary>
@@ -1383,8 +1354,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>The view action policy.</value>
         public IViewActionPolicy ViewActionPolicy
         {
-            get { return (IViewActionPolicy)GetValue(ViewActionPolicyProperty); }
-            set { SetValue(ViewActionPolicyProperty, value); }
+            get => (IViewActionPolicy)GetValue(ViewActionPolicyProperty);
+            set => SetValue(ViewActionPolicyProperty, value);
         }
 
         /// <summary>
@@ -1403,8 +1374,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>The active view.</value>
         public FrameworkElement ActiveView
         {
-            get { return (FrameworkElement)GetValue(ActiveViewProperty); }
-            set { SetValue(ActiveViewProperty, value); }
+            get => (FrameworkElement)GetValue(ActiveViewProperty);
+            set => SetValue(ActiveViewProperty, value);
         }
         /// <summary>
         /// Current active view associated with the current action list
@@ -1458,8 +1429,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public object Model
         {
-            get { return GetValue(ModelProperty); }
-            set { SetValue(ModelProperty, value); }
+            get => GetValue(ModelProperty);
+            set => SetValue(ModelProperty, value);
         }
 
         /// <summary>
@@ -1474,10 +1445,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="e">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void ModelChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var list = d as SpecialFirstPageActionList;
-            if (list == null) return;
-            var actionsContainer = e.NewValue as IHaveActions;
-            if (actionsContainer != null && actionsContainer.Actions != null)
+            if (d is not SpecialFirstPageActionList list) return;
+            if (e.NewValue is IHaveActions actionsContainer && actionsContainer.Actions != null)
             {
                 actionsContainer.Actions.CollectionChanged += (s, e2) => list.PopulateList(actionsContainer);
                 list.Visibility = Visibility.Visible;
@@ -1492,8 +1461,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public object SelectedView
         {
-            get { return GetValue(SelectedViewProperty); }
-            set { SetValue(SelectedViewProperty, value); }
+            get => GetValue(SelectedViewProperty);
+            set => SetValue(SelectedViewProperty, value);
         }
 
         /// <summary>
@@ -1506,8 +1475,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public bool IsActivating
         {
-            get { return (bool)GetValue(IsActivatingProperty); }
-            set { SetValue(IsActivatingProperty, value); }
+            get => (bool)GetValue(IsActivatingProperty);
+            set => SetValue(IsActivatingProperty, value);
         }
 
         /// <summary>
@@ -1530,8 +1499,7 @@ namespace CODE.Framework.Wpf.Mvvm
         private static void OnIsActivatingChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             if (!(bool)e.NewValue) return; // Nothing to do
-            var list = d as SpecialFirstPageActionList;
-            if (list == null) return;
+            if (d is not SpecialFirstPageActionList list) return;
             var selectedItem = list.Children.OfType<SpecialFirstPageRibbonButton>().FirstOrDefault(b => b.IsSelected);
             if (selectedItem == null || list.ActiveView == null || list.ActiveView != selectedItem.ActionView)
             {
@@ -1567,17 +1535,14 @@ namespace CODE.Framework.Wpf.Mvvm
         private static void SelectedViewChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             if (d == null) return;
-            var list = d as SpecialFirstPageActionList;
-            if (list == null) return;
-            var viewResult = e.NewValue as ViewResult;
-            if (viewResult == null)
+            if (d is not SpecialFirstPageActionList list) return;
+            if (e.NewValue is not ViewResult viewResult)
             {
                 list.PopulateList(list.Model as IHaveActions);
                 return;
             }
 
-            var actionsContainer = viewResult.Model as IHaveActions;
-            if (actionsContainer != null)
+            if (viewResult.Model is IHaveActions actionsContainer)
             {
                 actionsContainer.Actions.CollectionChanged += (s, e2) => list.PopulateList(list.Model as IHaveActions, actionsContainer, viewResult.ViewTitle);
                 list.PopulateList(list.Model as IHaveActions, actionsContainer, viewResult.ViewTitle);
@@ -1590,8 +1555,7 @@ namespace CODE.Framework.Wpf.Mvvm
 
         private void HandleViewResultPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            var viewResult = SelectedView as ViewResult;
-            if (viewResult == null)
+            if (SelectedView is not ViewResult viewResult)
             {
                 PopulateList(Model as IHaveActions);
                 return;
@@ -1681,7 +1645,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <returns>A converted value. If the method returns null, the valid null value is used.</returns>
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (!(value is ViewActionAvailabilities)) return Visibility.Collapsed;
+            if (value is not ViewActionAvailabilities) return Visibility.Collapsed;
             var availability = (ViewActionAvailabilities)value;
             return availability == ViewActionAvailabilities.Available ? Visibility.Visible : Visibility.Collapsed;
         }
@@ -1694,11 +1658,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="parameter">The converter parameter to use.</param>
         /// <param name="culture">The culture to use in the converter.</param>
         /// <returns>A converted value. If the method returns null, the valid null value is used.</returns>
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            // Not used
-            return null;
-        }
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => null; // Not used
     }
 
     /// <summary>
@@ -1737,11 +1697,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="parameter">The converter parameter to use.</param>
         /// <param name="culture">The culture to use in the converter.</param>
         /// <returns>An array of values that have been converted from the target value back to the source values.</returns>
-        public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
-        {
-            // Not needed
-            return null;
-        }
+        public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture) => null; // Not needed
     }
 
     /// <summary>
@@ -1777,11 +1733,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="parameter">The converter parameter to use.</param>
         /// <param name="culture">The culture to use in the converter.</param>
         /// <returns>An array of values that have been converted from the target value back to the source values.</returns>
-        public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
-        {
-            // Not needed
-            return null;
-        }
+        public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture) => null; // Not needed
     }
 
     /// <summary>
@@ -1795,10 +1747,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// Initializes a new instance of the <see cref="ChildrenCollectionCountToVisibleConverter" /> class.
         /// </summary>
         /// <param name="children">The children.</param>
-        public ChildrenCollectionCountToVisibleConverter(UIElementCollection children)
-        {
-            _children = children;
-        }
+        public ChildrenCollectionCountToVisibleConverter(UIElementCollection children) => _children = children;
 
         /// <summary>
         /// Converts a value.
@@ -1830,11 +1779,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="parameter">The converter parameter to use.</param>
         /// <param name="culture">The culture to use in the converter.</param>
         /// <returns>A converted value. If the method returns null, the valid null value is used.</returns>
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            // Not used
-            return null;
-        }
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => null; // Not used
     }
 
     /// <summary>
@@ -1845,8 +1790,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>Access key to be displayed for the button</summary>
         public string AccessKey
         {
-            get { return (string)GetValue(AccessKeyProperty); }
-            set { SetValue(AccessKeyProperty, value); }
+            get => (string)GetValue(AccessKeyProperty);
+            set => SetValue(AccessKeyProperty, value);
         }
 
         /// <summary>Access key to be displayed for the button</summary>
@@ -1857,8 +1802,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="args">The <see cref="DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void OnAccessKeyChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var button = d as SpecialFirstPageRibbonButton;
-            if (button == null) return;
+            if (d is not SpecialFirstPageRibbonButton button) return;
             button.AccessKeySet = !string.IsNullOrEmpty(args.NewValue.ToString());
         }
 
@@ -1866,8 +1810,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value><c>true</c> if [access key set]; otherwise, <c>false</c>.</value>
         public bool AccessKeySet
         {
-            get { return (bool)GetValue(AccessKeySetProperty); }
-            set { SetValue(AccessKeySetProperty, value); }
+            get => (bool)GetValue(AccessKeySetProperty);
+            set => SetValue(AccessKeySetProperty, value);
         }
 
         /// <summary>Indicates whether a page access key has been set</summary>
@@ -1879,8 +1823,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value><c>true</c> if this instance is selected; otherwise, <c>false</c>.</value>
         public bool IsSelected
         {
-            get { return (bool)GetValue(IsSelectedProperty); }
-            set { SetValue(IsSelectedProperty, value); }
+            get => (bool)GetValue(IsSelectedProperty);
+            set => SetValue(IsSelectedProperty, value);
         }
         /// <summary>
         /// Indicates whether the current button is considered to be "selected"
@@ -1934,8 +1878,7 @@ namespace CODE.Framework.Wpf.Mvvm
 
             if (ActionView == null && Command != null)
             {
-                var onDemandLoadViewAction = Command as OnDemandLoadCustomViewViewAction;
-                if (onDemandLoadViewAction != null)
+                if (Command is OnDemandLoadCustomViewViewAction onDemandLoadViewAction)
                 {
                     onDemandLoadViewAction.Execute(null); // Makes sure the desired view is loaded on demand
                     ActionView = onDemandLoadViewAction.ActionView;

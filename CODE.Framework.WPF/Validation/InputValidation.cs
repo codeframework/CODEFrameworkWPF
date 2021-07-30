@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up!
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -17,17 +15,13 @@ namespace CODE.Framework.Wpf.Validation
         /// <summary>
         /// Defines whether an element is valid (true) or not (false)
         /// </summary>
-        public static bool GetIsValid(DependencyObject d)
-        {
-            return (bool)d.GetValue(IsValidProperty);
-        }
+        public static bool GetIsValid(DependencyObject d) => (bool)d.GetValue(IsValidProperty);
+
         /// <summary>
         /// Defines whether an element is valid (true) or not (false)
         /// </summary>
-        public static void SetIsValid(DependencyObject d, bool value)
-        {
-            d.SetValue(IsValidProperty, value);
-        }
+        public static void SetIsValid(DependencyObject d, bool value) => d.SetValue(IsValidProperty, value);
+
         /// <summary>
         /// Defines whether an element is valid (true) or not (false)
         /// </summary>
@@ -36,17 +30,13 @@ namespace CODE.Framework.Wpf.Validation
         /// <summary>
         /// List of error messages
         /// </summary>
-        public static IEnumerable<string> GetErrorMessages(DependencyObject d)
-        {
-            return (IEnumerable<string>)d.GetValue(ErrorMessagesProperty);
-        }
+        public static IEnumerable<string> GetErrorMessages(DependencyObject d) => (IEnumerable<string>)d.GetValue(ErrorMessagesProperty);
+
         /// <summary>
         /// List of error messages
         /// </summary>
-        public static void SetErrorMessages(DependencyObject d, IEnumerable<string> errorMessages)
-        {
-            d.SetValue(ErrorMessagesProperty, errorMessages);
-        }
+        public static void SetErrorMessages(DependencyObject d, IEnumerable<string> errorMessages) => d.SetValue(ErrorMessagesProperty, errorMessages);
+
         /// <summary>
         /// List of error messages
         /// </summary>
@@ -74,17 +64,13 @@ namespace CODE.Framework.Wpf.Validation
         /// <summary>
         /// Consolidated list of error messages
         /// </summary>
-        public static string GetErrorMessage(DependencyObject d)
-        {
-            return (string)d.GetValue(ErrorMessageProperty);
-        }
+        public static string GetErrorMessage(DependencyObject d) => (string)d.GetValue(ErrorMessageProperty);
+
         /// <summary>
         /// Consolidated list of error messages
         /// </summary>
-        public static void SetErrorMessage(DependencyObject d, string errorMessages)
-        {
-            d.SetValue(ErrorMessageProperty, errorMessages);
-        }
+        public static void SetErrorMessage(DependencyObject d, string errorMessages) => d.SetValue(ErrorMessageProperty, errorMessages);
+
         /// <summary>
         /// Consolidated list of error messages
         /// </summary>
@@ -93,18 +79,12 @@ namespace CODE.Framework.Wpf.Validation
         /// <summary>
         /// Enumerable list of validation attributes, which are then automatically used to set up appropriate validation.
         /// </summary>
-        public static IEnumerable<Attribute> GetValidationAttributes(DependencyObject d)
-        {
-            return (IEnumerable<Attribute>)d.GetValue(ValidationAttributesProperty);
-        }
+        public static IEnumerable<Attribute> GetValidationAttributes(DependencyObject d) => (IEnumerable<Attribute>)d.GetValue(ValidationAttributesProperty);
 
         /// <summary>
         /// Enumerable list of validation attributes, which are then automatically used to set up appropriate validation.
         /// </summary>
-        public static void SetValidationAttributes(DependencyObject d, IEnumerable<Attribute> value)
-        {
-            d.SetValue(ValidationAttributesProperty, value);
-        }
+        public static void SetValidationAttributes(DependencyObject d, IEnumerable<Attribute> value) => d.SetValue(ValidationAttributesProperty, value);
 
         /// <summary>
         /// Enumerable list of validation attributes, which are then automatically used to set up appropriate validation.
@@ -345,10 +325,8 @@ namespace CODE.Framework.Wpf.Validation
         /// <summary>
         /// Initializes a new instance of the <see cref="ValidationResults"/> class.
         /// </summary>
-        public ValidationResults()
-        {
-            InvalidProperties = new List<PropertyValidationResult>();
-        }
+        public ValidationResults() => InvalidProperties = new List<PropertyValidationResult>();
+
         /// <summary>
         /// Indicates whether all validations returned true (the entire validated set is valid)
         /// </summary>
@@ -378,6 +356,7 @@ namespace CODE.Framework.Wpf.Validation
             PropertyName = propertyName;
             ErrorMessages = new List<string>();
         }
+
         /// <summary>
         /// Object the property belongs to.
         /// </summary>

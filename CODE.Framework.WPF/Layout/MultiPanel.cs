@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up!
-
-using System.Globalization;
+﻿using System.Globalization;
 using System.Linq;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -28,8 +26,8 @@ namespace CODE.Framework.Wpf.Layout
         /// </summary>
         public double Spacing
         {
-            get { return (double)GetValue(SpacingProperty); }
-            set { SetValue(SpacingProperty, value); }
+            get => (double)GetValue(SpacingProperty);
+            set => SetValue(SpacingProperty, value);
         }
 
         /// <summary>
@@ -43,8 +41,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The header renderer.</value>
         public IMultiPanelHeaderRenderer HeaderRenderer
         {
-            get { return (IMultiPanelHeaderRenderer)GetValue(HeaderRendererProperty); }
-            set { SetValue(HeaderRendererProperty, value); }
+            get => (IMultiPanelHeaderRenderer)GetValue(HeaderRendererProperty);
+            set => SetValue(HeaderRendererProperty, value);
         }
 
         /// <summary>
@@ -58,8 +56,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The orientation.</value>
         public Orientation Orientation
         {
-            get { return (Orientation)GetValue(OrientationProperty); }
-            set { SetValue(OrientationProperty, value); }
+            get => (Orientation)GetValue(OrientationProperty);
+            set => SetValue(OrientationProperty, value);
         }
 
         /// <summary>
@@ -723,8 +721,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The orientation of the header text.</value>
         public Orientation Orientation
         {
-            get { return (Orientation)GetValue(OrientationProperty); }
-            set { SetValue(OrientationProperty, value); }
+            get => (Orientation)GetValue(OrientationProperty);
+            set => SetValue(OrientationProperty, value);
         }
 
         /// <summary>
@@ -739,8 +737,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The header text font size.</value>
         public double FontSize
         {
-            get { return (double)GetValue(FontSizeProperty); }
-            set { SetValue(FontSizeProperty, value); }
+            get => (double)GetValue(FontSizeProperty);
+            set => SetValue(FontSizeProperty, value);
         }
 
         /// <summary>
@@ -754,8 +752,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The header text font family.</value>
         public FontFamily FontFamily
         {
-            get { return (FontFamily)GetValue(FontFamilyProperty); }
-            set { SetValue(FontFamilyProperty, value); }
+            get => (FontFamily)GetValue(FontFamilyProperty);
+            set => SetValue(FontFamilyProperty, value);
         }
 
         /// <summary>
@@ -769,8 +767,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The header text font style.</value>
         public FontStyle FontStyle
         {
-            get { return (FontStyle)GetValue(FontStyleProperty); }
-            set { SetValue(FontStyleProperty, value); }
+            get => (FontStyle)GetValue(FontStyleProperty);
+            set => SetValue(FontStyleProperty, value);
         }
 
         /// <summary>
@@ -784,8 +782,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The header text font weight.</value>
         public FontWeight FontWeight
         {
-            get { return (FontWeight)GetValue(FontWeightProperty); }
-            set { SetValue(FontWeightProperty, value); }
+            get => (FontWeight)GetValue(FontWeightProperty);
+            set => SetValue(FontWeightProperty, value);
         }
 
         /// <summary>
@@ -799,8 +797,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>Header text foreground brush.</value>
         public Brush Foreground
         {
-            get { return (Brush)GetValue(ForegroundProperty); }
-            set { SetValue(ForegroundProperty, value); }
+            get => (Brush)GetValue(ForegroundProperty);
+            set => SetValue(ForegroundProperty, value);
         }
 
         /// <summary>
@@ -814,8 +812,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The background brush.</value>
         public Brush Background
         {
-            get { return (Brush)GetValue(BackgroundProperty); }
-            set { SetValue(BackgroundProperty, value); }
+            get => (Brush)GetValue(BackgroundProperty);
+            set => SetValue(BackgroundProperty, value);
         }
 
         /// <summary>
@@ -829,8 +827,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value><c>true</c> if [use title color for foreground]; otherwise, <c>false</c>.</value>
         public bool UseTitleColorForForeground
         {
-            get { return (bool)GetValue(UseTitleColorForForegroundProperty); }
-            set { SetValue(UseTitleColorForForegroundProperty, value); }
+            get => (bool)GetValue(UseTitleColorForForegroundProperty);
+            set => SetValue(UseTitleColorForForegroundProperty, value);
         }
 
         /// <summary>
@@ -844,8 +842,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value><c>true</c> if [use title color for background]; otherwise, <c>false</c>.</value>
         public bool UseTitleColorForBackground
         {
-            get { return (bool)GetValue(UseTitleColorForBackgroundProperty); }
-            set { SetValue(UseTitleColorForBackgroundProperty, value); }
+            get => (bool)GetValue(UseTitleColorForBackgroundProperty);
+            set => SetValue(UseTitleColorForBackgroundProperty, value);
         }
 
         /// <summary>
@@ -859,8 +857,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The close icon.</value>
         public Brush CloseIcon
         {
-            get { return (Brush)GetValue(CloseIconProperty); }
-            set { SetValue(CloseIconProperty, value); }
+            get => (Brush)GetValue(CloseIconProperty);
+            set => SetValue(CloseIconProperty, value);
         }
 
         /// <summary>
@@ -874,8 +872,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The maximum size of the close icon.</value>
         public double MaxCloseIconSize
         {
-            get { return (double)GetValue(MaxCloseIconSizeProperty); }
-            set { SetValue(MaxCloseIconSizeProperty, value); }
+            get => (double)GetValue(MaxCloseIconSizeProperty);
+            set => SetValue(MaxCloseIconSizeProperty, value);
         }
 
         /// <summary>
@@ -890,8 +888,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <remarks>The style needs to target type FloatingDockWindow</remarks>
         public Style FloatWindowStyle
         {
-            get { return (Style)GetValue(FloatWindowStyleProperty); }
-            set { SetValue(FloatWindowStyleProperty, value); }
+            get => (Style)GetValue(FloatWindowStyleProperty);
+            set => SetValue(FloatWindowStyleProperty, value);
         }
 
         /// <summary>

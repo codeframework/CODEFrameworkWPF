@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up
-
-using System.Collections;
+﻿using System.Collections;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Input;
@@ -18,13 +16,15 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public object Model
         {
-            get { return GetValue(ModelProperty); }
-            set { SetValue(ModelProperty, value); }
+            get => GetValue(ModelProperty);
+            set => SetValue(ModelProperty, value);
         }
+
         /// <summary>
         /// Model dependency property
         /// </summary>
         public static readonly DependencyProperty ModelProperty = DependencyProperty.Register("Model", typeof(object), typeof(ActionGrid), new UIPropertyMetadata(null, ModelChanged));
+
         /// <summary>
         /// Change handler for model property
         /// </summary>
@@ -32,10 +32,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="e">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         static void ModelChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var grid = d as ActionGrid;
-            if (grid == null) return;
-            var actions = e.NewValue as IHaveActions;
-            if (actions == null)
+            if (d is not ActionGrid grid) return;
+            if (e.NewValue is not IHaveActions actions)
             {
                 grid.Visibility = Visibility.Collapsed;
                 return;
@@ -60,9 +58,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public object Model
         {
-            get { return GetValue(ModelProperty); }
-            set { SetValue(ModelProperty, value); }
+            get => GetValue(ModelProperty);
+            set => SetValue(ModelProperty, value);
         }
+
         /// <summary>
         /// Model dependency property
         /// </summary>
@@ -74,8 +73,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="e">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         static void ModelChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var itemsControl = d as ActionItemsControl;
-            if (itemsControl != null)
+            if (d is ActionItemsControl itemsControl)
             {
                 var actionHost = e.NewValue as IHaveActions;
                 if (actionHost != null)
@@ -115,8 +113,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>The view action policy.</value>
         public IViewActionPolicy ViewActionPolicy
         {
-            get { return (IViewActionPolicy)GetValue(ViewActionPolicyProperty); }
-            set { SetValue(ViewActionPolicyProperty, value); }
+            get => (IViewActionPolicy)GetValue(ViewActionPolicyProperty);
+            set => SetValue(ViewActionPolicyProperty, value);
         }
 
         /// <summary>
@@ -145,9 +143,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public Brush TitleIconBrush
         {
-            get { return (Brush)GetValue(TitleIconBrushProperty); }
-            set { SetValue(TitleIconBrushProperty, value); }
+            get => (Brush)GetValue(TitleIconBrushProperty);
+            set => SetValue(TitleIconBrushProperty, value);
         }
+
         /// <summary>
         /// Icon brush
         /// </summary>
@@ -158,9 +157,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public string ViewTitle
         {
-            get { return (string)GetValue(ViewTitleProperty); }
-            set { SetValue(ViewTitleProperty, value); }
+            get => (string)GetValue(ViewTitleProperty);
+            set => SetValue(ViewTitleProperty, value);
         }
+
         /// <summary>
         /// Document result title
         /// </summary>
@@ -171,9 +171,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public object ViewResult
         {
-            get { return GetValue(ViewResultProperty); }
-            set { SetValue(ViewResultProperty, value); }
+            get => GetValue(ViewResultProperty);
+            set => SetValue(ViewResultProperty, value);
         }
+
         /// <summary>
         /// Model dependency property
         /// </summary>
@@ -185,13 +186,11 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="e">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         static void ViewResultChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var grid = d as ViewResultHeaderGrid;
-            if (grid != null)
+            if (d is ViewResultHeaderGrid grid)
             {
-                var viewResult = e.NewValue as ViewResult;
-                if (viewResult != null)
+                if (e.NewValue is ViewResult viewResult)
                 {
-                    bool isVisible = false;
+                    var isVisible = false;
                     if (!string.IsNullOrEmpty(viewResult.ViewTitle))
                     {
                         isVisible = true;

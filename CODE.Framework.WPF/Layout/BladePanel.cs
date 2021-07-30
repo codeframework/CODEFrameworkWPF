@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up!
-
-using System.Globalization;
+﻿using System.Globalization;
 using System.Linq;
 using System.Windows.Controls.Primitives;
 using System.Windows.Documents;
@@ -54,8 +52,7 @@ namespace CODE.Framework.Wpf.Layout
                 SimpleView.SetUIElementTitle(decorator, SimpleView.GetUIElementTitle(this));
                 SimpleView.SetUIElementType(decorator, SimpleView.GetUIElementType(this));
 
-                var parentPanel = Parent as Panel;
-                if (parentPanel != null)
+                if (Parent is Panel parentPanel)
                 {
                     var childItemIndex = -1;
                     var found = false;
@@ -113,25 +110,21 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>
         /// Background color for each individual blade
         /// </summary>
-        public static Brush GetBladeBackground(DependencyObject d)
-        {
-            return (Brush)d.GetValue(BladeBackgroundProperty);
-        }
+        public static Brush GetBladeBackground(DependencyObject d) => (Brush)d.GetValue(BladeBackgroundProperty);
+
         /// <summary>
         /// Background color for each individual blade
         /// </summary>
-        public static void SetBladeBackground(DependencyObject d, Brush value)
-        {
-            d.SetValue(BladeBackgroundProperty, value);
-        }
+        public static void SetBladeBackground(DependencyObject d, Brush value) => d.SetValue(BladeBackgroundProperty, value);
 
         /// <summary>Style used by the scroll bars</summary>
         /// <value>The scroll bar style.</value>
         public Style ScrollBarStyle
         {
-            get { return (Style)GetValue(ScrollBarStyleProperty); }
-            set { SetValue(ScrollBarStyleProperty, value); }
+            get => (Style)GetValue(ScrollBarStyleProperty);
+            set => SetValue(ScrollBarStyleProperty, value);
         }
+
         /// <summary>Style used by the scroll bars</summary>
         public static readonly DependencyProperty ScrollBarStyleProperty = DependencyProperty.Register("ScrollBarStyle", typeof(Style), typeof(BladePanel), new PropertyMetadata(null, ScrollBarStyleChanged));
         /// <summary>
@@ -141,8 +134,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="args">Arguments</param>
         private static void ScrollBarStyleChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var panel = d as BladePanel;
-            if (panel == null) return;
+            if (d is not BladePanel panel) return;
             var style = args.NewValue as Style;
             panel._scrollHorizontal.Style = style;
         }
@@ -152,8 +144,8 @@ namespace CODE.Framework.Wpf.Layout
         /// </summary>
         public double Spacing
         {
-            get { return (double)GetValue(SpacingProperty); }
-            set { SetValue(SpacingProperty, value); }
+            get => (double)GetValue(SpacingProperty);
+            set => SetValue(SpacingProperty, value);
         }
 
         /// <summary>
@@ -167,8 +159,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The header renderer.</value>
         public IBladePanelHeaderRenderer HeaderRenderer
         {
-            get { return (IBladePanelHeaderRenderer)GetValue(HeaderRendererProperty); }
-            set { SetValue(HeaderRendererProperty, value); }
+            get => (IBladePanelHeaderRenderer)GetValue(HeaderRendererProperty);
+            set => SetValue(HeaderRendererProperty, value);
         }
 
         /// <summary>
@@ -182,8 +174,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The child item padding.</value>
         public Thickness ChildItemPadding
         {
-            get { return (Thickness)GetValue(ChildItemPaddingProperty); }
-            set { SetValue(ChildItemPaddingProperty, value); }
+            get => (Thickness)GetValue(ChildItemPaddingProperty);
+            set => SetValue(ChildItemPaddingProperty, value);
         }
 
         /// <summary>
@@ -197,8 +189,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value><c>true</c> if last top/left item fills space; otherwise, <c>false</c>.</value>
         public bool LastTopItemFillsSpace
         {
-            get { return (bool)GetValue(LastTopItemFillsSpaceProperty); }
-            set { SetValue(LastTopItemFillsSpaceProperty, value); }
+            get => (bool)GetValue(LastTopItemFillsSpaceProperty);
+            set => SetValue(LastTopItemFillsSpaceProperty, value);
         }
         /// <summary>
         /// Indicates whether the last top (or left) item fills the remaining space of the whole panel
@@ -565,8 +557,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The orientation of the header text.</value>
         public Orientation Orientation
         {
-            get { return (Orientation)GetValue(OrientationProperty); }
-            set { SetValue(OrientationProperty, value); }
+            get => (Orientation)GetValue(OrientationProperty);
+            set => SetValue(OrientationProperty, value);
         }
 
         /// <summary>
@@ -581,8 +573,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The header text font size.</value>
         public double FontSize
         {
-            get { return (double)GetValue(FontSizeProperty); }
-            set { SetValue(FontSizeProperty, value); }
+            get => (double)GetValue(FontSizeProperty);
+            set => SetValue(FontSizeProperty, value);
         }
 
         /// <summary>
@@ -596,8 +588,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The header text font family.</value>
         public FontFamily FontFamily
         {
-            get { return (FontFamily)GetValue(FontFamilyProperty); }
-            set { SetValue(FontFamilyProperty, value); }
+            get => (FontFamily)GetValue(FontFamilyProperty);
+            set => SetValue(FontFamilyProperty, value);
         }
 
         /// <summary>
@@ -611,8 +603,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The header text font style.</value>
         public FontStyle FontStyle
         {
-            get { return (FontStyle)GetValue(FontStyleProperty); }
-            set { SetValue(FontStyleProperty, value); }
+            get => (FontStyle)GetValue(FontStyleProperty);
+            set => SetValue(FontStyleProperty, value);
         }
 
         /// <summary>
@@ -626,8 +618,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The header text font weight.</value>
         public FontWeight FontWeight
         {
-            get { return (FontWeight)GetValue(FontWeightProperty); }
-            set { SetValue(FontWeightProperty, value); }
+            get => (FontWeight)GetValue(FontWeightProperty);
+            set => SetValue(FontWeightProperty, value);
         }
 
         /// <summary>
@@ -641,8 +633,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>Header text foreground brush.</value>
         public Brush Foreground
         {
-            get { return (Brush)GetValue(ForegroundProperty); }
-            set { SetValue(ForegroundProperty, value); }
+            get => (Brush)GetValue(ForegroundProperty);
+            set => SetValue(ForegroundProperty, value);
         }
 
         /// <summary>
@@ -656,8 +648,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The background brush.</value>
         public Brush Background
         {
-            get { return (Brush)GetValue(BackgroundProperty); }
-            set { SetValue(BackgroundProperty, value); }
+            get => (Brush)GetValue(BackgroundProperty);
+            set => SetValue(BackgroundProperty, value);
         }
 
         /// <summary>
@@ -671,9 +663,10 @@ namespace CODE.Framework.Wpf.Layout
         /// <value><c>true</c> if [use title color for foreground]; otherwise, <c>false</c>.</value>
         public bool UseTitleColorForForeground
         {
-            get { return (bool)GetValue(UseTitleColorForForegroundProperty); }
+            get => (bool)GetValue(UseTitleColorForForegroundProperty);
             set { SetValue(UseTitleColorForForegroundProperty, value); }
         }
+
         /// <summary>
         /// If true, the renderer attempts to pick up a View.TitleColor setting fore the foreground color of the header text
         /// </summary>
@@ -685,9 +678,10 @@ namespace CODE.Framework.Wpf.Layout
         /// <value><c>true</c> if [use title color for foreground]; otherwise, <c>false</c>.</value>
         public bool UseTitleColor2ForForeground
         {
-            get { return (bool)GetValue(UseTitleColor2ForForegroundProperty); }
-            set { SetValue(UseTitleColor2ForForegroundProperty, value); }
+            get => (bool)GetValue(UseTitleColor2ForForegroundProperty);
+            set => SetValue(UseTitleColor2ForForegroundProperty, value);
         }
+
         /// <summary>
         /// If true, the renderer attempts to pick up a View.TitleColor setting fore the foreground color of the header text
         /// </summary>
@@ -699,9 +693,10 @@ namespace CODE.Framework.Wpf.Layout
         /// <value><c>true</c> if [use title color for background]; otherwise, <c>false</c>.</value>
         public bool UseTitleColorForBackground
         {
-            get { return (bool)GetValue(UseTitleColorForBackgroundProperty); }
-            set { SetValue(UseTitleColorForBackgroundProperty, value); }
+            get => (bool)GetValue(UseTitleColorForBackgroundProperty);
+            set => SetValue(UseTitleColorForBackgroundProperty, value);
         }
+
         /// <summary>
         /// If true, the renderer attempts to pick up a View.TitleColor setting fore the background color of the header
         /// </summary>
@@ -713,9 +708,10 @@ namespace CODE.Framework.Wpf.Layout
         /// <value><c>true</c> if [use title color for background]; otherwise, <c>false</c>.</value>
         public bool UseTitleColor2ForBackground
         {
-            get { return (bool)GetValue(UseTitleColor2ForBackgroundProperty); }
-            set { SetValue(UseTitleColor2ForBackgroundProperty, value); }
+            get => (bool)GetValue(UseTitleColor2ForBackgroundProperty);
+            set => SetValue(UseTitleColor2ForBackgroundProperty, value);
         }
+
         /// <summary>
         /// If true, the renderer attempts to pick up a View.TitleColor setting fore the background color of the header
         /// </summary>
@@ -727,8 +723,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The close icon.</value>
         public Brush CloseIcon
         {
-            get { return (Brush)GetValue(CloseIconProperty); }
-            set { SetValue(CloseIconProperty, value); }
+            get => (Brush)GetValue(CloseIconProperty);
+            set => SetValue(CloseIconProperty, value);
         }
 
         /// <summary>
@@ -742,9 +738,10 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The maximum size of the close icon.</value>
         public double MaxCloseIconSize
         {
-            get { return (double)GetValue(MaxCloseIconSizeProperty); }
-            set { SetValue(MaxCloseIconSizeProperty, value); }
+            get => (double)GetValue(MaxCloseIconSizeProperty);
+            set => SetValue(MaxCloseIconSizeProperty, value);
         }
+
         /// <summary>
         /// Max height/width for the close icon
         /// </summary>
@@ -1006,17 +1003,11 @@ namespace CODE.Framework.Wpf.Layout
 
         /// <summary>Gets the number of visual child elements within this element.</summary>
         /// <returns>The number of visual child elements for this element.</returns>
-        protected override int VisualChildrenCount
-        {
-            get { return 1; }
-        }
+        protected override int VisualChildrenCount => 1;
 
         /// <summary>Overrides <see cref="M:System.Windows.Media.Visual.GetVisualChild(System.Int32)"/>, and returns a child at the specified index from a collection of child elements.</summary>
         /// <param name="index">The zero-based index of the requested child element in the collection.</param>
         /// <returns>The requested child element. This should not return null; if the provided index is out of range, an exception is thrown.</returns>
-        protected override Visual GetVisualChild(int index)
-        {
-            return _horizontal;
-        }
+        protected override Visual GetVisualChild(int index) => _horizontal;
     }
 }

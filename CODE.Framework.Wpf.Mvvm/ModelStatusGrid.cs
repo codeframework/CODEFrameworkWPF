@@ -1,8 +1,5 @@
-﻿// TODO: Clean this up!
-
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Globalization;
-using System.Threading;
 using System.Windows.Data;
 
 namespace CODE.Framework.Wpf.Mvvm
@@ -17,8 +14,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public object Model
         {
-            get { return GetValue(ModelProperty); }
-            set { SetValue(ModelProperty, value); }
+            get => GetValue(ModelProperty);
+            set => SetValue(ModelProperty, value);
         }
 
         /// <summary>
@@ -33,12 +30,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="e">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void ModelChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var grid = d as ModelStatusGrid;
-            if (grid != null)
+            if (d is ModelStatusGrid grid)
             {
                 grid.Visibility = Visibility.Visible;
-                var ms = e.NewValue as IModelStatus;
-                if (ms != null)
+                if (e.NewValue is IModelStatus ms)
                 {
                     grid.ModelStatus = ms.ModelStatus;
                     var ms2 = ms as INotifyPropertyChanged;
@@ -57,9 +52,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>Indicates the model status of the bound model object</summary>
         public ModelStatus ModelStatus
         {
-            get { return (ModelStatus)GetValue(ModelStatusProperty); }
-            set { SetValue(ModelStatusProperty, value); }
+            get => (ModelStatus)GetValue(ModelStatusProperty);
+            set => SetValue(ModelStatusProperty, value);
         }
+
         /// <summary>Indicates the model status of the bound model object</summary>
         public static readonly DependencyProperty ModelStatusProperty = DependencyProperty.Register("ModelStatus", typeof(ModelStatus), typeof(ModelStatusGrid), new UIPropertyMetadata(ModelStatus.Unknown));
     }
@@ -100,9 +96,6 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <returns>
         /// A converted value. If the method returns null, the valid null value is used.
         /// </returns>
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            return ModelStatus.Unknown; // Not really using this
-        }
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => ModelStatus.Unknown; // Not really using this
     }
 }

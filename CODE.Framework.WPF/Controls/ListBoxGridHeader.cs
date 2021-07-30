@@ -1,6 +1,4 @@
-﻿// TODO: Clean up this file!
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
@@ -48,8 +46,7 @@ namespace CODE.Framework.Wpf.Controls
             if (!(o is ListBoxGridHeader header)) return;
             header.TriggerConsolidatedColumnRepopulate();
 
-            var columns = args.NewValue as ListColumnsCollection;
-            if (columns == null) return;
+            if (args.NewValue is not ListColumnsCollection columns) return;
             columns.CollectionChangedDelayed -= header.HandleColumnCollectionChanged;
             columns.CollectionChangedDelayed += header.HandleColumnCollectionChanged;
             foreach (var column in columns)
@@ -106,8 +103,8 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="args">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void ParentListBoxChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            if (!(d is ListBoxGridHeader header)) return;
-            if (!(args.NewValue is ListBox listBox)) return;
+            if (d is not ListBoxGridHeader header) return;
+            if (args.NewValue is not ListBox listBox) return;
 
             header.SetEditControlVisibility(ListEx.GetShowHeaderEditControls(listBox));
 
@@ -145,7 +142,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="args">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void HorizontalHeaderOffsetChanged(DependencyObject o, DependencyPropertyChangedEventArgs args)
         {
-            if (!(o is ListBoxGridHeader header) || header.Content == null) return;
+            if (o is not ListBoxGridHeader header || header.Content == null) return;
             header.InvalidateHorizontalHeaderOffset();
         }
 
@@ -154,13 +151,13 @@ namespace CODE.Framework.Wpf.Controls
         /// </summary>
         public void InvalidateHorizontalHeaderOffset()
         {
-            if (!(Content is Grid content)) return;
+            if (Content is not Grid content) return;
             content.Margin = new Thickness(HorizontalHeaderOffset * -1, 0, 0, 0);
         }
 
         private void ForceParentRefresh()
         {
-            if (!(Parent is FrameworkElement element)) return;
+            if (Parent is not FrameworkElement element) return;
             element.InvalidateMeasure();
             element.InvalidateArrange();
             element.InvalidateVisual();
@@ -736,7 +733,6 @@ namespace CODE.Framework.Wpf.Controls
             switch (filterMode)
             {
                 case AutoFilterMode.OneColumnAtATime:
-                    //PropertyInfo property = null;
                     var filteredSource = sourceList.Where(i =>
                     {
                         var propertyValue = i.GetPropertyValue<string>(_column.BindingPath)?.ToLower();
@@ -1406,11 +1402,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <returns>
         /// The requested child element. This should not return null; if the provided index is out of range, an exception is thrown.
         /// </returns>
-        protected override Visual GetVisualChild(int index)
-        {
-            if (index == 1) return _columnDropDestinationIndicator;
-            return _dragVisual;
-        }
+        protected override Visual GetVisualChild(int index) => index == 1 ? _columnDropDestinationIndicator : _dragVisual;
 
         /// <summary>
         /// Called when the control needs to render itself.

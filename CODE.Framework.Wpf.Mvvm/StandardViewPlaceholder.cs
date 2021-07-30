@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up
-
-namespace CODE.Framework.Wpf.Mvvm
+﻿namespace CODE.Framework.Wpf.Mvvm
 {
     /// <summary>Placeholder for a standard view that is to be loaded dynamically</summary>
     public class StandardViewPlaceholder : ContentControl
@@ -17,8 +15,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>Name of the standard view that is to be loaded into this placeholder control</summary>
         public string StandardViewName
         {
-            get { return (string)GetValue(StandardViewNameProperty); }
-            set { SetValue(StandardViewNameProperty, value); }
+            get => (string)GetValue(StandardViewNameProperty);
+            set => SetValue(StandardViewNameProperty, value);
         }
 
         /// <summary>Name of the standard view that is to be loaded into this placeholder control</summary>
@@ -29,8 +27,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="a">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void StandardViewNameChanged(DependencyObject s, DependencyPropertyChangedEventArgs a)
         {
-            var placeholder = s as StandardViewPlaceholder;
-            if (placeholder == null) return;
+            if (s is not StandardViewPlaceholder placeholder) return;
 
             if (a.NewValue != a.OldValue)
             {
@@ -49,8 +46,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>Standard view (identifier) of the view that is to be loaded into this placeholder</summary>
         public StandardViews StandardView
         {
-            get { return (StandardViews)GetValue(StandardViewProperty); }
-            set { SetValue(StandardViewProperty, value); }
+            get => (StandardViews)GetValue(StandardViewProperty);
+            set => SetValue(StandardViewProperty, value);
         }
 
         /// <summary>Standard view (identifier) of the view that is to be loaded into this placeholder</summary>
@@ -61,8 +58,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="a">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void StandardViewChanged(DependencyObject s, DependencyPropertyChangedEventArgs a)
         {
-            var placeholder = s as StandardViewPlaceholder;
-            if (placeholder == null) return;
+            if (s is not StandardViewPlaceholder placeholder) return;
             placeholder.StandardViewName = "CODEFrameworkStandardView" + a.NewValue;
         }
     }

@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up
-
-using System.Globalization;
+﻿using System.Globalization;
 using System.Linq;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -23,8 +21,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="visualRemoved">The <see cref="T:System.Windows.Media.Visual" /> that was removed from the collection.</param>
         protected override void OnVisualChildrenChanged(DependencyObject visualAdded, DependencyObject visualRemoved)
         {
-            var element = visualAdded as UIElement;
-            if (element != null)
+            if (visualAdded is UIElement element)
                 element.Visibility = Visibility.Collapsed;
 
             base.OnVisualChildrenChanged(visualAdded, visualRemoved);
@@ -36,7 +33,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The selected page.</value>
         public int SelectedPage
         {
-            get { return _selectedPage; }
+            get => _selectedPage;
             set
             {
                 if (_selectedPage == value) return;
@@ -128,8 +125,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="e">The <see cref="DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void OnTabVisibilityChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var element = d as FrameworkElement;
-            if (element == null) return;
+            if (d is not FrameworkElement element) return;
             var tabItemsPanel = ElementHelper.FindVisualTreeParent<TabItemsPanel>(element);
             if (tabItemsPanel != null)
                 tabItemsPanel.InvalidateVisual();
@@ -140,20 +136,14 @@ namespace CODE.Framework.Wpf.Layout
         /// </summary>
         /// <param name="d">The item to get tab visibility for.</param>
         /// <returns>Visibility.</returns>
-        public static Visibility GetTabVisibility(DependencyObject d)
-        {
-            return (Visibility)d.GetValue(TabVisibilityProperty);
-        }
+        public static Visibility GetTabVisibility(DependencyObject d) => (Visibility)d.GetValue(TabVisibilityProperty);
 
         /// <summary>
         /// Sets the visibility of the tabs
         /// </summary>
         /// <param name="d">The item to set tab visibility on.</param>
         /// <param name="value">Visibility.</param>
-        public static void SetTabVisibility(DependencyObject d, Visibility value)
-        {
-            d.SetValue(TabVisibilityProperty, value);
-        }
+        public static void SetTabVisibility(DependencyObject d, Visibility value) => d.SetValue(TabVisibilityProperty, value);
 
         /// <summary>
         /// Header renderer used to create the visuals for the tab headers and borders.
@@ -161,8 +151,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The header renderer.</value>
         public TabItemsHeaderRenderer HeaderRenderer
         {
-            get { return (TabItemsHeaderRenderer)GetValue(HeaderRendererProperty); }
-            set { SetValue(HeaderRendererProperty, value); }
+            get => (TabItemsHeaderRenderer)GetValue(HeaderRendererProperty);
+            set => SetValue(HeaderRendererProperty, value);
         }
 
         /// <summary>
@@ -184,8 +174,8 @@ namespace CODE.Framework.Wpf.Layout
         /// </summary>
         public double HeaderHeight
         {
-            get { return (double)GetValue(HeaderHeightProperty); }
-            set { SetValue(HeaderHeightProperty, value); }
+            get => (double)GetValue(HeaderHeightProperty);
+            set => SetValue(HeaderHeightProperty, value);
         }
 
         /// <summary>
@@ -199,8 +189,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The font family.</value>
         public FontFamily FontFamily
         {
-            get { return (FontFamily)GetValue(FontFamilyProperty); }
-            set { SetValue(FontFamilyProperty, value); }
+            get => (FontFamily)GetValue(FontFamilyProperty);
+            set => SetValue(FontFamilyProperty, value);
         }
 
         /// <summary>
@@ -214,10 +204,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="panel">The tab items panel.</param>
         /// <param name="finalSize">The size of the tab items panel.</param>
         /// <returns>Rect.</returns>
-        public Rect GetClientRect(TabItemsPanel panel, Size finalSize)
-        {
-            return GeometryHelper.NewRect(2, HeaderHeight + 2, finalSize.Width - 4, finalSize.Height - HeaderHeight - 4);
-        }
+        public Rect GetClientRect(TabItemsPanel panel, Size finalSize) => GeometryHelper.NewRect(2, HeaderHeight + 2, finalSize.Width - 4, finalSize.Height - HeaderHeight - 4);
 
         /// <summary>
         /// Renders the actual tabs

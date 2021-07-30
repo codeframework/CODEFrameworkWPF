@@ -1,8 +1,4 @@
-﻿// TODO: Clean this up
-
-using CODE.Framework.Wpf.Layout;
-
-namespace CODE.Framework.Wpf.Controls
+﻿namespace CODE.Framework.Wpf.Controls
 {
     /// <summary>
     /// This content control can be used for content that can be undocked into a separate window
@@ -13,8 +9,8 @@ namespace CODE.Framework.Wpf.Controls
         /// <value><c>true</c> if the content is docked; otherwise, <c>false</c>.</value>
         public bool IsDocked
         {
-            get { return (bool)GetValue(IsDockedProperty); }
-            set { SetValue(IsDockedProperty, value); }
+            get => (bool)GetValue(IsDockedProperty);
+            set => SetValue(IsDockedProperty, value);
         }
 
         /// <summary>Indicates and sets whether the current content is displayed in-place/docked (true) or in a separate window (false)</summary>
@@ -25,8 +21,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="args">The <see cref="DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void IsDockedChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var host = d as DockHost;
-            if (host == null) return;
+            if (d is not DockHost host) return;
 
             if ((bool)args.NewValue)
             {
@@ -81,8 +76,8 @@ namespace CODE.Framework.Wpf.Controls
         /// <value>The title.</value>
         public string Title
         {
-            get { return (string)GetValue(TitleProperty); }
-            set { SetValue(TitleProperty, value); }
+            get => (string)GetValue(TitleProperty);
+            set => SetValue(TitleProperty, value);
         }
         /// <summary>The title property </summary>
         public static readonly DependencyProperty TitleProperty = DependencyProperty.Register("Title", typeof(string), typeof(DockHost), new PropertyMetadata("", TitleChanged));
@@ -91,8 +86,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="args">The <see cref="DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void TitleChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var host = d as DockHost;
-            if (host == null) return;
+            if (d is not DockHost host) return;
             if (host.FloatWindow != null) host.FloatWindow.Title = args.NewValue.ToString();
         }
 
@@ -100,8 +94,8 @@ namespace CODE.Framework.Wpf.Controls
         /// <value>The float window style.</value>
         public Style FloatWindowStyle
         {
-            get { return (Style)GetValue(FloatWindowStyleProperty); }
-            set { SetValue(FloatWindowStyleProperty, value); }
+            get => (Style)GetValue(FloatWindowStyleProperty);
+            set => SetValue(FloatWindowStyleProperty, value);
         }
         /// <summary>Style for the floating window</summary>
         /// <value>The float window style.</value>
@@ -111,8 +105,8 @@ namespace CODE.Framework.Wpf.Controls
         /// <value>The content visibility.</value>
         public Visibility ContentVisibility
         {
-            get { return (Visibility)GetValue(ContentVisibilityProperty); }
-            set { SetValue(ContentVisibilityProperty, value); }
+            get => (Visibility)GetValue(ContentVisibilityProperty);
+            set => SetValue(ContentVisibilityProperty, value);
         }
         /// <summary>Defines whether the content is supposed to be visible (docked or not)</summary>
         /// <value>The content visibility.</value>
@@ -125,8 +119,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="args">The <see cref="DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void ContentVisibilityChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var host = d as DockHost;
-            if (host == null) return;
+            if (d is not DockHost host) return;
 
             if (host.IsDocked)
                 // We are in standard mode, so we can simply switch visibility
@@ -239,8 +232,8 @@ namespace CODE.Framework.Wpf.Controls
         /// </summary>
         public bool AutoDockOnClose
         {
-            get { return (bool)GetValue(AutoDockOnCloseProperty); }
-            set { SetValue(AutoDockOnCloseProperty, value); }
+            get => (bool)GetValue(AutoDockOnCloseProperty);
+            set => SetValue(AutoDockOnCloseProperty, value);
         }
         /// <summary>
         /// Indicates whether clicking the close button will automatically dock the content back into the host

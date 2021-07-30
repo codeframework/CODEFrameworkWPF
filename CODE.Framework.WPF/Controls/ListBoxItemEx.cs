@@ -1,6 +1,4 @@
-﻿// TODO: Clean up this file!
-
-namespace CODE.Framework.Wpf.Controls
+﻿namespace CODE.Framework.Wpf.Controls
 {
     /// <summary>
     /// Extensions for list box items
@@ -17,8 +15,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="args">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void SelectItemwhenFocusWithinChanged(DependencyObject o, DependencyPropertyChangedEventArgs args)
         {
-            var item = o as ListBoxItem;
-            if (item == null) return;
+            if (o is not ListBoxItem item) return;
 
             // This is a bit heavy handed, but it seems different scenarios fire different events, so I (Markus) added all these to account for various scenarios
 

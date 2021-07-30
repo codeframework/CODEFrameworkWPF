@@ -1,6 +1,4 @@
-﻿// TODO: Clean this file up!
-
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
@@ -33,8 +31,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>Column definitions</summary>
         public ColumnPanelColumnsCollection ColumnDefinitions
         {
-            get { return (ColumnPanelColumnsCollection)GetValue(ColumnDefinitionsProperty); }
-            set { SetValue(ColumnDefinitionsProperty, value); }
+            get => (ColumnPanelColumnsCollection)GetValue(ColumnDefinitionsProperty);
+            set => SetValue(ColumnDefinitionsProperty, value);
         }
 
         /// <summary>Column definitions</summary>
@@ -103,8 +101,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The detail area indent.</value>
         public double DetailAreaIndent
         {
-            get { return (double)GetValue(DetailAreaIndentProperty); }
-            set { SetValue(DetailAreaIndentProperty, value); }
+            get => (double)GetValue(DetailAreaIndentProperty);
+            set => SetValue(DetailAreaIndentProperty, value);
         }
         /// <summary>
         /// Indentation of the detail area
@@ -118,9 +116,10 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The width of the expand icon.</value>
         public double ExpandIconWidth
         {
-            get { return (double)GetValue(ExpandIconWidthProperty); }
-            set { SetValue(ExpandIconWidthProperty, value); }
+            get => (double)GetValue(ExpandIconWidthProperty);
+            set => SetValue(ExpandIconWidthProperty, value);
         }
+
         /// <summary>
         /// Width of the expand/collapse icon
         /// </summary>
@@ -132,8 +131,8 @@ namespace CODE.Framework.Wpf.Layout
         /// </summary>
         public bool DetailIsExpanded
         {
-            get { return (bool)GetValue(DetailIsExpandedProperty); }
-            set { SetValue(DetailIsExpandedProperty, value); }
+            get => (bool)GetValue(DetailIsExpandedProperty);
+            set => SetValue(DetailIsExpandedProperty, value);
         }
         /// <summary>
         /// Indicates whether the detail area is expanded
@@ -146,8 +145,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The expand icon brush resource key.</value>
         public string ExpandIconBrushResourceKey
         {
-            get { return (string)GetValue(ExpandIconBrushResourceKeyProperty); }
-            set { SetValue(ExpandIconBrushResourceKeyProperty, value); }
+            get => (string)GetValue(ExpandIconBrushResourceKeyProperty);
+            set => SetValue(ExpandIconBrushResourceKeyProperty, value);
         }
         /// <summary>
         /// Brush resource key used for the expand-icon (shown in collapsed state)
@@ -161,8 +160,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The collapse icon brush resource key.</value>
         public string CollapseIconBrushResourceKey
         {
-            get { return (string)GetValue(CollapseIconBrushResourceKeyProperty); }
-            set { SetValue(CollapseIconBrushResourceKeyProperty, value); }
+            get => (string)GetValue(CollapseIconBrushResourceKeyProperty);
+            set => SetValue(CollapseIconBrushResourceKeyProperty, value);
         }
         /// <summary>
         /// Brush resource key used for the collapse-icon (shown in expanded state)
@@ -176,8 +175,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The expand icon.</value>
         public Brush ExpandIcon
         {
-            get { return (Brush)GetValue(ExpandIconProperty); }
-            set { SetValue(ExpandIconProperty, value); }
+            get => (Brush)GetValue(ExpandIconProperty);
+            set => SetValue(ExpandIconProperty, value);
         }
         /// <summary>
         /// Brush used for the expand-icon (shown in collapsed state)
@@ -191,8 +190,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The collapse icon.</value>
         public Brush CollapseIcon
         {
-            get { return (Brush)GetValue(CollapseIconProperty); }
-            set { SetValue(CollapseIconProperty, value); }
+            get => (Brush)GetValue(CollapseIconProperty);
+            set => SetValue(CollapseIconProperty, value);
         }
         /// <summary>
         /// Brush used for the collapse-icon (shown in collapsed state)
@@ -207,8 +206,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="e">The <see cref="DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void OnDetailIsExpandedChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var panel = d as ColumnPanel;
-            if (panel == null) return;
+            if (d is not ColumnPanel panel) return;
             panel.InvalidateVisual();
         }
 
@@ -218,8 +216,8 @@ namespace CODE.Framework.Wpf.Layout
         /// </summary>
         public bool DetailSpansFullWidth
         {
-            get { return (bool)GetValue(DetailSpansFullWidthProperty); }
-            set { SetValue(DetailSpansFullWidthProperty, value); }
+            get => (bool)GetValue(DetailSpansFullWidthProperty);
+            set => SetValue(DetailSpansFullWidthProperty, value);
         }
 
         /// <summary>
@@ -438,10 +436,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <summary>
         /// Initializes a new instance of the <see cref="ColumnPanelColumnDefinition"/> class.
         /// </summary>
-        public ColumnPanelColumnDefinition()
-        {
-            AutoShowChildElement = true;
-        }
+        public ColumnPanelColumnDefinition() => AutoShowChildElement = true;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ColumnPanelColumnDefinition"/> class.
@@ -480,8 +475,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <value>The visible.</value>
         public Visibility Visible
         {
-            get { return (Visibility)GetValue(VisibleProperty); }
-            set { SetValue(VisibleProperty, value); }
+            get => (Visibility)GetValue(VisibleProperty);
+            set => SetValue(VisibleProperty, value);
         }
 
         /// <summary>
@@ -494,8 +489,8 @@ namespace CODE.Framework.Wpf.Layout
         /// </summary>
         public string ReadOnlyText
         {
-            get { return (string)GetValue(ReadOnlyTextProperty); }
-            set { SetValue(ReadOnlyTextProperty, value); }
+            get => (string)GetValue(ReadOnlyTextProperty);
+            set => SetValue(ReadOnlyTextProperty, value);
         }
         /// <summary>
         /// Read only text property used as column content by some renderers
@@ -510,11 +505,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <exception cref="System.NotImplementedException"></exception>
         private static void OnReadOnlyTextChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var column = d as ColumnPanelColumnDefinition;
-            if (column == null) return;
-            var handler = column.ReadOnlyTextChanged;
-            if (handler != null)
-                handler(column, new EventArgs());
+            if (d is not ColumnPanelColumnDefinition column) return;
+            column.ReadOnlyTextChanged?.Invoke(column, new EventArgs());
         }
 
         /// <summary>
@@ -527,8 +519,8 @@ namespace CODE.Framework.Wpf.Layout
         /// </summary>
         public TextAlignment ReadOnlyTextAlignment
         {
-            get { return (TextAlignment)GetValue(ReadOnlyTextAlignmentProperty); }
-            set { SetValue(ReadOnlyTextAlignmentProperty, value); }
+            get => (TextAlignment)GetValue(ReadOnlyTextAlignmentProperty);
+            set => SetValue(ReadOnlyTextAlignmentProperty, value);
         }
         /// <summary>
         /// Desired text alignment for read-only column content (note: this is only supported by some renderers)
@@ -543,11 +535,8 @@ namespace CODE.Framework.Wpf.Layout
         /// <exception cref="System.NotImplementedException"></exception>
         private static void OnReadOnlyTextAlignmentChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var column = d as ColumnPanelColumnDefinition;
-            if (column == null) return;
-            var handler = column.ReadOnlyTextAlignmentChanged;
-            if (handler != null)
-                handler(column, new EventArgs());
+            if (d is not ColumnPanelColumnDefinition column) return;
+            column.ReadOnlyTextAlignmentChanged?.Invoke(column, new EventArgs());
         }
 
         /// <summary>
@@ -567,20 +556,14 @@ namespace CODE.Framework.Wpf.Layout
         /// Initializes a new instance of the <see cref="ColumnPanelColumnsCollection"/> class.
         /// </summary>
         /// <param name="parent">The parent.</param>
-        public ColumnPanelColumnsCollection(ColumnPanel parent)
-        {
-            _parent = parent;
-        }
+        public ColumnPanelColumnsCollection(ColumnPanel parent) => _parent = parent;
 
         /// <summary>
         /// Adds the specified column.
         /// </summary>
         /// <param name="column">The column.</param>
         [Obsolete("Please use the overload with the ColumnPanelColumnDefinition parameter instead.")]
-        public void Add(ColumnDefinition column)
-        {
-            Add(new ColumnPanelColumnDefinition(column));
-        }
+        public void Add(ColumnDefinition column) => Add(new ColumnPanelColumnDefinition(column));
 
         /// <summary>
         /// Adds the specified column.

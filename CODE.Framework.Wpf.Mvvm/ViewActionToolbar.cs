@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up!
-
-using System.Globalization;
+﻿using System.Globalization;
 using System.Windows.Data;
 
 namespace CODE.Framework.Wpf.Mvvm
@@ -13,18 +11,15 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <summary>
         /// Initializes a new instance of the <see cref="ViewActionToolbar"/> class.
         /// </summary>
-        public ViewActionToolbar()
-        {
-            Visibility = Visibility.Collapsed;
-        }
+        public ViewActionToolbar() => Visibility = Visibility.Collapsed;
 
         /// <summary>
         /// Model used as the data context
         /// </summary>
         public object Model
         {
-            get { return GetValue(ModelProperty); }
-            set { SetValue(ModelProperty, value); }
+            get => GetValue(ModelProperty);
+            set => SetValue(ModelProperty, value);
         }
         /// <summary>
         /// Model dependency property
@@ -37,11 +32,9 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="e">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         static void ModelChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var toolbar = d as ViewActionToolbar;
-            if (toolbar == null) return;
+            if (d is not ViewActionToolbar toolbar) return;
 
-            var actionsContainer = e.NewValue as IHaveActions;
-            if (actionsContainer != null && actionsContainer.Actions != null)
+            if (e.NewValue is IHaveActions actionsContainer && actionsContainer.Actions != null)
             {
                 actionsContainer.Actions.CollectionChanged += (s, e2) => toolbar.PopulateToolbar(actionsContainer);
                 toolbar.Visibility = Visibility.Visible;
@@ -56,9 +49,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public object SelectedView
         {
-            get { return GetValue(SelectedViewProperty); }
-            set { SetValue(SelectedViewProperty, value); }
+            get => GetValue(SelectedViewProperty);
+            set => SetValue(SelectedViewProperty, value);
         }
+
         /// <summary>
         /// Selected view dependency property
         /// </summary>
@@ -71,18 +65,15 @@ namespace CODE.Framework.Wpf.Mvvm
         static void SelectedViewChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             if (d == null) return;
-            var toolbar = d as ViewActionToolbar;
-            if (toolbar == null) return;
+            if (d is not ViewActionToolbar toolbar) return;
 
-            var viewResult = e.NewValue as ViewResult;
-            if (viewResult == null)
+            if (e.NewValue is not ViewResult viewResult)
             {
                 toolbar.PopulateToolbar(toolbar.Model as IHaveActions);
                 return;
             }
 
-            var actionsContainer = viewResult.Model as IHaveActions;
-            if (actionsContainer != null)
+            if (viewResult.Model is IHaveActions actionsContainer)
             {
                 actionsContainer.Actions.CollectionChanged += (s, e2) => toolbar.PopulateToolbar(toolbar.Model as IHaveActions, actionsContainer);
                 toolbar.PopulateToolbar(toolbar.Model as IHaveActions, actionsContainer);
@@ -97,8 +88,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>The view action display mode</value>
         public ViewActionDisplayMode RootViewActionDisplayMode
         {
-            get { return (ViewActionDisplayMode)GetValue(RootViewActionDisplayModeProperty); }
-            set { SetValue(RootViewActionDisplayModeProperty, value); }
+            get => (ViewActionDisplayMode)GetValue(RootViewActionDisplayModeProperty);
+            set => SetValue(RootViewActionDisplayModeProperty, value);
         }
         /// <summary>
         /// Defines which root view actions should be displayed
@@ -112,8 +103,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>The view action display mode</value>
         public ViewActionDisplayMode LocalViewActionDisplayMode
         {
-            get { return (ViewActionDisplayMode)GetValue(LocalViewActionDisplayModeProperty); }
-            set { SetValue(LocalViewActionDisplayModeProperty, value); }
+            get => (ViewActionDisplayMode)GetValue(LocalViewActionDisplayModeProperty);
+            set => SetValue(LocalViewActionDisplayModeProperty, value);
         }
         /// <summary>
         /// Defines which local view view actions should be displayed
@@ -154,10 +145,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         /// <param name="action">The action.</param>
         /// <returns><c>true</c> if the action is to be included, <c>false</c> otherwise.</returns>
-        protected virtual bool IncludeAction(IViewAction action)
-        {
-            return true;
-        }
+        protected virtual bool IncludeAction(IViewAction action) => true;
     }
 
     /// <summary>
@@ -173,8 +161,7 @@ namespace CODE.Framework.Wpf.Mvvm
         {
             Action = action;
 
-            var viewAction = Action as ViewAction;
-            if (viewAction != null)
+            if (Action is ViewAction viewAction)
             {
                 ToolTip = viewAction.ToolTipText;
                 HasIcon = viewAction.HasBrush;
@@ -224,9 +211,10 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>The action.</value>
         public IViewAction Action
         {
-            get { return (IViewAction)GetValue(ActionProperty); }
-            set { SetValue(ActionProperty, value); }
+            get => (IViewAction)GetValue(ActionProperty);
+            set => SetValue(ActionProperty, value);
         }
+
         /// <summary>
         /// View action associated with this button
         /// </summary>
@@ -240,8 +228,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>The title display filter.</value>
         public ViewActionDisplayMode TitleDisplayFilter
         {
-            get { return (ViewActionDisplayMode)GetValue(TitleDisplayFilterProperty); }
-            set { SetValue(TitleDisplayFilterProperty, value); }
+            get => (ViewActionDisplayMode)GetValue(TitleDisplayFilterProperty);
+            set => SetValue(TitleDisplayFilterProperty, value);
         }
         /// <summary>
         /// Indicates what level of view action titles (text) should be displayed for.
@@ -256,8 +244,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value><c>true</c> if this instance has icon; otherwise, <c>false</c>.</value>
         public bool HasIcon
         {
-            get { return (bool)GetValue(HasIconProperty); }
-            set { SetValue(HasIconProperty, value); }
+            get => (bool)GetValue(HasIconProperty);
+            set => SetValue(HasIconProperty, value);
         }
         /// <summary>
         /// Indicates whether this button has an icon
@@ -271,8 +259,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value><c>true</c> if this instance has title; otherwise, <c>false</c>.</value>
         public bool HasTitle
         {
-            get { return (bool)GetValue(HasTitleProperty); }
-            set { SetValue(HasTitleProperty, value); }
+            get => (bool)GetValue(HasTitleProperty);
+            set => SetValue(HasTitleProperty, value);
         }
         /// <summary>
         /// Indicates whether the button has a title that should be displayed
@@ -286,8 +274,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value>The title.</value>
         public string Title
         {
-            get { return (string)GetValue(TitleProperty); }
-            set { SetValue(TitleProperty, value); }
+            get => (string)GetValue(TitleProperty);
+            set => SetValue(TitleProperty, value);
         }
         /// <summary>
         /// Title of the button
@@ -301,8 +289,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <value><c>true</c> if this instance is checked; otherwise, <c>false</c>.</value>
         public bool IsChecked
         {
-            get { return (bool)GetValue(IsCheckedProperty); }
-            set { SetValue(IsCheckedProperty, value); }
+            get => (bool)GetValue(IsCheckedProperty);
+            set => SetValue(IsCheckedProperty, value);
         }
         /// <summary>
         /// Indicates whether the associated action has its IsChecked property set
@@ -314,8 +302,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         public ViewActionSignificance Significance
         {
-            get { return (ViewActionSignificance)GetValue(SignificanceProperty); }
-            set { SetValue(SignificanceProperty, value); }
+            get => (ViewActionSignificance)GetValue(SignificanceProperty);
+            set => SetValue(SignificanceProperty, value);
         }
         /// <summary>
         /// Significance of the associated view-action
@@ -337,10 +325,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="parameter">The converter parameter to use.</param>
         /// <param name="culture">The culture to use in the converter.</param>
         /// <returns>A converted value. If the method returns null, the valid null value is used.</returns>
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            return !string.IsNullOrEmpty(value.ToString());
-        }
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture) => !string.IsNullOrEmpty(value.ToString());
 
         /// <summary>
         /// Converts a value.
@@ -350,10 +335,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="parameter">The converter parameter to use.</param>
         /// <param name="culture">The culture to use in the converter.</param>
         /// <returns>A converted value. If the method returns null, the valid null value is used.</returns>
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            return value;
-        }
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => value;
     }
 
     /// <summary>

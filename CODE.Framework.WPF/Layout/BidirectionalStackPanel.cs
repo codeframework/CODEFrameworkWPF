@@ -1,6 +1,4 @@
-﻿// TODO: Clean this up!
-
-using System.Linq;
+﻿using System.Linq;
 using System.Windows.Controls.Primitives;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -49,8 +47,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="args">Arguments</param>
         private static void ScrollBarStyleChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
-            var panel = d as BidirectionalStackPanel;
-            if (panel == null) return;
+            if (d is not BidirectionalStackPanel panel) return;
             var style = args.NewValue as Style;
             panel._scrollHorizontal.Style = style;
             panel._scrollVertical.Style = style;

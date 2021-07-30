@@ -63,7 +63,7 @@ namespace CODE.Framework.Wpf.TestBench {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.TestBench;V1.0.0.0;component/panelsizeandvisibilitytest.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.TestBench;component/panelsizeandvisibilitytest.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PanelSizeAndVisibilityTest.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
