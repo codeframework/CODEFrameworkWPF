@@ -1,0 +1,16 @@
+﻿namespace CODE.Framework.Wpf.Theme.Metro.StandardViews
+{
+    /// <summary>
+    /// Interaction logic for LargePeekImageCollection04.xaml
+    /// </summary>
+    public partial class LargePeekImageCollection04
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LargePeekImageCollection04"/> class.
+        /// </summary>
+        public LargePeekImageCollection04()
+        {
+            InitializeComponent();
+        }
+    }
+}

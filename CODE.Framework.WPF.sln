@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CODE.Framework.Wpf.Theme.Ba
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CODE.Framework.Wpf.Theme.Geek", "CODE.Framework.Wpf.Theme.Geek\CODE.Framework.Wpf.Theme.Geek.csproj", "{5F6D0FED-B6EC-4166-B8DA-DE99293C89A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CODE.Framework.Wpf.Theme.Metro", "CODE.Framework.Wpf.Theme.Metro\CODE.Framework.Wpf.Theme.Metro.csproj", "{C4A299ED-E76E-4CAB-BBEF-43447016BB5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5F6D0FED-B6EC-4166-B8DA-DE99293C89A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F6D0FED-B6EC-4166-B8DA-DE99293C89A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F6D0FED-B6EC-4166-B8DA-DE99293C89A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4A299ED-E76E-4CAB-BBEF-43447016BB5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A299ED-E76E-4CAB-BBEF-43447016BB5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A299ED-E76E-4CAB-BBEF-43447016BB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A299ED-E76E-4CAB-BBEF-43447016BB5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

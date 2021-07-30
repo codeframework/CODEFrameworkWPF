@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="StandardViews\Block.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\Components\LogoNameAndCount.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\Data01.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\Data02.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\Data03.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\DataAndImage01.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\DataAndImage02.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\DataAndImage03.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\DataRowAndImage01.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\DataSmall01.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\DataSmall02.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\DataSmall03.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\Fallback.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\Image.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeBlockAndText01.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeBlockAndText02.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeImage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeImageAndText01.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeImageAndText02.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeImageCollection.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargePeekImageAndText01.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargePeekImageAndText02.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargePeekImageAndText03.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargePeekImageAndText04.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargePeekImageAndText05.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargePeekImageAndText06.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargePeekImageCollection01.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargePeekImageCollection02.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargePeekImageCollection03.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargePeekImageCollection04.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargePeekImageCollection05.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargePeekImageCollection06.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeSmallImageAndText01.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeSmallImageAndText02.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeSmallImageAndText03.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeSmallImageAndText04.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeSmallImageAndText05.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeSmallImageAndText06.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeSmallImageAndText07.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeText01.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeText02.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeText03.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeText04.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeText05.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeText06.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeText07.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeText08.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeText09.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeText10.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\LargeText11.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\PeekImageAndText01.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\PeekImageAndText02.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\PeekImageAndText03.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\PeekImageAndText04.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\PeekImageAndText05.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\Text01.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\Text02.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\Text03.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\Text04.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\Text05.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\TileNarrow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\TileNarrow1Image.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\TileTiny.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\TileTiny1Image.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\TileWide.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\TileWide1Image.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\TileWide5Images.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\TileWideSquare.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\TileWideSquare1Image.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardViews\TileWideSquare5Images.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="StandardViews\Block.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\Components\LogoNameAndCount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\Data01.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\Data02.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\Data03.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\DataAndImage01.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\DataAndImage02.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\DataAndImage03.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\DataRowAndImage01.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\DataSmall01.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\DataSmall02.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\DataSmall03.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\Fallback.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\Image.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeBlockAndText01.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeBlockAndText02.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeImage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeImageAndText01.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeImageAndText02.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeImageCollection.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargePeekImageAndText01.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargePeekImageAndText02.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargePeekImageAndText03.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargePeekImageAndText04.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargePeekImageAndText05.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargePeekImageAndText06.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargePeekImageCollection01.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargePeekImageCollection02.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargePeekImageCollection03.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargePeekImageCollection04.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargePeekImageCollection05.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargePeekImageCollection06.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeSmallImageAndText01.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeSmallImageAndText02.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeSmallImageAndText03.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeSmallImageAndText04.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeSmallImageAndText05.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeSmallImageAndText06.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeSmallImageAndText07.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeText01.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeText02.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeText03.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeText04.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeText05.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeText06.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeText07.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeText08.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeText09.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeText10.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\LargeText11.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\PeekImageAndText01.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\PeekImageAndText02.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\PeekImageAndText03.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\PeekImageAndText04.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\PeekImageAndText05.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\Text01.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\Text02.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\Text03.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\Text04.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\Text05.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\TileNarrow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\TileNarrow1Image.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\TileTiny.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\TileTiny1Image.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\TileWide.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\TileWide1Image.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\TileWide5Images.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\TileWideSquare.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\TileWideSquare1Image.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardViews\TileWideSquare5Images.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

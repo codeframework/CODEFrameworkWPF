@@ -1,0 +1,16 @@
+﻿namespace CODE.Framework.Wpf.Theme.Metro.StandardViews
+{
+    /// <summary>
+    /// Interaction logic for DataSmall03.xaml
+    /// </summary>
+    public partial class DataSmall03
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DataSmall03"/> class.
+        /// </summary>
+        public DataSmall03()
+        {
+            InitializeComponent();
+        }
+    }
+}
