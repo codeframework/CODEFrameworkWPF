@@ -1,0 +1,20 @@
+﻿CODE.Framework.Wpf.Theme.Vapor
+5.0.0.0
+
+library
+C#
+.cs
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Vapor\obj\Debug\net5.0-windows\
+CODE.Framework.Wpf.Theme.Vapor
+none
+false
+TRACE;DEBUG;NET;NET5_0;NETCOREAPP
+
+41688430389
+
+52040782843
+195550311368
+Colors.xaml;Fonts.xaml;Standard\LargeImage.xaml;Standard\Notification.xaml;ThemeRoot.xaml;Vapor-Control-Button.xaml;Vapor-Control-CapsLockWarning.xaml;Vapor-Control-CheckBox.xaml;Vapor-Control-ComboBox.xaml;Vapor-Control-FlowDocumentReader.xaml;Vapor-Control-Label.xaml;Vapor-Control-ListBox.xaml;Vapor-Control-Menu.xaml;Vapor-Control-PasswordBox.xaml;Vapor-Control-RadioButton.xaml;Vapor-Control-ScrollBar.xaml;Vapor-Control-TabControl.xaml;Vapor-Control-TextBlock.xaml;Vapor-Control-TextBox.xaml;Vapor-Icon-Standard.xaml;Vapor-Layout-BladePanel.xaml;Vapor-Layout-EditForm.xaml;Vapor-Layout-FlowForm.xaml;Vapor-Layout-MultiPanel.xaml;Vapor-Layout-OneToManyPanel.xaml;Vapor-Layout-PrimarySecondaryForm.xaml;Vapor-Layout-SimpleForm.xaml;Vapor-Layout-StandardForm.xaml;Vapor-Layout-Tabs.xaml;Vapor-MessageBox-Icon-Asterisk.xaml;Vapor-MessageBox-Icon-Error.xaml;Vapor-MessageBox-Icon-Exclamation.xaml;Vapor-MessageBox-Icon-Hand.xaml;Vapor-MessageBox-Icon-Information.xaml;Vapor-MessageBox-Icon-Question.xaml;Vapor-MessageBox-Icon-Stop.xaml;Vapor-MessageBox-Icon-Warning.xaml;Vapor-Print.xaml;Vapor-Shell.xaml;Vapor-StandardDataTemplates.xaml;Vapor-StandardTypes.xaml;
+
+False
+
