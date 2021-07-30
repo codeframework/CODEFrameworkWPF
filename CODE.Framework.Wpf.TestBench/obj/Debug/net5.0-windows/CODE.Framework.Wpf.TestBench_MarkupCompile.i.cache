@@ -16,5 +16,5 @@ C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.TestBench\App.x
 203207387826
 AsyncTest.xaml;AutoCompleteTest.xaml;BiStackTest.xaml;BiStackTest2.xaml;BiStackTest3.xaml;BladeTest.xaml;ButtonMenuTest.xaml;CalendarTest.xaml;CanExecuteChangedTest.xaml;CapsLockTest.xaml;ColumnComboBox.xaml;ColumnListBox.xaml;CustomBehaviorWindow.xaml;Disclaimer.xaml;DockContainerTest.xaml;EditFormTest.xaml;EventCommandTest.xaml;ExampleListInRibbon.xaml;FileIcon.xaml;FlowDocumentReaderTest.xaml;FlowFormTest.xaml;FolderIcon.xaml;FontControls.xaml;LazyList.xaml;ListBoxGrid.xaml;ListBoxGridReadOnly.xaml;ListDependencyProperties.xaml;MainWindow.xaml;MetroControls.xaml;MetroListBoxes.xaml;MultiPanelTest.xaml;ObjectHelperTest.xaml;PanelSizeAndVisibilityTest.xaml;PanoramaTest.xaml;PrimarySecondaryHorizontalTest.xaml;ProgressAnimations.xaml;PropertySheetTest.xaml;RangeSliderTest.xaml;RibbonTest.xaml;SaveWindowSettingsTest.xaml;ScaleSliderTest.xaml;SizeAwareContentTest.xaml;SizeCalcEx.xaml;SliderTest.xaml;SpellCheck.xaml;StandardIcons.xaml;StickyNoteTest.xaml;SyncCollectionTest.xaml;SystemMetricsTests.xaml;TabItemsPanelTest.xaml;TextBlockExTest.xaml;TextBoxTest.xaml;TreeViewTest.xaml;ViewActionItemsControlTest.xaml;ViewActionMenuTest.xaml;
 
-False
+True
 

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<Language>preview</Language>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\CODE.Framework.Wpf.Theme.Battleship\CODE.Framework.Wpf.Theme.Battleship.csproj" />
+		<ProjectReference Include="..\CODE.Framework.Wpf.Theme.Geek\CODE.Framework.Wpf.Theme.Geek.csproj" />
+		<ProjectReference Include="..\CODE.Framework.Wpf.Theme.Metro\CODE.Framework.Wpf.Theme.Metro.csproj" />
+		<ProjectReference Include="..\CODE.Framework.Wpf.Theme.Universe\CODE.Framework.Wpf.Theme.Universe.csproj" />
+		<ProjectReference Include="..\CODE.Framework.Wpf.Theme.Vapor\CODE.Framework.Wpf.Theme.Vapor.csproj" />
+		<ProjectReference Include="..\CODE.Framework.Wpf.Theme.Wildcat\CODE.Framework.Wpf.Theme.Wildcat.csproj" />
+		<ProjectReference Include="..\CODE.Framework.Wpf.Theme.Worlplace\CODE.Framework.Wpf.Theme.Workplace.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Page Update="Views\User\Login.xaml">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </Page>
+	</ItemGroup>
+
+</Project>

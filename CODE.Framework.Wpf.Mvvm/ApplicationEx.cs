@@ -31,15 +31,14 @@ namespace CODE.Framework.Wpf.Mvvm
 
         static ApplicationEx()
         {
-            // TODO: Add the themes back in
             RegisterTheme("battleship", "pack://application:,,,/CODE.Framework.Wpf.Theme.Battleship;component/ThemeRoot.xaml");
-            //RegisterTheme("geek", "pack://application:,,,/CODE.Framework.Wpf.Theme.Geek;component/ThemeRoot.xaml");
-            //RegisterTheme("metro", "pack://application:,,,/CODE.Framework.Wpf.Theme.Metro;component/ThemeRoot.xaml");
+            RegisterTheme("geek", "pack://application:,,,/CODE.Framework.Wpf.Theme.Geek;component/ThemeRoot.xaml");
+            RegisterTheme("metro", "pack://application:,,,/CODE.Framework.Wpf.Theme.Metro;component/ThemeRoot.xaml");
             //RegisterTheme("newsroom", "pack://application:,,,/CODE.Framework.Wpf.Theme.Newsroom;component/ThemeRoot.xaml");
-            //RegisterTheme("universe", "pack://application:,,,/CODE.Framework.Wpf.Theme.Universe;component/ThemeRoot.xaml");
-            //RegisterTheme("vapor", "pack://application:,,,/CODE.Framework.Wpf.Theme.Vapor;component/ThemeRoot.xaml");
-            //RegisterTheme("workplace", "pack://application:,,,/CODE.Framework.Wpf.Theme.Workplace;component/ThemeRoot.xaml");
-            //RegisterTheme("wildcat", "pack://application:,,,/CODE.Framework.Wpf.Theme.Wildcat;component/ThemeRoot.xaml");
+            RegisterTheme("universe", "pack://application:,,,/CODE.Framework.Wpf.Theme.Universe;component/ThemeRoot.xaml");
+            RegisterTheme("vapor", "pack://application:,,,/CODE.Framework.Wpf.Theme.Vapor;component/ThemeRoot.xaml");
+            RegisterTheme("workplace", "pack://application:,,,/CODE.Framework.Wpf.Theme.Workplace;component/ThemeRoot.xaml");
+            RegisterTheme("wildcat", "pack://application:,,,/CODE.Framework.Wpf.Theme.Wildcat;component/ThemeRoot.xaml");
         }
 
         /// <summary>Attached property to set application theme</summary>
