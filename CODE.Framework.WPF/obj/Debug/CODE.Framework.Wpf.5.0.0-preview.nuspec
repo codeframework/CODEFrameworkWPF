@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CODE.Framework.Wpf</id>
+    <version>5.0.0-preview</version>
+    <authors>Markus Egger Inc.</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://codeframework.io/</projectUrl>
+    <iconUrl>http://www.codemag.com/Images/Logos/CodeFramework_Small.png</iconUrl>
+    <description>Package Description</description>
+    <repository type="Git" url="https://github.com/CODEFramework" />
+    <dependencies>
+      <group targetFramework="net5.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net5.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf\bin\Debug\net5.0-windows\CODE.Framework.Wpf.dll" target="lib\net5.0-windows7.0\CODE.Framework.Wpf.dll" />
+  </files>
+</package>
