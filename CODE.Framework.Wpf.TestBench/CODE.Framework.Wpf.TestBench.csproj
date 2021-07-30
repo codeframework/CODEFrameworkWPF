@@ -5,6 +5,7 @@
 		<UseWPF>true</UseWPF>
 		<OutputType>WinExe</OutputType>
 		<LangVersion>preview</LangVersion>
+		<IsPublishable>False</IsPublishable>
 	</PropertyGroup>
 
 	<ItemGroup>
