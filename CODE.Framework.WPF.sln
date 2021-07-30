@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CODE.Framework.Wpf.Theme.Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CODE.Framework.Wpf.Theme.Metro", "CODE.Framework.Wpf.Theme.Metro\CODE.Framework.Wpf.Theme.Metro.csproj", "{C4A299ED-E76E-4CAB-BBEF-43447016BB5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CODE.Framework.Wpf.Theme.Universe", "CODE.Framework.Wpf.Theme.Universe\CODE.Framework.Wpf.Theme.Universe.csproj", "{1FD5A3F9-DB4C-4873-81FE-151B052FE8AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C4A299ED-E76E-4CAB-BBEF-43447016BB5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4A299ED-E76E-4CAB-BBEF-43447016BB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4A299ED-E76E-4CAB-BBEF-43447016BB5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FD5A3F9-DB4C-4873-81FE-151B052FE8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD5A3F9-DB4C-4873-81FE-151B052FE8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD5A3F9-DB4C-4873-81FE-151B052FE8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD5A3F9-DB4C-4873-81FE-151B052FE8AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
