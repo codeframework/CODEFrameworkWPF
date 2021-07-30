@@ -15,9 +15,15 @@
 		<RepositoryUrl>https://github.com/CODEFramework</RepositoryUrl>
 		<RepositoryType>Git</RepositoryType>
 		<PackageIconUrl>http://www.codemag.com/Images/Logos/CodeFramework_Small.png</PackageIconUrl>
-		<!--<PackageIcon>CodeFramework_Small.png</PackageIcon>-->
+		<PackageIcon>CODEFrameworkLogoSmall.png</PackageIcon>
 		<PackageProjectUrl>https://codeframework.io</PackageProjectUrl>
+		<Description>WPF features of CODE Framework. For more information, see https://codeframework.io</Description>
+		<Copyright>Markus Egger Inc.</Copyright>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="CODEFrameworkLogoSmall.png" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<Compile Update="Resources.Designer.cs">

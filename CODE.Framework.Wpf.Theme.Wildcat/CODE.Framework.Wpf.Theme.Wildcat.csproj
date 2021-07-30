@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net5.0-windows</TargetFramework>
@@ -15,9 +15,15 @@
 		<RepositoryUrl>https://github.com/CODEFramework</RepositoryUrl>
 		<RepositoryType>Git</RepositoryType>
 		<PackageIconUrl>http://www.codemag.com/Images/Logos/CodeFramework_Small.png</PackageIconUrl>
-		<!--<PackageIcon>CodeFramework_Small.png</PackageIcon>-->
+		<PackageIcon>CODEFrameworkLogoSmall.png</PackageIcon>
 		<PackageProjectUrl>https://codeframework.io</PackageProjectUrl>
+		<Description>Wildcat Theme for CODE Framework. For more information, see https://codeframework.io</Description>
+		<Copyright>Markus Egger Inc.</Copyright>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="CODEFrameworkLogoSmall.png" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\CODE.Framework.Wpf.Mvvm\CODE.Framework.Wpf.Mvvm.csproj" />
