@@ -1,0 +1,108 @@
+﻿<Window x:Class="CODE.Framework.Wpf.TestBench.StandardIcons"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mvvm="clr-namespace:CODE.Framework.Wpf.Mvvm;assembly=CODE.Framework.Wpf.Mvvm"
+        Title="Standard Icons" Height="800" Width="700">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Battleship;component/Battleship-Icon-Standard.xaml"/>-->
+                <!--<ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Geek;component/Geek-Icon-Standard.xaml"/>-->
+                <!--<ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Metro;component/Metro-Icon-Standard.xaml"/>-->
+                <!--<ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Newsroom;component/Newsroom-Icon-Standard.xaml"/>-->
+                <ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Universe;component/Universe-Icon-Standard.xaml"/>
+                <!--<ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Vapor;component/Vapor-Icon-Standard.xaml"/>-->
+                <!--<ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Wildcat;component/Wildcat-Icon-Standard.xaml"/>-->
+                <!--<ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Workplace;component/Workplace-Icon-Standard.xaml"/>-->
+            </ResourceDictionary.MergedDictionaries>
+
+            <SolidColorBrush x:Key="CODE.Framework-Metro-IconForegroundBrush" Color="White" />
+            <SolidColorBrush x:Key="CODE.Framework-Universe-IconForegroundBrush" Color="Black" />
+            <SolidColorBrush x:Key="CODE.Framework-Newsroom-IconForegroundBrush" Color="Black" />
+            <SolidColorBrush x:Key="CODE.Framework-Battleship-IconForegroundBrush" Color="Black" />
+            <SolidColorBrush x:Key="CODE.Framework-Vapor-IconForegroundBrush" Color="#C5C5C5" />
+            <SolidColorBrush x:Key="CODE.Framework-Vapor-IconForegroundBrush2" Color="#6D6F71" />
+            <SolidColorBrush x:Key="CODE.Framework-Wildcat-IconForegroundBrush1" Color="White"/>
+            <SolidColorBrush x:Key="CODE.Framework-Wildcat-IconForegroundBrush2" Color="#81FFFFFF"/>
+            <LinearGradientBrush x:Key="CODE.Framework-Wildcat-IconThemeBrush1" StartPoint="0,0" EndPoint="0,1">
+                <GradientStopCollection>
+                    <GradientStop Color="#E38C2D" Offset="0"/>
+                    <GradientStop Color="#C07519" Offset="1"/>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+            <LinearGradientBrush x:Key="CODE.Framework-Wildcat-IconThemeBrush2" StartPoint="0,0" EndPoint="0,1">
+                <GradientStopCollection>
+                    <GradientStop Color="#5F91BD" Offset="0"/>
+                    <GradientStop Color="#305B87" Offset="1"/>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+            <LinearGradientBrush x:Key="CODE.Framework-Wildcat-IconThemeBrush3" StartPoint="0,0" EndPoint="0,1">
+                <GradientStopCollection>
+                    <GradientStop Color="#B1A541" Offset="0"/>
+                    <GradientStop Color="#69620A" Offset="1"/>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+            <LinearGradientBrush x:Key="CODE.Framework-Wildcat-IconThemeBrush4" StartPoint="0,0" EndPoint="0,1">
+                <GradientStopCollection>
+                    <GradientStop Color="#D06860" Offset="0"/>
+                    <GradientStop Color="#924B45" Offset="1"/>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+            <LinearGradientBrush x:Key="CODE.Framework-Wildcat-IconThemeBrush5" StartPoint="0,0" EndPoint="0,1">
+                <GradientStopCollection>
+                    <GradientStop Color="#D1CD92" Offset="0"/>
+                    <GradientStop Color="#676037" Offset="1"/>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+            <LinearGradientBrush x:Key="CODE.Framework-Wildcat-IconThemeBrush6" StartPoint="0,0" EndPoint="0,1">
+                <GradientStopCollection>
+                    <GradientStop Color="#137582" Offset="0"/>
+                    <GradientStop Color="#003941" Offset="1"/>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+            <LinearGradientBrush x:Key="CODE.Framework-Wildcat-IconThemeBrush7" StartPoint="0,0" EndPoint="0,1">
+                <GradientStopCollection>
+                    <GradientStop Color="#8940C8" Offset="0"/>
+                    <GradientStop Color="#4F1D74" Offset="1"/>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Export to Image" Click="ExportToImage" Padding="10,4" Margin="5"/>
+            <Button Content="Create to CSS" Click="ExportToCss" Padding="10,4" Margin="5"/>
+            <Button Content="Create to JS" Click="ExportToOffsetJS" Padding="10,4" Margin="5"/>
+            <Button Content="Create All-Themes HTML Table" Click="CreateHtmlTable" Padding="10,4" Margin="5"/>
+            <mvvm:ThemeIcon Height="25" Width="25" Margin="10,0,0,0" StandardIcon="Accounts" />
+            <mvvm:ThemeIcon Height="25" Width="25" Margin="10,0,0,0" IconResourceKey="CODE.Framework-Icon-User" />
+            <mvvm:ThemeIcon Height="25" Width="25" Margin="10,0,0,0" IconResourceKey="yadayada" />
+        </StackPanel>
+        <ListBox x:Name="icons" Grid.Row="1" Margin="5" Background="CornflowerBlue">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="400" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <mvvm:ThemeIcon IconResourceKey="{Binding Name}" Height="36" Width="36" Margin="5" />
+                        <Rectangle Fill="{Binding Icon}" Height="36" Width="36" Margin="5" Grid.Column="1" />
+                        <TextBlock Text="{Binding Name}" VerticalAlignment="Center" Margin="10" Grid.Column="2" />
+                        <Button Margin="20,10,0,10" Padding="5,2" Content="Copy Icon" Click="Button_Click" Grid.Column="3" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+
+</Window>

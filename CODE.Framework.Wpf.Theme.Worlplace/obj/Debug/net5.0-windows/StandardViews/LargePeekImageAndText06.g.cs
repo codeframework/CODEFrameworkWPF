@@ -53,7 +53,7 @@ namespace CODE.Framework.Wpf.Theme.Workplace.StandardViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Worlplace;V5.0.0.0;component/standardviews/largepeekima" +
+            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Workplace;V5.0.0.0;component/standardviews/largepeekima" +
                     "geandtext06.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\StandardViews\LargePeekImageAndText06.xaml"

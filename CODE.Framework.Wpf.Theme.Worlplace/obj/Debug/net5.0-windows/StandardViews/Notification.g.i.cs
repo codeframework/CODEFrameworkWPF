@@ -55,7 +55,7 @@ namespace CODE.Framework.Wpf.Theme.Workplace.StandardViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Worlplace;V5.0.0.0;component/standardviews/notification" +
+            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Workplace;V5.0.0.0;component/standardviews/notification" +
                     ".xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\StandardViews\Notification.xaml"

@@ -171,11 +171,14 @@ namespace CODE.Framework.Wpf.Utilities
                                 var file = detail.Substring(at + 4);
                                 detail = detail.Substring(0, at);
                                 at = file.IndexOf(":line", StringComparison.Ordinal);
-                                var lineNumber = file.Substring(at + 6);
-                                file = file.Substring(0, at);
-                                sb.Append($"    {Resources.LineNumber}: {lineNumber} -- ");
-                                sb.Append($"{Resources.Method}: {detail} -- ");
-                                sb.Append($"{Resources.SourceFile}: {file}\r\n");
+                                if (at > -1)
+                                {
+                                    var lineNumber = file.Substring(at + 6);
+                                    file = file.Substring(0, at);
+                                    sb.Append($"    {Resources.LineNumber}: {lineNumber} -- ");
+                                    sb.Append($"{Resources.Method}: {detail} -- ");
+                                    sb.Append($"{Resources.SourceFile}: {file}\r\n");
+                                }
                             }
                             else
                             {

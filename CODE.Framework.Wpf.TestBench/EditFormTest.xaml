@@ -1,0 +1,117 @@
+﻿<Window x:Class="CODE.Framework.Wpf.TestBench.EditFormTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="clr-namespace:CODE.Framework.Wpf.Layout;assembly=CODE.Framework.Wpf"
+        xmlns:mvvm="clr-namespace:CODE.Framework.Wpf.Mvvm;assembly=CODE.Framework.Wpf.Mvvm" 
+        Title="EditFormTest" Height="800" Width="1400" MouseDoubleClick="Window_MouseDoubleClick">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Workplace;component/Workplace-Control-Calendar.xaml"/>
+                <ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Workplace;component/Workplace-Control-DatePicker.xaml"/>
+                <ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Workplace;component/Workplace-Control-TextBox.xaml"/>
+                <ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Workplace;component/Workplace-Control-ScrollBar.xaml"/>
+                <ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Workplace;component/Workplace-Icon-Standard.xaml"/>
+                <ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Workplace;component/Colors.xaml"/>
+                <ResourceDictionary Source="/CODE.Framework.Wpf.Theme.Workplace;component/Fonts.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <!--<Color x:Key="CODE.Framework-Application-ThemeColor1">DarkGray</Color>-->
+            <Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+                <Setter Property="Margin" Value="0" />
+                <Setter Property="Padding" Value="0" />
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <l:EditForm Margin="20" x:Name="edit1"
+                GroupHeaderFontSize="20"
+                GroupHeaderFontWeight="Light"
+                GroupHeaderForegroundBrush="DarkRed"
+                GroupHeaderTopSpacing="25"
+                GroupHeaderBottomSpacing="15"
+                GroupBackgroundBrush="#2532CD32"
+                GroupBorderBrush="{x:Null}"
+                GroupBorderWidth="0"
+                GroupBorderMargin="20,5"
+                RenderGroupBackground="True"
+                MinColumnSpacing="25"
+                MinEditControlLeftSpacing="10"
+                LabelPosition="Left"
+                VerticalSpacing="10"
+                ColumnSpacing="100"
+                LayoutElasticity="Layout">
+
+        <CheckBox mvvm:View.IsStandAloneEditControl="True">Check 1</CheckBox>
+        <CheckBox mvvm:View.IsStandAloneEditControl="True">Check 2</CheckBox>
+        <CheckBox mvvm:View.IsStandAloneEditControl="True">Check 3</CheckBox>
+        <!--<Label>Test</Label>
+        <CheckBox>Check 4</CheckBox>-->
+        <CheckBox mvvm:View.IsStandAloneEditControl="True">Check 5 long</CheckBox>
+        
+        <TextBlock mvvm:View.ColumnBreak="True">First Name:</TextBlock>
+        <TextBox mvvm:View.WidthEx="25" />
+        <TextBlock mvvm:View.IsStandAloneLabel="True">Stand-alone label...</TextBlock>
+        <Label>Middle Name:</Label>
+        <TextBox mvvm:View.WidthEx="25" />
+        <TextBlock>Last Name:</TextBlock>
+        <TextBox mvvm:View.WidthEx="25" />
+
+        <TextBlock mvvm:View.GroupBreak="True" mvvm:View.GroupTitle="Hidden Group" Visibility="Collapsed">Hidden 1:</TextBlock>
+        <TextBox mvvm:View.WidthEx="25" Visibility="Collapsed" />
+        <TextBlock Visibility="Collapsed">Hidden 2:</TextBlock>
+        <TextBox mvvm:View.WidthEx="25" Visibility="Collapsed" />
+
+        <TextBlock mvvm:View.GroupBreak="True" mvvm:View.GroupTitle="Phone Numbers">Phone 1:</TextBlock>
+        <TextBox mvvm:View.WidthEx="25" />
+        <TextBlock>Phone 2:</TextBlock>
+        <TextBox mvvm:View.WidthEx="25" />
+        <TextBlock>Phone 3:</TextBlock>
+        <TextBox mvvm:View.WidthEx="25" />
+
+        <TextBlock mvvm:View.GroupBreak="True" mvvm:View.GroupTitle="Address">Address:</TextBlock>
+        <TextBox mvvm:View.WidthEx="30" />
+        <TextBox mvvm:View.WidthEx="50" mvvm:View.IsStandAloneEditControl="True" />
+        <TextBlock>City, State, ZIP:</TextBlock>
+        <TextBox mvvm:View.WidthEx="20"/>
+        <TextBox mvvm:View.WidthEx="3" mvvm:View.FlowsWithPrevious="True"/>
+        <TextBox mvvm:View.WidthEx="5" mvvm:View.FlowsWithPrevious="True"/>
+
+        <TextBlock mvvm:View.ColumnBreak="True" mvvm:View.GroupTitle="Alternate Contact">First Name:</TextBlock>
+        <TextBox mvvm:View.WidthEx="20" />
+        <TextBlock>Last Name:</TextBlock>
+        <TextBox mvvm:View.WidthEx="20" />
+
+        <TextBlock mvvm:View.GroupBreak="True" mvvm:View.GroupTitle="More Numbers">Phone 1:</TextBlock>
+        <TextBox mvvm:View.WidthEx="15" />
+        <TextBlock>Phone 2:</TextBlock>
+        <TextBox mvvm:View.WidthEx="15" />
+
+        <TextBlock mvvm:View.GroupBreak="True" mvvm:View.GroupTitle="Phone Numbers">Phone 1:</TextBlock>
+        <TextBox mvvm:View.WidthEx="15" />
+
+        <TextBlock mvvm:View.ColumnBreak="True" mvvm:View.GroupTitle="Alternate Contact">First Name:</TextBlock>
+        <TextBox mvvm:View.WidthEx="20" />
+        <TextBlock>Middle Name:</TextBlock>
+        <TextBox mvvm:View.WidthEx="20" />
+        <TextBlock>Last Name:</TextBlock>
+        <TextBox mvvm:View.WidthEx="20" />
+
+        <TextBlock mvvm:View.GroupBreak="True" mvvm:View.GroupTitle="More Phone Numbers">Phone 1:</TextBlock>
+        <TextBox mvvm:View.WidthEx="15" />
+        <TextBlock>Phone 2:</TextBlock>
+        <TextBox mvvm:View.WidthEx="15" />
+
+        <TextBlock mvvm:View.GroupBreak="True">Phone 1:</TextBlock>
+        <TextBox mvvm:View.WidthEx="15" />
+        <TextBlock>Phone 1:</TextBlock>
+        <TextBox mvvm:View.WidthEx="15" />
+        <TextBlock>Phone 1:</TextBlock>
+        <TextBox mvvm:View.WidthEx="15" />
+
+        <TextBlock>Some Date:</TextBlock>
+        <DatePicker mvvm:View.WidthEx="15" />
+        <!--<TextBlock>Some Date:</TextBlock>
+        <Calendar/>-->
+    </l:EditForm>
+</Window>

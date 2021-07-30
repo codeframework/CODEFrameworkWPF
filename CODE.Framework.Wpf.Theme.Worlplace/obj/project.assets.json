@@ -59,9 +59,9 @@
   "project": {
     "version": "5.0.0-preview",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Worlplace.csproj",
-      "projectName": "CODE.Framework.Wpf.Theme.Worlplace",
-      "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Worlplace.csproj",
+      "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Workplace.csproj",
+      "projectName": "CODE.Framework.Wpf.Theme.Workplace",
+      "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Workplace.csproj",
       "packagesPath": "C:\\Users\\megge\\.nuget\\packages\\",
       "outputPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Worlplace\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AsyncTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AutoCompleteTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BiStackTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BiStackTest2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BiStackTest3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BladeTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ButtonMenuTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CalendarTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CanExecuteChangedTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CapsLockTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ColumnComboBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ColumnListBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CustomBehaviorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Disclaimer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DockContainerTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditFormTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventCommandTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ExampleListInRibbon.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FlowDocumentReaderTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FlowFormTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FontControls.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LazyList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ListBoxGrid.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ListBoxGridReadOnly.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ListDependencyProperties.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MetroControls.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MetroListBoxes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MultiPanelTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ObjectHelperTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PanelSizeAndVisibilityTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PanoramaTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PrimarySecondaryHorizontalTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProgressAnimations.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PropertySheetTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RangeSliderTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RibbonTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SaveWindowSettingsTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ScaleSliderTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SizeAwareContentTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SizeCalcEx.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SliderTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SpellCheck.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StandardIcons.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StickyNoteTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SyncCollectionTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SystemMetricsTests.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TabItemsPanelTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TextBlockExTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TextBoxTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TreeViewTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewActionItemsControlTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewActionMenuTest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AsyncTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AutoCompleteTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BiStackTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BiStackTest2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BiStackTest3.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BladeTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ButtonMenuTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CalendarTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CanExecuteChangedTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CapsLockTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ColumnComboBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ColumnListBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomBehaviorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Disclaimer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DockContainerTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditFormTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EventCommandTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ExampleListInRibbon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FileIcon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FlowDocumentReaderTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FlowFormTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FolderIcon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FontControls.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LazyList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListBoxGrid.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListBoxGridReadOnly.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListDependencyProperties.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MetroControls.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MetroListBoxes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MultiPanelTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ObjectHelperTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PanelSizeAndVisibilityTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PanoramaTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PrimarySecondaryHorizontalTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProgressAnimations.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PropertySheetTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RangeSliderTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RibbonTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SaveWindowSettingsTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ScaleSliderTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SizeAwareContentTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SizeCalcEx.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SliderTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SpellCheck.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StandardIcons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StickyNoteTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SyncCollectionTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SystemMetricsTests.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TabItemsPanelTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TextBlockExTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TextBoxTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TreeViewTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewActionItemsControlTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewActionMenuTest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

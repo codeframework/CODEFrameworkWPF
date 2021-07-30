@@ -1,0 +1,324 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0-windows7.0": {
+      "CODE.Framework.Wpf/5.0.0-preview": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CODE.Framework.Wpf.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CODE.Framework.Wpf.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "CODE.Framework.Wpf.Documents/5.0.0-preview": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CODE.Framework.Wpf": "5.0.0-preview"
+        },
+        "compile": {
+          "bin/placeholder/CODE.Framework.Wpf.Documents.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CODE.Framework.Wpf.Documents.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "CODE.Framework.Wpf.Mvvm/5.0.0-preview": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CODE.Framework.Wpf": "5.0.0-preview"
+        },
+        "compile": {
+          "bin/placeholder/CODE.Framework.Wpf.Mvvm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CODE.Framework.Wpf.Mvvm.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "CODE.Framework.Wpf.Theme.Battleship/5.0.0-preview": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+        },
+        "compile": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Battleship.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Battleship.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "CODE.Framework.Wpf.Theme.Geek/5.0.0-preview": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+        },
+        "compile": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Geek.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Geek.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "CODE.Framework.Wpf.Theme.Metro/5.0.0-preview": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+        },
+        "compile": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Metro.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Metro.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "CODE.Framework.Wpf.Theme.Universe/5.0.0-preview": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+        },
+        "compile": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Universe.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Universe.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "CODE.Framework.Wpf.Theme.Vapor/5.0.0-preview": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+        },
+        "compile": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Vapor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Vapor.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "CODE.Framework.Wpf.Theme.Wildcat/5.0.0-preview": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+        },
+        "compile": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Wildcat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Wildcat.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "CODE.Framework.Wpf.Theme.Workplace/5.0.0-preview": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+        },
+        "compile": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Workplace.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Workplace.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "CODE.Framework.Wpf/5.0.0-preview": {
+      "type": "project",
+      "path": "../CODE.Framework.Wpf/CODE.Framework.Wpf.csproj",
+      "msbuildProject": "../CODE.Framework.Wpf/CODE.Framework.Wpf.csproj"
+    },
+    "CODE.Framework.Wpf.Documents/5.0.0-preview": {
+      "type": "project",
+      "path": "../CODE.Framework.Wpf.Documents/CODE.Framework.Wpf.Documents.csproj",
+      "msbuildProject": "../CODE.Framework.Wpf.Documents/CODE.Framework.Wpf.Documents.csproj"
+    },
+    "CODE.Framework.Wpf.Mvvm/5.0.0-preview": {
+      "type": "project",
+      "path": "../CODE.Framework.Wpf.Mvvm/CODE.Framework.Wpf.Mvvm.csproj",
+      "msbuildProject": "../CODE.Framework.Wpf.Mvvm/CODE.Framework.Wpf.Mvvm.csproj"
+    },
+    "CODE.Framework.Wpf.Theme.Battleship/5.0.0-preview": {
+      "type": "project",
+      "path": "../CODE.Framework.Wpf.Theme.Battleship/CODE.Framework.Wpf.Theme.Battleship.csproj",
+      "msbuildProject": "../CODE.Framework.Wpf.Theme.Battleship/CODE.Framework.Wpf.Theme.Battleship.csproj"
+    },
+    "CODE.Framework.Wpf.Theme.Geek/5.0.0-preview": {
+      "type": "project",
+      "path": "../CODE.Framework.Wpf.Theme.Geek/CODE.Framework.Wpf.Theme.Geek.csproj",
+      "msbuildProject": "../CODE.Framework.Wpf.Theme.Geek/CODE.Framework.Wpf.Theme.Geek.csproj"
+    },
+    "CODE.Framework.Wpf.Theme.Metro/5.0.0-preview": {
+      "type": "project",
+      "path": "../CODE.Framework.Wpf.Theme.Metro/CODE.Framework.Wpf.Theme.Metro.csproj",
+      "msbuildProject": "../CODE.Framework.Wpf.Theme.Metro/CODE.Framework.Wpf.Theme.Metro.csproj"
+    },
+    "CODE.Framework.Wpf.Theme.Universe/5.0.0-preview": {
+      "type": "project",
+      "path": "../CODE.Framework.Wpf.Theme.Universe/CODE.Framework.Wpf.Theme.Universe.csproj",
+      "msbuildProject": "../CODE.Framework.Wpf.Theme.Universe/CODE.Framework.Wpf.Theme.Universe.csproj"
+    },
+    "CODE.Framework.Wpf.Theme.Vapor/5.0.0-preview": {
+      "type": "project",
+      "path": "../CODE.Framework.Wpf.Theme.Vapor/CODE.Framework.Wpf.Theme.Vapor.csproj",
+      "msbuildProject": "../CODE.Framework.Wpf.Theme.Vapor/CODE.Framework.Wpf.Theme.Vapor.csproj"
+    },
+    "CODE.Framework.Wpf.Theme.Wildcat/5.0.0-preview": {
+      "type": "project",
+      "path": "../CODE.Framework.Wpf.Theme.Wildcat/CODE.Framework.Wpf.Theme.Wildcat.csproj",
+      "msbuildProject": "../CODE.Framework.Wpf.Theme.Wildcat/CODE.Framework.Wpf.Theme.Wildcat.csproj"
+    },
+    "CODE.Framework.Wpf.Theme.Workplace/5.0.0-preview": {
+      "type": "project",
+      "path": "../CODE.Framework.Wpf.Theme.Worlplace/CODE.Framework.Wpf.Theme.Workplace.csproj",
+      "msbuildProject": "../CODE.Framework.Wpf.Theme.Worlplace/CODE.Framework.Wpf.Theme.Workplace.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0-windows7.0": [
+      "CODE.Framework.Wpf.Documents >= 5.0.0-preview",
+      "CODE.Framework.Wpf.Theme.Battleship >= 5.0.0-preview",
+      "CODE.Framework.Wpf.Theme.Geek >= 5.0.0-preview",
+      "CODE.Framework.Wpf.Theme.Metro >= 5.0.0-preview",
+      "CODE.Framework.Wpf.Theme.Universe >= 5.0.0-preview",
+      "CODE.Framework.Wpf.Theme.Vapor >= 5.0.0-preview",
+      "CODE.Framework.Wpf.Theme.Wildcat >= 5.0.0-preview",
+      "CODE.Framework.Wpf.Theme.Workplace >= 5.0.0-preview"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\megge\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.TestBench\\CODE.Framework.Wpf.TestBench.csproj",
+      "projectName": "CODE.Framework.Wpf.TestBench",
+      "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.TestBench\\CODE.Framework.Wpf.TestBench.csproj",
+      "packagesPath": "C:\\Users\\megge\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.TestBench\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\megge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/eps-software/_packaging/EPSPackages/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "projectReferences": {
+            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Documents\\CODE.Framework.Wpf.Documents.csproj": {
+              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Documents\\CODE.Framework.Wpf.Documents.csproj"
+            },
+            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj": {
+              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj"
+            },
+            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Geek\\CODE.Framework.Wpf.Theme.Geek.csproj": {
+              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Geek\\CODE.Framework.Wpf.Theme.Geek.csproj"
+            },
+            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Metro\\CODE.Framework.Wpf.Theme.Metro.csproj": {
+              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Metro\\CODE.Framework.Wpf.Theme.Metro.csproj"
+            },
+            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Universe\\CODE.Framework.Wpf.Theme.Universe.csproj": {
+              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Universe\\CODE.Framework.Wpf.Theme.Universe.csproj"
+            },
+            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Vapor\\CODE.Framework.Wpf.Theme.Vapor.csproj": {
+              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Vapor\\CODE.Framework.Wpf.Theme.Vapor.csproj"
+            },
+            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Wildcat\\CODE.Framework.Wpf.Theme.Wildcat.csproj": {
+              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Wildcat\\CODE.Framework.Wpf.Theme.Wildcat.csproj"
+            },
+            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Workplace.csproj": {
+              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Workplace.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0-windows7.0": {
+        "targetAlias": "net5.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.6.21355.2\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
