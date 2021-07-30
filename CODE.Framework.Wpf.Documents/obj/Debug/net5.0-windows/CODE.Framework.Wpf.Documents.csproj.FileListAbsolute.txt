@@ -1,0 +1,15 @@
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.csproj.AssemblyReference.cache
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.AssemblyInfoInputs.cache
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.AssemblyInfo.cs
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.csproj.CoreCompileInputs.cache
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.deps.json
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.dll
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\bin\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Documents.dll
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.pdb
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\bin\Debug\net5.0-windows\CODE.Framework.Wpf.dll
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\bin\Debug\net5.0-windows\CODE.Framework.Wpf.pdb
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.csproj.CopyComplete
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.dll
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\obj\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Documents.dll
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.pdb
