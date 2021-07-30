@@ -1,16 +1,26 @@
-<c:View xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-        xmlns:c="clr-namespace:CODE.Framework.Wpf.Mvvm;assembly=CODE.Framework.Wpf.Mvvm"
-        xmlns:Controls="clr-namespace:CODE.Framework.Wpf.Controls;assembly=CODE.Framework.Wpf"
+<m:View xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:m="clr-namespace:CODE.Framework.Wpf.Mvvm;assembly=CODE.Framework.Wpf.Mvvm"
+        xmlns:c="clr-namespace:CODE.Framework.Wpf.Controls;assembly=CODE.Framework.Wpf"
         Title="Login to access this application" 
-        IconResourceKey="CODE.Framework-Icon-Login"
-        Style="{DynamicResource CODE.Framework-Layout-SimpleFormLayout}">
+        StandardIcon="Login"
+        StandardLayout="SimpleForm">
 
     <Label>User Name</Label>
-    <TextBox ToolTip="Enter Your User Name" Text="{Binding UserName}" c:View.WidthEx="30" Controls:TextBoxEx.WatermarkText="User Name" />
+    <TextBox ToolTip="Enter Your User Name" 
+             Text="{Binding UserName}" 
+             m:View.WidthEx="50" 
+             c:TextBoxEx.WatermarkText="User Name" />
 
     <Label>Password</Label>
-    <PasswordBox ToolTip="Enter Your Password" Controls:PasswordBoxEx.Value="{Binding Password}" c:View.WidthEx="30" Controls:TextBoxEx.WatermarkText="Password" />
+    <PasswordBox ToolTip="Enter Your Password" 
+                 c:PasswordBoxEx.Value="{Binding Password}" 
+                 m:View.WidthEx="50" 
+                 c:TextBoxEx.WatermarkText="Password" />
 
+    <c:CapsLockWarning />
+    
+    <TextBlock>Note: In this sample app, you can log in with an empty user name and password.</TextBlock>
+    
     <!-- Note: The 2 buttons that show up in this UI are shown because they are defined as Actions in the LoginViewModel class. Actions are automatically picked up by default styles. -->
     
-</c:View>
+</m:View>
