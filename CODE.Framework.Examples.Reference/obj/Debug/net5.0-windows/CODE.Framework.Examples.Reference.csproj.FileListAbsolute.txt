@@ -1,0 +1,9 @@
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\User\Login.baml
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\App.baml
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\App.g.cs
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference_MarkupCompile.cache
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.g.resources
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.AssemblyInfoInputs.cache
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.AssemblyInfo.cs
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.csproj.CoreCompileInputs.cache

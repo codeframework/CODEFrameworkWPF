@@ -53,7 +53,7 @@ namespace CODE.Framework.Wpf.TestBench {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.TestBench;V1.0.0.0;component/slidertest.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.TestBench;component/slidertest.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\SliderTest.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
