@@ -65,10 +65,9 @@ namespace CODE.Framework.Wpf.Controls
             if (d is not Window window) return;
             if (!(bool)e.NewValue) return;
 
-            // TODO: Put this back!
-            //SettingsManager.RegisterSerializer<WindowPositionSettingsSerializer>();
-            //SettingsManager.LoadSettings(window);
-            //window.Closing += (s2, e2) => { SettingsManager.SaveSettings(window, serializerTypeFilter: typeof(WindowPositionSettingsSerializer), includeDerivedTypeFilterTypes: true); };
+            SettingsManager.RegisterSerializer<WindowPositionSettingsSerializer>();
+            SettingsManager.LoadSettings(window);
+            window.Closing += (s2, e2) => { SettingsManager.SaveSettings(window, serializerTypeFilter: typeof(WindowPositionSettingsSerializer), includeDerivedTypeFilterTypes: true); };
         }
 
         /// <summary>If set to true, the window can be dragged automatically by clicking in the background or header area</summary>

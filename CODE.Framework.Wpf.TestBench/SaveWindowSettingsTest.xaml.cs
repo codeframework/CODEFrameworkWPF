@@ -1,4 +1,7 @@
-﻿namespace CODE.Framework.Wpf.TestBench
+﻿using CODE.Framework.Wpf.Utilities;
+using System.Globalization;
+
+namespace CODE.Framework.Wpf.TestBench
 {
     /// <summary>
     /// Interaction logic for SaveWindowSettingsTest.xaml
@@ -13,11 +16,11 @@
             {
                 var mruGuid = Guid.NewGuid();
                 var data = new Dictionary<string, string> { { "User", "Test User" }, { "SomeOtherKey", Guid.NewGuid().ToString() } };
-                // TODO: SettingsManager.SaveMostRecentlyUsed("WindowUse", mruGuid.ToString(), "Window Usage: Timestamp " + DateTime.Now.ToString(CultureInfo.InvariantCulture) + " Id " + mruGuid, scope: SettingScope.Workstation, data: data);
+                SettingsManager.SaveMostRecentlyUsed("WindowUse", mruGuid.ToString(), "Window Usage: Timestamp " + DateTime.Now.ToString(CultureInfo.InvariantCulture) + " Id " + mruGuid, scope: SettingScope.Workstation, data: data);
             };
 
-            // TODO: var recentUses = SettingsManager.LoadMostRecentlyUsed("WindowUse", SettingScope.Workstation);
-            // TODO: mruList.ItemsSource = recentUses;
+            var recentUses = SettingsManager.LoadMostRecentlyUsed("WindowUse", SettingScope.Workstation);
+            mruList.ItemsSource = recentUses;
         }
     }
 }

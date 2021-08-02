@@ -1656,187 +1656,185 @@ namespace CODE.Framework.Wpf.Controls
         Number
     }
 
-    // TODO: Bring this back!
+    /// <summary>
+    /// This settings serializer can be used to serialize list column information
+    /// </summary>
+    /// <seealso cref="CODE.Framework.Core.Utilities.ISettingsSerializer" />
+    public class ListColumnsSettingsSerializer : ISettingsSerializer
+    {
+        /// <summary>
+        /// Serializes the state object and returns the state as JSON
+        /// </summary>
+        /// <param name="stateObject">Object to serialize</param>
+        /// <returns>State JSON</returns>
+        public string SerializeToJson(object stateObject)
+        {
+            if (!(stateObject is ListColumnsCollection columns)) return string.Empty;
 
-    ///// <summary>
-    ///// This settings serializer can be used to serialize list column information
-    ///// </summary>
-    ///// <seealso cref="CODE.Framework.Core.Utilities.ISettingsSerializer" />
-    //public class ListColumnsSettingsSerializer : ISettingsSerializer
-    //{
-    //    /// <summary>
-    //    /// Serializes the state object and returns the state as JSON
-    //    /// </summary>
-    //    /// <param name="stateObject">Object to serialize</param>
-    //    /// <returns>State JSON</returns>
-    //    public string SerializeToJson(object stateObject)
-    //    {
-    //        if (!(stateObject is ListColumnsCollection columns)) return string.Empty;
+            var jsonBuilder = new JsonBuilder();
 
-    //        var jsonBuilder = new JsonBuilder();
+            foreach (var column in columns)
+            {
+                var columnIdentifier = column.BindingPath;
+                if (string.IsNullOrEmpty(columnIdentifier))
+                    columnIdentifier = column.Header.ToString().Replace(" ", "");
+                if (string.IsNullOrEmpty(columnIdentifier))
+                    columnIdentifier = column.EditControlBindingPath;
+                if (string.IsNullOrEmpty(columnIdentifier))
+                    columnIdentifier = column.SortOrderBindingPath;
+                if (string.IsNullOrEmpty(columnIdentifier)) continue;
+                jsonBuilder.Append("Column-" + columnIdentifier + "-Width", column.Width);
+                jsonBuilder.Append("Column-" + columnIdentifier + "-SortOrder", column.SortOrder);
+            }
 
-    //        foreach (var column in columns)
-    //        {
-    //            var columnIdentifier = column.BindingPath;
-    //            if (string.IsNullOrEmpty(columnIdentifier))
-    //                columnIdentifier = column.Header.ToString().Replace(" ", "");
-    //            if (string.IsNullOrEmpty(columnIdentifier))
-    //                columnIdentifier = column.EditControlBindingPath;
-    //            if (string.IsNullOrEmpty(columnIdentifier))
-    //                columnIdentifier = column.SortOrderBindingPath;
-    //            if (string.IsNullOrEmpty(columnIdentifier)) continue;
-    //            jsonBuilder.Append("Column-" + columnIdentifier + "-Width", column.Width);
-    //            jsonBuilder.Append("Column-" + columnIdentifier + "-SortOrder", column.SortOrder);
-    //        }
+            var json = jsonBuilder.ToString();
+            return json;
+        }
 
-    //        var json = jsonBuilder.ToString();
-    //        return json;
-    //    }
+        /// <summary>
+        /// Deserializes the provides JSON state and updates the state object with the settings
+        /// </summary>
+        /// <param name="stateObject">Object to set the persisted state on.</param>
+        /// <param name="state">State information (JSON)</param>
+        public void DeserializeFromJson(object stateObject, string state)
+        {
+            var columns = stateObject as ListColumnsCollection;
+            if (columns == null) return;
+            if (string.IsNullOrEmpty(state)) return;
 
-    //    /// <summary>
-    //    /// Deserializes the provides JSON state and updates the state object with the settings
-    //    /// </summary>
-    //    /// <param name="stateObject">Object to set the persisted state on.</param>
-    //    /// <param name="state">State information (JSON)</param>
-    //    public void DeserializeFromJson(object stateObject, string state)
-    //    {
-    //        var columns = stateObject as ListColumnsCollection;
-    //        if (columns == null) return;
-    //        if (string.IsNullOrEmpty(state)) return;
+            // First, we need to see what all the columns are we have, what the order is, and whether we have to re-sort
+            var columnOrders = new List<string>();
+            JsonHelper.QuickParse(state, (n, v) =>
+            {
+                var nameParts = n.Split('-');
+                if (nameParts.Length != 3) return;
+                var columnIdentifier = nameParts[1];
+                if (!columnOrders.Contains(columnIdentifier)) columnOrders.Add(columnIdentifier);
+            });
+            var mustSort = false;
+            if (columns.Count != columnOrders.Count)
+                mustSort = true;
+            else
+                for (var columnCounter = 0; columnCounter < columns.Count; columnCounter++)
+                    if (columnOrders[columnCounter] != columns[columnCounter].BindingPath)
+                    {
+                        mustSort = true;
+                        break;
+                    }
 
-    //        // First, we need to see what all the columns are we have, what the order is, and whether we have to re-sort
-    //        var columnOrders = new List<string>();
-    //        JsonHelper.QuickParse(state, (n, v) =>
-    //        {
-    //            var nameParts = n.Split('-');
-    //            if (nameParts.Length != 3) return;
-    //            var columnIdentifier = nameParts[1];
-    //            if (!columnOrders.Contains(columnIdentifier)) columnOrders.Add(columnIdentifier);
-    //        });
-    //        var mustSort = false;
-    //        if (columns.Count != columnOrders.Count)
-    //            mustSort = true;
-    //        else
-    //            for (var columnCounter = 0; columnCounter < columns.Count; columnCounter++)
-    //                if (columnOrders[columnCounter] != columns[columnCounter].BindingPath)
-    //                {
-    //                    mustSort = true;
-    //                    break;
-    //                }
+            if (mustSort)
+            {
+                var tempCollection = new List<ListColumn>();
+                tempCollection.AddRange(columns);
+                columns.Clear();
 
-    //        if (mustSort)
-    //        {
-    //            var tempCollection = new List<ListColumn>();
-    //            tempCollection.AddRange(columns);
-    //            columns.Clear();
+                // We add all the columns we have in the ordered source
+                foreach (var columnIdentifier in columnOrders)
+                {
+                    var column = tempCollection.FirstOrDefault(c => c.BindingPath == columnIdentifier);
+                    if (column == null)
+                        column = tempCollection.FirstOrDefault(c => c.Header.ToString() == columnIdentifier);
+                    if (column == null)
+                        column = tempCollection.FirstOrDefault(c => c.EditControlBindingPath == columnIdentifier);
+                    if (column == null)
+                        column = tempCollection.FirstOrDefault(c => c.SortOrderBindingPath == columnIdentifier);
+                    if (column != null) columns.Add(column);
+                }
 
-    //            // We add all the columns we have in the ordered source
-    //            foreach (var columnIdentifier in columnOrders)
-    //            {
-    //                var column = tempCollection.FirstOrDefault(c => c.BindingPath == columnIdentifier);
-    //                if (column == null)
-    //                    column = tempCollection.FirstOrDefault(c => c.Header.ToString() == columnIdentifier);
-    //                if (column == null)
-    //                    column = tempCollection.FirstOrDefault(c => c.EditControlBindingPath == columnIdentifier);
-    //                if (column == null)
-    //                    column = tempCollection.FirstOrDefault(c => c.SortOrderBindingPath == columnIdentifier);
-    //                if (column != null) columns.Add(column);
-    //            }
+                // We remove all the columns we already used from the ordered source
+                foreach (var column in columns)
+                    if (tempCollection.Contains(column))
+                        tempCollection.Remove(column);
+                // If there are any unused columns left, we add them add the end (this could happen if the column collection is different now from what it was when the state was saved)
+                foreach (var column in tempCollection) columns.Add(column);
+            }
 
-    //            // We remove all the columns we already used from the ordered source
-    //            foreach (var column in columns)
-    //                if (tempCollection.Contains(column))
-    //                    tempCollection.Remove(column);
-    //            // If there are any unused columns left, we add them add the end (this could happen if the column collection is different now from what it was when the state was saved)
-    //            foreach (var column in tempCollection) columns.Add(column);
-    //        }
+            // We are now ready to set individual settings on the columns
+            JsonHelper.QuickParse(state, (n, v) =>
+            {
+                var nameParts = n.Split('-');
+                if (nameParts.Length != 3) return;
+                var columnIdentifier = nameParts[1];
+                var column = columns.FirstOrDefault(c => c.BindingPath == columnIdentifier);
+                if (column == null)
+                    column = columns.FirstOrDefault(c => c.Header.ToString() == columnIdentifier);
+                if (column == null)
+                    column = columns.FirstOrDefault(c => c.EditControlBindingPath == columnIdentifier);
+                if (column == null)
+                    column = columns.FirstOrDefault(c => c.SortOrderBindingPath == columnIdentifier);
+                if (column != null)
+                    switch (nameParts[2])
+                    {
+                        case "Width":
 
-    //        // We are now ready to set individual settings on the columns
-    //        JsonHelper.QuickParse(state, (n, v) =>
-    //        {
-    //            var nameParts = n.Split('-');
-    //            if (nameParts.Length != 3) return;
-    //            var columnIdentifier = nameParts[1];
-    //            var column = columns.FirstOrDefault(c => c.BindingPath == columnIdentifier);
-    //            if (column == null)
-    //                column = columns.FirstOrDefault(c => c.Header.ToString() == columnIdentifier);
-    //            if (column == null)
-    //                column = columns.FirstOrDefault(c => c.EditControlBindingPath == columnIdentifier);
-    //            if (column == null)
-    //                column = columns.FirstOrDefault(c => c.SortOrderBindingPath == columnIdentifier);
-    //            if (column != null)
-    //                switch (nameParts[2])
-    //                {
-    //                    case "Width":
+                            if (v.EndsWith("*"))
+                                if (v.Length == 1)
+                                {
+                                    column.Width = new GridLength(1, GridUnitType.Star);
+                                }
+                                else
+                                {
+                                    var v2 = v.Substring(0, v.Length - 1);
+                                    SafeDoubleParse(v2, d => { column.Width = new GridLength(d, GridUnitType.Star); });
+                                }
+                            else if (v.ToLower() == "auto")
+                                column.Width = new GridLength(1, GridUnitType.Auto);
+                            else
+                                SafeDoubleParse(v, d => { column.Width = new GridLength(d); });
 
-    //                        if (v.EndsWith("*"))
-    //                            if (v.Length == 1)
-    //                            {
-    //                                column.Width = new GridLength(1, GridUnitType.Star);
-    //                            }
-    //                            else
-    //                            {
-    //                                var v2 = v.Substring(0, v.Length - 1);
-    //                                SafeDoubleParse(v2, d => { column.Width = new GridLength(d, GridUnitType.Star); });
-    //                            }
-    //                        else if (v.ToLower() == "auto")
-    //                            column.Width = new GridLength(1, GridUnitType.Auto);
-    //                        else
-    //                            SafeDoubleParse(v, d => { column.Width = new GridLength(d); });
+                            break;
 
-    //                        break;
+                        case "SortOrder":
+                            switch (v)
+                            {
+                                case "0":
+                                case "Unsorted":
+                                    if (column.SortOrder != SortOrder.Unsorted) column.SortOrder = SortOrder.Unsorted;
+                                    break;
+                                case "1":
+                                case "Ascending":
+                                    if (column.SortOrder != SortOrder.Ascending) column.SortOrder = SortOrder.Ascending;
+                                    break;
+                                case "2":
+                                case "Descending":
+                                    if (column.SortOrder != SortOrder.Descending) column.SortOrder = SortOrder.Descending;
+                                    break;
+                            }
 
-    //                    case "SortOrder":
-    //                        switch (v)
-    //                        {
-    //                            case "0":
-    //                            case "Unsorted":
-    //                                if (column.SortOrder != SortOrder.Unsorted) column.SortOrder = SortOrder.Unsorted;
-    //                                break;
-    //                            case "1":
-    //                            case "Ascending":
-    //                                if (column.SortOrder != SortOrder.Ascending) column.SortOrder = SortOrder.Ascending;
-    //                                break;
-    //                            case "2":
-    //                            case "Descending":
-    //                                if (column.SortOrder != SortOrder.Descending) column.SortOrder = SortOrder.Descending;
-    //                                break;
-    //                        }
+                            break;
+                    }
+            });
+        }
 
-    //                        break;
-    //                }
-    //        });
-    //    }
+        private static void SafeDoubleParse(string value, Action<double> callback)
+        {
+            if (double.TryParse(value, out var realValue))
+                callback(realValue);
+        }
 
-    //    private static void SafeDoubleParse(string value, Action<double> callback)
-    //    {
-    //        if (double.TryParse(value, out var realValue))
-    //            callback(realValue);
-    //    }
+        /// <summary>
+        /// Returns true if the provided serializer can handle the object in question
+        /// </summary>
+        /// <param name="stateObject">Object containing the state</param>
+        /// <param name="id">ID of the setting that is to be persisted</param>
+        /// <param name="scope">Scope of the setting</param>
+        /// <returns>True if the serializer can handle the provided object</returns>
+        public bool CanHandle(object stateObject, string id, SettingScope scope) => stateObject is ListColumnsCollection;
 
-    //    /// <summary>
-    //    /// Returns true if the provided serializer can handle the object in question
-    //    /// </summary>
-    //    /// <param name="stateObject">Object containing the state</param>
-    //    /// <param name="id">ID of the setting that is to be persisted</param>
-    //    /// <param name="scope">Scope of the setting</param>
-    //    /// <returns>True if the serializer can handle the provided object</returns>
-    //    public bool CanHandle(object stateObject, string id, SettingScope scope) => stateObject is ListColumnsCollection;
+        /// <summary>
+        /// Can be used to suggest a file name for the setting, in case the handler is file-based
+        /// </summary>
+        /// <param name="stateObject">Object containing the state</param>
+        /// <param name="id">ID of the setting that is to be persisted</param>
+        /// <param name="scope">Scope of the setting</param>
+        /// <returns>File name, or string.Empty if no default is suggested</returns>
+        public string GetSuggestedFileName(object stateObject, string id, SettingScope scope) => id + ".ListColumns.json";
 
-    //    /// <summary>
-    //    /// Can be used to suggest a file name for the setting, in case the handler is file-based
-    //    /// </summary>
-    //    /// <param name="stateObject">Object containing the state</param>
-    //    /// <param name="id">ID of the setting that is to be persisted</param>
-    //    /// <param name="scope">Scope of the setting</param>
-    //    /// <returns>File name, or string.Empty if no default is suggested</returns>
-    //    public string GetSuggestedFileName(object stateObject, string id, SettingScope scope) => id + ".ListColumns.json";
-
-    //    /// <summary>
-    //    /// If set to true, this serializer will be invoked, even if other serializers have already
-    //    /// handled the process
-    //    /// </summary>
-    //    /// <value>True or False</value>
-    //    public bool UseInAdditionToOtherAppliedSerializers => true;
-    //}
+        /// <summary>
+        /// If set to true, this serializer will be invoked, even if other serializers have already
+        /// handled the process
+        /// </summary>
+        /// <value>True or False</value>
+        public bool UseInAdditionToOtherAppliedSerializers => true;
+    }
 }

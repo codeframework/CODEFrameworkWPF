@@ -46,23 +46,22 @@ namespace CODE.Framework.Wpf.Mvvm
         static Shell()
         {
             // Just doing this once. We want to help out the settings manager by providing more granular name resolution for windows that contain view models.
-            // TODO: Bring this back!
-            //SettingsManager.ResolveSettingId += (id, stateObject) =>
-            //{
-            //    if (stateObject is Window window)
-            //    {
-            //        var viewResult = GetViewResult(window);
-            //        if (viewResult != null)
-            //        {
-            //            id = viewResult.ViewSource;
-            //            id = id.Replace("XAML Resource: ", "");
-            //            id = id.Replace("/", "-");
-            //            if (id.StartsWith("-"))
-            //                id = id.Substring(1);
-            //        }
-            //    }
-            //    return id;
-            //};
+            SettingsManager.ResolveSettingId += (id, stateObject) =>
+            {
+                if (stateObject is Window window)
+                {
+                    var viewResult = GetViewResult(window);
+                    if (viewResult != null)
+                    {
+                        id = viewResult.ViewSource;
+                        id = id.Replace("XAML Resource: ", "");
+                        id = id.Replace("/", "-");
+                        if (id.StartsWith("-"))
+                            id = id.Substring(1);
+                    }
+                }
+                return id;
+            };
         }
 
         /// <summary>

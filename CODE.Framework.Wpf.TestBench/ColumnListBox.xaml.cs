@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using CODE.Framework.Wpf.Controls;
+using CODE.Framework.Wpf.Utilities;
 
 namespace CODE.Framework.Wpf.TestBench
 {
@@ -17,7 +18,7 @@ namespace CODE.Framework.Wpf.TestBench
             list.ItemsSource = model.OtherModels;
             model.SelectedModel = model.OtherModels[2];
 
-            // TODO: Closing += (s, e) => { SettingsManager.SaveSettings(ListEx.GetColumns(list)); };
+            Closing += (s, e) => { SettingsManager.SaveSettings(ListEx.GetColumns(list)); };
         }
 
         private void ToggleColumnC2(object sender, RoutedEventArgs e) => c2.Visibility = c2.Visibility != Visibility.Visible ? Visibility.Visible : Visibility.Collapsed;

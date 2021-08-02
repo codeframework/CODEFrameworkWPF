@@ -39,16 +39,15 @@ namespace CODE.Framework.Wpf.TestBench
         {
             var invoice = new Invoice();
             invoice.FirstName = "©®™";
-            // TODO: var json = JsonHelper.SerializeToRestJson(invoice, true);
-            // TODO: MessageBox.Show(json);
-
-            // TODO: var invoice2 = JsonHelper.DeserializeFromRestJson<Invoice>(json);
+            var json = JsonHelper.SerializeToRestJson(invoice, true);
+            MessageBox.Show(json);
+            var invoice2 = JsonHelper.DeserializeFromRestJson<Invoice>(json);
         }
 
         private void GetDateJson(object sender, RoutedEventArgs e)
         {
-            // TODO: var json = JsonHelper.SerializeToRestJson(DateTimeOffset.Now);
-            // TODO: MessageBox.Show(json);
+            var json = JsonHelper.SerializeToRestJson(DateTimeOffset.Now);
+            MessageBox.Show(json);
         }
     }
 

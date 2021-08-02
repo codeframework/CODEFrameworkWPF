@@ -2,7 +2,7 @@
 
 namespace CODE.Framework.Example.Reference.Models.User
 {
-    // TODO: Implement real user logic here
+    // Implement real user logic here
 
     /// <summary>
     /// Custom user object for this application
@@ -13,12 +13,8 @@ namespace CODE.Framework.Example.Reference.Models.User
         /// Constructor
         /// </summary>
         /// <param name="username">Name of the logged in user</param>
-        public CODEFrameworkUser(string username)
-        {
-            Name = username;
-            AuthenticationType = "Custom";
-            IsAuthenticated = true;
-        }
+        public CODEFrameworkUser(string username) => Name = username;
+
         /// <summary>
         /// Gets the name of the current user.
         /// </summary>
@@ -33,7 +29,7 @@ namespace CODE.Framework.Example.Reference.Models.User
         /// <returns>
         /// The type of authentication used to identify the user.
         /// </returns>
-        public string AuthenticationType { get; private set; }
+        public string AuthenticationType { get; private set; } = "Custom";
 
         /// <summary>
         /// Gets a value that indicates whether the user has been authenticated.
@@ -41,7 +37,7 @@ namespace CODE.Framework.Example.Reference.Models.User
         /// <returns>
         /// true if the user was authenticated; otherwise, false.
         /// </returns>
-        public bool IsAuthenticated { get; private set; }
+        public bool IsAuthenticated { get; private set; } = true;
     }
 
     /// <summary>
@@ -53,10 +49,7 @@ namespace CODE.Framework.Example.Reference.Models.User
         /// Consturctor
         /// </summary>
         /// <param name="user">Ordico user</param>
-        public CODEFrameworkPrincipal(CODEFrameworkUser user)
-        {
-            Identity = user;
-        }
+        public CODEFrameworkPrincipal(CODEFrameworkUser user) => Identity = user;
 
         /// <summary>
         /// Determines whether the current principal belongs to the specified role.
@@ -67,8 +60,7 @@ namespace CODE.Framework.Example.Reference.Models.User
         /// <param name="role">The name of the role for which to check membership. </param>
         public bool IsInRole(string role)
         {
-            // TODO: implement this for real by detirmining which roles the user is in
-
+            // Implement this for real by detirmining which roles the user is in
             return false;
         }
 

@@ -23,7 +23,8 @@ namespace CODE.Framework.Example.Reference.Models.User
 
         private void Login(IViewAction action, object parameter)
         {
-            // TODO: Perform actual user login here
+            // Perform actual user login here
+
             _loginTriggered = true;
             AppDomain.CurrentDomain.SetThreadPrincipal(new CODEFrameworkPrincipal(new CODEFrameworkUser(UserName)));
 
