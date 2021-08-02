@@ -6,4 +6,27 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\Customer\List.Battleship.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Customer\List.Geek.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Customer\List.Metro.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Customer\List.Universe.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Customer\List.Vapor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Customer\List.Workplace.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Customer\List.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
 </Project>

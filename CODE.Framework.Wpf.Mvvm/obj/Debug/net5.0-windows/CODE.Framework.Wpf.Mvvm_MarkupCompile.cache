@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 
-1-1292808874
+3-808533349
 
 37-1091667288
 194-6687428
-Tools\ViewVisualizer.xaml;
+List.Universe.xaml;List.Wildcat.xaml;Tools\ViewVisualizer.xaml;
 
 False
 

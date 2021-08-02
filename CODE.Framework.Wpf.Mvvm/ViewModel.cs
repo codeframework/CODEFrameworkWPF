@@ -1,5 +1,6 @@
 ﻿using System.Collections.Specialized;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace CODE.Framework.Wpf.Mvvm
 {
@@ -39,7 +40,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// Can be used to indicate a property changed
         /// </summary>
         /// <param name="propertyName">Name of the changed property (or empty string to indicate a refresh of all properties)</param>
-        protected virtual void NotifyChanged(string propertyName = "")
+        protected virtual void NotifyChanged([CallerMemberName] string propertyName = null)
         {
             var handler = PropertyChanged;
             if (handler != null)

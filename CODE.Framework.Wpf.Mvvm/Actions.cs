@@ -2318,6 +2318,27 @@ namespace CODE.Framework.Wpf.Mvvm
     }
 
     /// <summary>
+    /// If this interface is implemented, objects (typically view-models) support a standardized search mechanism
+    /// </summary>
+    public interface ISearchable
+    {
+        /// <summary>
+        /// Text-based search
+        /// </summary>
+        string SearchText { get; set; }
+
+        /// <summary>
+        /// Action used to trigger the search
+        /// </summary>
+        ViewAction Search { get; }
+
+        /// <summary>
+        /// Action used to trigger clearing of current search results
+        /// </summary>
+        ViewAction ClearSearch { get; }
+    }
+
+    /// <summary>
     /// This class provides attached property related to the IClosable interface
     /// </summary>
     /// <seealso cref="System.Windows.DependencyObject" />

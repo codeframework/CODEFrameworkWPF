@@ -19,3 +19,5 @@ C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\obj\Debug\
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.dll
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Mvvm.dll
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.pdb
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\List.Wildcat.baml
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\List.Universe.baml

@@ -7,6 +7,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="List.Wildcat.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Tools\ViewVisualizer.xaml">
       <SubType>Designer</SubType>
     </Page>

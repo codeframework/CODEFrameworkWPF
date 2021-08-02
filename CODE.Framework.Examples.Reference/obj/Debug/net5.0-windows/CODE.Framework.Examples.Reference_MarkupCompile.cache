@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\App.xaml
-1411347102
+81250819129
 
-8-419167255
+10-2121509550
 202-1453133185
-Views\User\Login.xaml;
+Views\Customer\List.Battleship.xaml;Views\Customer\List.Geek.xaml;Views\Customer\List.Metro.xaml;Views\Customer\List.Universe.xaml;Views\Customer\List.Vapor.xaml;Views\Customer\List.Workplace.xaml;Views\Customer\List.xaml;Views\User\Login.xaml;
 
 False
 

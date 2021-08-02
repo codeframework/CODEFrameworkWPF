@@ -38,3 +38,10 @@ C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\ref\CODE.Framework.Examples.Reference.dll
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.pdb
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.genruntimeconfig.cache
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.baml
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Workplace.baml
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Battleship.baml
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Geek.baml
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Metro.baml
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Universe.baml
+C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Vapor.baml
