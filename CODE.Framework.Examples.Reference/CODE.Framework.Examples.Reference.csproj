@@ -27,27 +27,27 @@
 		</Page>
 		<Page Update="Views\Customer\List.Battleship.xaml">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
-			<DependentUpon>Views\Customer\List.xaml</DependentUpon>
+			<DependentUpon>List.xaml</DependentUpon>
 		</Page>
 		<Page Update="Views\Customer\List.Geek.xaml">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
-			<DependentUpon>Views\Customer\List.xaml</DependentUpon>
+			<DependentUpon>List.xaml</DependentUpon>
 		</Page>
 		<Page Update="Views\Customer\List.Metro.xaml">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
-			<DependentUpon>Views\Customer\List.xaml</DependentUpon>
+			<DependentUpon>List.xaml</DependentUpon>
 		</Page>
 		<Page Update="Views\Customer\List.Universe.xaml">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
-			<DependentUpon>Views\Customer\List.xaml</DependentUpon>
+			<DependentUpon>List.xaml</DependentUpon>
 		</Page>
 		<Page Update="Views\Customer\List.Vapor.xaml">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
-			<DependentUpon>Views\Customer\List.xaml</DependentUpon>
+			<DependentUpon>List.xaml</DependentUpon>
 		</Page>
 		<Page Update="Views\Customer\List.Workplace.xaml">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
-			<DependentUpon>Views\Customer\List.xaml</DependentUpon>
+			<DependentUpon>List.xaml</DependentUpon>
 		</Page>
 	</ItemGroup>
 
