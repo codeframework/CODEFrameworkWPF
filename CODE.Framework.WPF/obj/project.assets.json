@@ -13,7 +13,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "5.0.0-preview",
+    "version": "5.0.0",
     "restore": {
       "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj",
       "projectName": "CODE.Framework.Wpf",

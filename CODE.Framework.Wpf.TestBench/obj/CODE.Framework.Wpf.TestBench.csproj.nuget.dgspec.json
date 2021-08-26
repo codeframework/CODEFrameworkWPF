@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Documents\\CODE.Framework.Wpf.Documents.csproj": {
-      "version": "5.0.0-preview",
+      "version": "5.0.0",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Documents\\CODE.Framework.Wpf.Documents.csproj",
         "projectName": "CODE.Framework.Wpf.Documents",
@@ -72,7 +72,7 @@
       }
     },
     "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj": {
-      "version": "5.0.0-preview",
+      "version": "5.0.0",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj",
         "projectName": "CODE.Framework.Wpf.Mvvm",
@@ -233,7 +233,7 @@
       }
     },
     "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj": {
-      "version": "5.0.0-preview",
+      "version": "5.0.0",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj",
         "projectName": "CODE.Framework.Wpf.Theme.Battleship",
@@ -300,7 +300,7 @@
       }
     },
     "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Geek\\CODE.Framework.Wpf.Theme.Geek.csproj": {
-      "version": "5.0.0-preview",
+      "version": "5.0.0",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Geek\\CODE.Framework.Wpf.Theme.Geek.csproj",
         "projectName": "CODE.Framework.Wpf.Theme.Geek",
@@ -367,7 +367,7 @@
       }
     },
     "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Metro\\CODE.Framework.Wpf.Theme.Metro.csproj": {
-      "version": "5.0.0-preview",
+      "version": "5.0.0",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Metro\\CODE.Framework.Wpf.Theme.Metro.csproj",
         "projectName": "CODE.Framework.Wpf.Theme.Metro",
@@ -434,7 +434,7 @@
       }
     },
     "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Universe\\CODE.Framework.Wpf.Theme.Universe.csproj": {
-      "version": "5.0.0-preview",
+      "version": "5.0.0",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Universe\\CODE.Framework.Wpf.Theme.Universe.csproj",
         "projectName": "CODE.Framework.Wpf.Theme.Universe",
@@ -501,7 +501,7 @@
       }
     },
     "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Vapor\\CODE.Framework.Wpf.Theme.Vapor.csproj": {
-      "version": "5.0.0-preview",
+      "version": "5.0.0",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Vapor\\CODE.Framework.Wpf.Theme.Vapor.csproj",
         "projectName": "CODE.Framework.Wpf.Theme.Vapor",
@@ -568,7 +568,7 @@
       }
     },
     "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Wildcat\\CODE.Framework.Wpf.Theme.Wildcat.csproj": {
-      "version": "5.0.0-preview",
+      "version": "5.0.0",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Wildcat\\CODE.Framework.Wpf.Theme.Wildcat.csproj",
         "projectName": "CODE.Framework.Wpf.Theme.Wildcat",
@@ -635,7 +635,7 @@
       }
     },
     "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Workplace.csproj": {
-      "version": "5.0.0-preview",
+      "version": "5.0.0",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Workplace.csproj",
         "projectName": "CODE.Framework.Wpf.Theme.Workplace",
@@ -702,7 +702,7 @@
       }
     },
     "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj": {
-      "version": "5.0.0-preview",
+      "version": "5.0.0",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj",
         "projectName": "CODE.Framework.Wpf",

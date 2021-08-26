@@ -6,7 +6,7 @@
 		<LangVersion>preview</LangVersion>
 		<AssemblyVersion>5.0.0.0</AssemblyVersion>
 		<FileVersion>5.0.0.0</FileVersion>
-		<Version>5.0.0-preview</Version>
+		<Version>5.0.0</Version>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>Markus Egger Inc.</Authors>
 		<Company>Markus Egger Inc.</Company>

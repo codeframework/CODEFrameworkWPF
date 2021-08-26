@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Vapor Theme (inspired by Valve\'s Steam UI) for CODE Framework. For more informati" +
     "on, see https://codeframework.io")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("5.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("5.0.0-preview")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("5.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CODE Framework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CODE.Framework.Wpf.Theme.Vapor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("5.0.0.0")]

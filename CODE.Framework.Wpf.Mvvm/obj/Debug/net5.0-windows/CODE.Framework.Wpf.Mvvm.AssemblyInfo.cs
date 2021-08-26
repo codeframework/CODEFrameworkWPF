@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("CODE Framework WPF MVVM components. For more information, see https://codeframewo" +
     "rk.io")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("5.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("5.0.0-preview")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("5.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CODE Framework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CODE.Framework.Wpf.Mvvm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("5.0.0.0")]

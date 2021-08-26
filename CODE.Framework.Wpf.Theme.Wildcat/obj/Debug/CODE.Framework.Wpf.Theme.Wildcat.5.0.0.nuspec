@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CODE.Framework.Wpf.Theme.Wildcat</id>
+    <version>5.0.0</version>
+    <authors>Markus Egger Inc.</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>CODEFrameworkLogoSmall.png</icon>
+    <projectUrl>https://codeframework.io/</projectUrl>
+    <iconUrl>http://www.codemag.com/Images/Logos/CodeFramework_Small.png</iconUrl>
+    <description>Wildcat Theme for CODE Framework. For more information, see https://codeframework.io</description>
+    <copyright>Markus Egger Inc.</copyright>
+    <repository type="Git" url="https://github.com/CODEFramework" />
+    <dependencies>
+      <group targetFramework="net5.0-windows7.0">
+        <dependency id="CODE.Framework.Wpf.Mvvm" version="5.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net5.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Wildcat\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Wildcat.dll" target="lib\net5.0-windows7.0\CODE.Framework.Wpf.Theme.Wildcat.dll" />
+    <file src="C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Wildcat\CODEFrameworkLogoSmall.png" target="\CODEFrameworkLogoSmall.png" />
+  </files>
+</package>

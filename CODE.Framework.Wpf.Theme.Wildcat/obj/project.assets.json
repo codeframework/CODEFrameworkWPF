@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
-      "CODE.Framework.Wpf/5.0.0-preview": {
+      "CODE.Framework.Wpf/5.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
@@ -15,11 +15,11 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "CODE.Framework.Wpf.Mvvm/5.0.0-preview": {
+      "CODE.Framework.Wpf.Mvvm/5.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "CODE.Framework.Wpf": "5.0.0-preview"
+          "CODE.Framework.Wpf": "5.0.0"
         },
         "compile": {
           "bin/placeholder/CODE.Framework.Wpf.Mvvm.dll": {}
@@ -34,12 +34,12 @@
     }
   },
   "libraries": {
-    "CODE.Framework.Wpf/5.0.0-preview": {
+    "CODE.Framework.Wpf/5.0.0": {
       "type": "project",
       "path": "../CODE.Framework.Wpf/CODE.Framework.Wpf.csproj",
       "msbuildProject": "../CODE.Framework.Wpf/CODE.Framework.Wpf.csproj"
     },
-    "CODE.Framework.Wpf.Mvvm/5.0.0-preview": {
+    "CODE.Framework.Wpf.Mvvm/5.0.0": {
       "type": "project",
       "path": "../CODE.Framework.Wpf.Mvvm/CODE.Framework.Wpf.Mvvm.csproj",
       "msbuildProject": "../CODE.Framework.Wpf.Mvvm/CODE.Framework.Wpf.Mvvm.csproj"
@@ -47,7 +47,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "CODE.Framework.Wpf.Mvvm >= 5.0.0-preview"
+      "CODE.Framework.Wpf.Mvvm >= 5.0.0"
     ]
   },
   "packageFolders": {
@@ -56,7 +56,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "5.0.0-preview",
+    "version": "5.0.0",
     "restore": {
       "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Wildcat\\CODE.Framework.Wpf.Theme.Wildcat.csproj",
       "projectName": "CODE.Framework.Wpf.Theme.Wildcat",

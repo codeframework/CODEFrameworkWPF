@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Documents\\CODE.Framework.Wpf.Documents.csproj": {
-      "version": "5.0.0-preview",
+      "version": "5.0.0",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Documents\\CODE.Framework.Wpf.Documents.csproj",
         "projectName": "CODE.Framework.Wpf.Documents",
@@ -72,7 +72,7 @@
       }
     },
     "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj": {
-      "version": "5.0.0-preview",
+      "version": "5.0.0",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj",
         "projectName": "CODE.Framework.Wpf",

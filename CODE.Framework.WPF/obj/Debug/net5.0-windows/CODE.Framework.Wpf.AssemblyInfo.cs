@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("WPF features of CODE Framework. For more information, see https://codeframework.i" +
     "o")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("5.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("5.0.0-preview")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("5.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CODE Framework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CODE.Framework.Wpf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("5.0.0.0")]
