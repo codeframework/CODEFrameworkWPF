@@ -204,27 +204,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\megge\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\megge\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Examples.Reference\\CODE.Framework.Examples.Reference.csproj",
+      "projectUniqueName": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Examples.Reference\\CODE.Framework.Examples.Reference.csproj",
       "projectName": "CODE.Framework.Examples.Reference",
-      "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Examples.Reference\\CODE.Framework.Examples.Reference.csproj",
+      "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Examples.Reference\\CODE.Framework.Examples.Reference.csproj",
       "packagesPath": "C:\\Users\\megge\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Examples.Reference\\obj\\",
+      "outputPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Examples.Reference\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\megge\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0-windows7.0"
@@ -238,26 +231,26 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj": {
-              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj"
+            "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj": {
+              "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj"
             },
-            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Geek\\CODE.Framework.Wpf.Theme.Geek.csproj": {
-              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Geek\\CODE.Framework.Wpf.Theme.Geek.csproj"
+            "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Geek\\CODE.Framework.Wpf.Theme.Geek.csproj": {
+              "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Geek\\CODE.Framework.Wpf.Theme.Geek.csproj"
             },
-            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Metro\\CODE.Framework.Wpf.Theme.Metro.csproj": {
-              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Metro\\CODE.Framework.Wpf.Theme.Metro.csproj"
+            "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Metro\\CODE.Framework.Wpf.Theme.Metro.csproj": {
+              "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Metro\\CODE.Framework.Wpf.Theme.Metro.csproj"
             },
-            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Universe\\CODE.Framework.Wpf.Theme.Universe.csproj": {
-              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Universe\\CODE.Framework.Wpf.Theme.Universe.csproj"
+            "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Universe\\CODE.Framework.Wpf.Theme.Universe.csproj": {
+              "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Universe\\CODE.Framework.Wpf.Theme.Universe.csproj"
             },
-            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Vapor\\CODE.Framework.Wpf.Theme.Vapor.csproj": {
-              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Vapor\\CODE.Framework.Wpf.Theme.Vapor.csproj"
+            "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Vapor\\CODE.Framework.Wpf.Theme.Vapor.csproj": {
+              "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Vapor\\CODE.Framework.Wpf.Theme.Vapor.csproj"
             },
-            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Wildcat\\CODE.Framework.Wpf.Theme.Wildcat.csproj": {
-              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Wildcat\\CODE.Framework.Wpf.Theme.Wildcat.csproj"
+            "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Wildcat\\CODE.Framework.Wpf.Theme.Wildcat.csproj": {
+              "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Wildcat\\CODE.Framework.Wpf.Theme.Wildcat.csproj"
             },
-            "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Workplace.csproj": {
-              "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Workplace.csproj"
+            "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Workplace.csproj": {
+              "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Workplace.csproj"
             }
           }
         }
@@ -284,7 +277,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.7, 5.0.7]"
+            "version": "[5.0.9, 5.0.9]"
           }
         ],
         "frameworkReferences": {
@@ -295,7 +288,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.6.21355.2\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
       }
     }
   }

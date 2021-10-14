@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lyY0RP2s/G4xFGO7MMZkw5pYGG0SD3zbltLYOq/6gmznGRCe+VPRESqq3kFjdJox9SzFDW/F2FoMvQih6bDNWw==",
+  "dgSpecHash": "aaQg0a+88xV5LU1G8L6ifF8o6P+dyAMqcR0mxfYsnUUiNMAxuOy/Ubv18KRleKU2asszfW+QcO/j8EDwHCDZBg==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj",
+  "projectFilePath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

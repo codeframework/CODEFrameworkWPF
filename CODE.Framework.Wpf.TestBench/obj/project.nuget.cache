@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4NdzuszoJqkW19eksaZjlVL4c6AmvwVw183Eh5/YpQDvey33RUTTsY7wofYt/jPfE+NfTfpwezLw3sjabdZy2w==",
+  "dgSpecHash": "E6ml/ABbuf9kib+oOgq61TZFkhgDx3NrW41m7iWpRvjMw2Yf2L3/hP9dHutwvpukPLfcmynPx+ZUiDwZcPWLUw==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.TestBench\\CODE.Framework.Wpf.TestBench.csproj",
+  "projectFilePath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.TestBench\\CODE.Framework.Wpf.TestBench.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\megge\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.7\\microsoft.netcore.app.host.win-x64.5.0.7.nupkg.sha512"
+    "C:\\Users\\megge\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
   ],
   "logs": []
 }

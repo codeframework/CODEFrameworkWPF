@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZWMeks2QUf/o2gQq6WVffzhIqMmA5tcIr90MmghN54EvxQz6wISsNlyXDcHgWhYBWMMQu3o5lhlkj/ai3jk3mw==",
+  "dgSpecHash": "vVQCmPK3QqepY1kYrbC4PKmcbeOXz/S0XVXmsX6ON2LsVbwHAHMkMlLtUKAxYTjbvblR7Z44BPf9dK1gIlFSZw==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Examples.Reference\\CODE.Framework.Examples.Reference.csproj",
+  "projectFilePath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Examples.Reference\\CODE.Framework.Examples.Reference.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\megge\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.7\\microsoft.netcore.app.host.win-x64.5.0.7.nupkg.sha512"
+    "C:\\Users\\megge\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
   ],
   "logs": []
 }

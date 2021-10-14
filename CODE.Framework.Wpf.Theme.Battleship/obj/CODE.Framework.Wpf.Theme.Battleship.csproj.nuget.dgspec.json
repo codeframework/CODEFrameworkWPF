@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj": {}
+    "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj": {
+    "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj": {
       "version": "5.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj",
+        "projectUniqueName": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj",
         "projectName": "CODE.Framework.Wpf.Mvvm",
-        "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj",
+        "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj",
         "packagesPath": "C:\\Users\\megge\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Mvvm\\obj\\",
+        "outputPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Mvvm\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\megge\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -34,8 +29,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj": {
-                "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj"
+              "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj": {
+                "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj"
               }
             }
           }
@@ -67,27 +62,22 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.6.21355.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj": {
+    "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj": {
       "version": "5.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj",
+        "projectUniqueName": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj",
         "projectName": "CODE.Framework.Wpf.Theme.Battleship",
-        "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj",
+        "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj",
         "packagesPath": "C:\\Users\\megge\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Theme.Battleship\\obj\\",
+        "outputPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Battleship\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\megge\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -101,8 +91,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj": {
-                "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj"
+              "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj": {
+                "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj"
               }
             }
           }
@@ -134,27 +124,22 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.6.21355.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj": {
+    "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj": {
       "version": "5.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj",
+        "projectUniqueName": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj",
         "projectName": "CODE.Framework.Wpf",
-        "projectPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj",
+        "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj",
         "packagesPath": "C:\\Users\\megge\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\CODE Framework\\CODE.Framework.Wpf\\CODE.Framework.Wpf\\obj\\",
+        "outputPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\megge\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -197,7 +182,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.6.21355.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
         }
       }
     }
