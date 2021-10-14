@@ -37,8 +37,9 @@ namespace CODE.Framework.Wpf.Mvvm
             //RegisterTheme("newsroom", "pack://application:,,,/CODE.Framework.Wpf.Theme.Newsroom;component/ThemeRoot.xaml");
             RegisterTheme("universe", "pack://application:,,,/CODE.Framework.Wpf.Theme.Universe;component/ThemeRoot.xaml");
             RegisterTheme("vapor", "pack://application:,,,/CODE.Framework.Wpf.Theme.Vapor;component/ThemeRoot.xaml");
-            RegisterTheme("workplace", "pack://application:,,,/CODE.Framework.Wpf.Theme.Workplace;component/ThemeRoot.xaml");
             RegisterTheme("wildcat", "pack://application:,,,/CODE.Framework.Wpf.Theme.Wildcat;component/ThemeRoot.xaml");
+            RegisterTheme("workplace", "pack://application:,,,/CODE.Framework.Wpf.Theme.Workplace;component/ThemeRoot.xaml");
+            RegisterTheme("zorro", "pack://application:,,,/CODE.Framework.Wpf.Theme.Zorro;component/ThemeRoot.xaml");
         }
 
         /// <summary>Attached property to set application theme</summary>

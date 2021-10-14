@@ -5,7 +5,7 @@
                     xmlns:themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero">
 
     <DataTemplate x:Key="MultiColumnComboBoxItemTemplate">
-        <c:ListBoxSmartDataTemplate Style="{DynamicResource Workplace-ListBoxSmartDataTemplate-Style}"/>
+        <c:ListBoxSmartDataTemplate Style="{DynamicResource Vapor-ListBoxSmartDataTemplate-Style}"/>
     </DataTemplate>
     <DataTemplate x:Key="DisplayValueComboBoxItemTemplate">
         <c:ComboBoxInlineTextBlock Foreground="{DynamicResource CODE.Framework-Application-ForegroundBrush3}"/>

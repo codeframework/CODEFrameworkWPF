@@ -6,7 +6,7 @@
                     xmlns:mvvm="clr-namespace:CODE.Framework.Wpf.Mvvm;assembly=CODE.Framework.Wpf.Mvvm">
 
     <DataTemplate x:Key="MultiColumnComboBoxItemTemplate">
-        <c:ListBoxSmartDataTemplate Style="{DynamicResource Workplace-ListBoxSmartDataTemplate-Style}"/>
+        <c:ListBoxSmartDataTemplate Style="{DynamicResource Geek-ListBoxSmartDataTemplate-Style}"/>
     </DataTemplate>
     <DataTemplate x:Key="DisplayValueComboBoxItemTemplate">
         <c:ComboBoxInlineTextBlock/>

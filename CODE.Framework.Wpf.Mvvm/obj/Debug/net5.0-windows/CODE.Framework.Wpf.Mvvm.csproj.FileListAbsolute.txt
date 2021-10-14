@@ -21,3 +21,25 @@ C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\obj\Debug\
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.pdb
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\List.Wildcat.baml
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\List.Universe.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.deps.json
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.dll
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\bin\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Mvvm.dll
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.pdb
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\bin\Debug\net5.0-windows\CODE.Framework.Wpf.dll
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\bin\Debug\net5.0-windows\CODE.Framework.Wpf.pdb
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.csproj.AssemblyReference.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\List.Universe.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\List.Wildcat.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\Tools\ViewVisualizer.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\Tools\ViewVisualizer.g.cs
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm_MarkupCompile.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.g.resources
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.Resources.resources
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.csproj.GenerateResource.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.AssemblyInfoInputs.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.AssemblyInfo.cs
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.csproj.CoreCompileInputs.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.dll
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Mvvm.dll
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.pdb

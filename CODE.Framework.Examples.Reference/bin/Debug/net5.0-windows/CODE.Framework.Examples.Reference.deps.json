@@ -14,7 +14,8 @@
           "CODE.Framework.Wpf.Theme.Universe": "5.0.0",
           "CODE.Framework.Wpf.Theme.Vapor": "5.0.0",
           "CODE.Framework.Wpf.Theme.Wildcat": "5.0.0",
-          "CODE.Framework.Wpf.Theme.Workplace": "5.0.0"
+          "CODE.Framework.Wpf.Theme.Workplace": "5.0.0",
+          "CODE.Framework.Wpf.Theme.Zorro": "5.0.0"
         },
         "runtime": {
           "CODE.Framework.Examples.Reference.dll": {}
@@ -88,6 +89,14 @@
         "runtime": {
           "CODE.Framework.Wpf.Theme.Workplace.dll": {}
         }
+      },
+      "CODE.Framework.Wpf.Theme.Zorro/5.0.0": {
+        "dependencies": {
+          "CODE.Framework.Wpf.Mvvm": "5.0.0"
+        },
+        "runtime": {
+          "CODE.Framework.Wpf.Theme.Zorro.dll": {}
+        }
       }
     }
   },
@@ -138,6 +147,11 @@
       "sha512": ""
     },
     "CODE.Framework.Wpf.Theme.Workplace/5.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CODE.Framework.Wpf.Theme.Zorro/5.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

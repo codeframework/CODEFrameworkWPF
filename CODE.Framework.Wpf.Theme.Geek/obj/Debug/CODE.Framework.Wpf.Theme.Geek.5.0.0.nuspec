@@ -24,7 +24,7 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Geek\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Geek.dll" target="lib\net5.0-windows7.0\CODE.Framework.Wpf.Theme.Geek.dll" />
-    <file src="C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Geek\CODEFrameworkLogoSmall.png" target="\CODEFrameworkLogoSmall.png" />
+    <file src="C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Geek\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Geek.dll" target="lib\net5.0-windows7.0\CODE.Framework.Wpf.Theme.Geek.dll" />
+    <file src="C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Geek\CODEFrameworkLogoSmall.png" target="\CODEFrameworkLogoSmall.png" />
   </files>
 </package>

@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Wildcat\obj\Debug\net5.0-windows\
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Wildcat\obj\Debug\net5.0-windows\
 CODE.Framework.Wpf.Theme.Wildcat
 none
 false
@@ -13,7 +13,7 @@ TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 36-1749345940
 
 8-1159948626
-195550311368
+195-600979617
 Colors.xaml;Fonts.xaml;StandardViews\Notification.xaml;ThemeRoot.xaml;Wildcat-Control-Button.xaml;Wildcat-Control-CapsLockWarning.xaml;Wildcat-Control-ComboBox.xaml;Wildcat-Control-Label.xaml;Wildcat-Control-ListBox.xaml;Wildcat-Control-Menu.xaml;Wildcat-Control-PasswordBox.xaml;Wildcat-Control-ScrollBar.xaml;Wildcat-Control-TabControl.xaml;Wildcat-Control-TextBox.xaml;Wildcat-Icon-Standard.xaml;Wildcat-Layout-BladePanel.xaml;Wildcat-Layout-EditForm.xaml;Wildcat-Layout-FlowForm.xaml;Wildcat-Layout-MultiPanel.xaml;Wildcat-Layout-OneToManyPanel.xaml;Wildcat-Layout-PrimarySecondaryForm.xaml;Wildcat-Layout-SimpleForm.xaml;Wildcat-Layout-StandardForm.xaml;Wildcat-Layout-Tabs.xaml;Wildcat-MessageBox-Icon-Asterisk.xaml;Wildcat-MessageBox-Icon-Error.xaml;Wildcat-MessageBox-Icon-Exclamation.xaml;Wildcat-MessageBox-Icon-Hand.xaml;Wildcat-MessageBox-Icon-Information.xaml;Wildcat-MessageBox-Icon-Question.xaml;Wildcat-MessageBox-Icon-Stop.xaml;Wildcat-MessageBox-Icon-Warning.xaml;Wildcat-Shell-BackgroundPattern.xaml;Wildcat-Shell.xaml;Wildcat-StandardDataTemplates.xaml;Wildcat-StandardTypes.xaml;
 
 False

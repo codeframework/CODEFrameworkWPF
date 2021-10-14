@@ -16,5 +16,5 @@ TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 195-600979617
 Colors.xaml;Fonts.xaml;Geek-Control-Button.xaml;Geek-Control-CapsLockWarning.xaml;Geek-Control-ComboBox.xaml;Geek-Control-FlowDocumentReader.xaml;Geek-Control-Label.xaml;Geek-Control-ListBox.xaml;Geek-Control-Menu.xaml;Geek-Control-PasswordBox.xaml;Geek-Control-TextBlock.xaml;Geek-Control-Textbox.xaml;Geek-Control-ZoomSlider.xaml;Geek-Icon-Standard.xaml;Geek-Layout-BladePanel.xaml;Geek-Layout-EditForm.xaml;Geek-Layout-FlowForm.xaml;Geek-Layout-MultiPanel.xaml;Geek-Layout-OneToManyPanel.xaml;Geek-Layout-PrimarySecondaryForm.xaml;Geek-Layout-SimpleForm.xaml;Geek-Layout-StandardForm.xaml;Geek-Layout-Tabs.xaml;Geek-MessageBox-Icon-Asterisk.xaml;Geek-MessageBox-Icon-Error.xaml;Geek-MessageBox-Icon-Exclamation.xaml;Geek-MessageBox-Icon-Hand.xaml;Geek-MessageBox-Icon-Information.xaml;Geek-MessageBox-Icon-Question.xaml;Geek-MessageBox-Icon-Stop.xaml;Geek-MessageBox-Icon-Warning.xaml;Geek-Print.xaml;Geek-Shell.xaml;Geek-StandardDataTemplates.xaml;Geek-StandardTypes.xaml;Standard\Notification.xaml;ThemeRoot.xaml;
 
-True
+False
 

@@ -4,6 +4,6 @@ namespace CODE.Framework.Examples.Reference.Controllers
 {
     public class CustomerController : Controller
     {
-        public ActionResult List() => ViewModal(new ListViewModel());
+        public ActionResult List() => View(new ListViewModel());
     }
 }

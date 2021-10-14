@@ -24,7 +24,7 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Worlplace\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Workplace.dll" target="lib\net5.0-windows7.0\CODE.Framework.Wpf.Theme.Workplace.dll" />
-    <file src="C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Worlplace\CODEFrameworkLogoSmall.png" target="\CODEFrameworkLogoSmall.png" />
+    <file src="C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Worlplace\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Workplace.dll" target="lib\net5.0-windows7.0\CODE.Framework.Wpf.Theme.Workplace.dll" />
+    <file src="C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Worlplace\CODEFrameworkLogoSmall.png" target="\CODEFrameworkLogoSmall.png" />
   </files>
 </package>

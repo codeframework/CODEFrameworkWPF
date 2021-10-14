@@ -142,6 +142,22 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "CODE.Framework.Wpf.Theme.Zorro/5.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CODE.Framework.Wpf.Mvvm": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Zorro.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CODE.Framework.Wpf.Theme.Zorro.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -190,6 +206,11 @@
       "type": "project",
       "path": "../CODE.Framework.Wpf.Theme.Worlplace/CODE.Framework.Wpf.Theme.Workplace.csproj",
       "msbuildProject": "../CODE.Framework.Wpf.Theme.Worlplace/CODE.Framework.Wpf.Theme.Workplace.csproj"
+    },
+    "CODE.Framework.Wpf.Theme.Zorro/5.0.0": {
+      "type": "project",
+      "path": "../CODE.Framework.Wpf.Theme.Zorro/CODE.Framework.Wpf.Theme.Zorro.csproj",
+      "msbuildProject": "../CODE.Framework.Wpf.Theme.Zorro/CODE.Framework.Wpf.Theme.Zorro.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -200,7 +221,8 @@
       "CODE.Framework.Wpf.Theme.Universe >= 5.0.0",
       "CODE.Framework.Wpf.Theme.Vapor >= 5.0.0",
       "CODE.Framework.Wpf.Theme.Wildcat >= 5.0.0",
-      "CODE.Framework.Wpf.Theme.Workplace >= 5.0.0"
+      "CODE.Framework.Wpf.Theme.Workplace >= 5.0.0",
+      "CODE.Framework.Wpf.Theme.Zorro >= 5.0.0"
     ]
   },
   "packageFolders": {
@@ -251,6 +273,9 @@
             },
             "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Workplace.csproj": {
               "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Workplace.csproj"
+            },
+            "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Zorro\\CODE.Framework.Wpf.Theme.Zorro.csproj": {
+              "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Zorro\\CODE.Framework.Wpf.Theme.Zorro.csproj"
             }
           }
         }

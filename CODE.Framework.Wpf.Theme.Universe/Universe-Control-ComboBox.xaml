@@ -5,7 +5,7 @@
                     xmlns:bindingConverters="clr-namespace:CODE.Framework.Wpf.BindingConverters;assembly=CODE.Framework.Wpf">
 
     <DataTemplate x:Key="MultiColumnComboBoxItemTemplate">
-        <controls:ListBoxSmartDataTemplate Style="{DynamicResource Workplace-ListBoxSmartDataTemplate-Style}"/>
+        <controls:ListBoxSmartDataTemplate Style="{DynamicResource Universe-ListBoxSmartDataTemplate-Style}"/>
     </DataTemplate>
     <DataTemplate x:Key="DisplayValueComboBoxItemTemplate">
         <controls:ComboBoxInlineTextBlock/>

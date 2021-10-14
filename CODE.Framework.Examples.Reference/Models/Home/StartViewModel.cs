@@ -50,13 +50,14 @@
             //    Number1 = "100"
             //});
 
-            Actions.Add(new SwitchThemeViewAction("Battleship (Win95)", "Windows 95", category: "View", categoryAccessKey: 'V', accessKey: 'W') { GroupTitle = "View" });
-            Actions.Add(new SwitchThemeViewAction("Geek (Visual Studio)", "Geek", category: "View", categoryAccessKey: 'V', accessKey: 'G') { GroupTitle = "View" });
-            Actions.Add(new SwitchThemeViewAction("Metro (Win8)", "Metro", category: "View", categoryAccessKey: 'V', accessKey: 'M') { GroupTitle = "View" });
-            Actions.Add(new SwitchThemeViewAction("Universe (UWP)", "Universe", category: "View", categoryAccessKey: 'V', accessKey: 'U') { GroupTitle = "View" });
-            Actions.Add(new SwitchThemeViewAction("Vapor (Steam)", "Vapor", category: "View", categoryAccessKey: 'V', accessKey: 'V') { GroupTitle = "View" });
+            Actions.Add(new SwitchThemeViewAction("Windows 95", "Battleship (Win95)", category: "View", categoryAccessKey: 'V', accessKey: 'W') { GroupTitle = "View" });
+            Actions.Add(new SwitchThemeViewAction("Geek", "Geek (Visual Studio)", category: "View", categoryAccessKey: 'V', accessKey: 'G') { GroupTitle = "View" });
+            Actions.Add(new SwitchThemeViewAction("Metro", "Metro (Win8)", category: "View", categoryAccessKey: 'V', accessKey: 'M') { GroupTitle = "View" });
+            Actions.Add(new SwitchThemeViewAction("Universe", "Universe (UWP)", category: "View", categoryAccessKey: 'V', accessKey: 'U') { GroupTitle = "View" });
+            Actions.Add(new SwitchThemeViewAction("Vapor", "Vapor (Steam)", category: "View", categoryAccessKey: 'V', accessKey: 'V') { GroupTitle = "View" });
             Actions.Add(new SwitchThemeViewAction("Wildcat", "Wildcat", category: "View", categoryAccessKey: 'V', accessKey: 'C') { GroupTitle = "View" });
-            Actions.Add(new SwitchThemeViewAction("Workplace (Office)", "Workplace", category: "View", categoryAccessKey: 'V', accessKey: 'W') { GroupTitle = "View" });
+            Actions.Add(new SwitchThemeViewAction("Workplace", "Workplace (Office)", category: "View", categoryAccessKey: 'V', accessKey: 'W') { GroupTitle = "View" });
+            Actions.Add(new SwitchThemeViewAction("Zorro", "Zorro (VFP)", category: "View", categoryAccessKey: 'V', accessKey: 'Z') { GroupTitle = "View" });
             //Actions.Add(new SwitchThemeViewAction("Newsroom", "Newsroom", category: "View", categoryAccessKey: 'V', accessKey: 'N') { GroupTitle = "View" });
 
             //// Example message box
