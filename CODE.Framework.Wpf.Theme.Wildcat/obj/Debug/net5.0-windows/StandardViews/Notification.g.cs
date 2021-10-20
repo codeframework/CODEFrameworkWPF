@@ -54,7 +54,7 @@ namespace CODE.Framework.Wpf.Theme.Wildcat.StandardViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Wildcat;V5.0.0.0;component/standardviews/notification.x" +
+            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Wildcat;V5.0.1.0;component/standardviews/notification.x" +
                     "aml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\StandardViews\Notification.xaml"

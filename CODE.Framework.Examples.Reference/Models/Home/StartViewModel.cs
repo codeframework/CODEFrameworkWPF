@@ -12,7 +12,7 @@
 
             Actions.Add(new ViewAction("Customers", 
                 execute: (a, o) => Controller.Action(nameof(CustomerController), nameof(CustomerController.List)), 
-                significance: ViewActionSignificance.AboveNormal, 
+                significance: ViewActionSignificance.Highest, 
                 category: "File", 
                 categoryAccessKey: 'F', 
                 accessKey: 'C', 

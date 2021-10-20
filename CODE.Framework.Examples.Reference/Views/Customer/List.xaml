@@ -1,12 +1,13 @@
-﻿ <mvvm:View xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-            xmlns:mvvm="clr-namespace:CODE.Framework.Wpf.Mvvm;assembly=CODE.Framework.Wpf.Mvvm"
-            xmlns:c="clr-namespace:CODE.Framework.Wpf.Controls;assembly=CODE.Framework.Wpf"
-            Title="Subscriber List"
-            SizeStrategy="UseMaximumSizeAvailable"
-            Group="Customers"
-            ViewThemeColor="{DynamicResource Subscription-Theme-Color}" 
-            StandardLayout="PrimarySecondaryListForm"
-            StandardIcon="ContactInfo">
+﻿<mvvm:View xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:mvvm="clr-namespace:CODE.Framework.Wpf.Mvvm;assembly=CODE.Framework.Wpf.Mvvm"
+           xmlns:c="clr-namespace:CODE.Framework.Wpf.Controls;assembly=CODE.Framework.Wpf"
+           Title="Subscriber List"
+           SizeStrategy="UseSuggestedSize"
+           SuggestedHeight="400" SuggestedWidth="700"
+           Group="Customers"
+           ViewThemeColor="{DynamicResource Subscription-Theme-Color}" 
+           StandardLayout="PrimarySecondaryListForm"
+           StandardIcon="ContactInfo">
 
     <ListBox ItemsSource="{Binding Customers}"
              Style="{DynamicResource Customer-List}"
@@ -20,6 +21,20 @@
         <TextBox Text="{Binding FirstName}" />
         <Label>Company:</Label>
         <TextBox Text="{Binding Company}" />
+
+        <TabControl Height="200">
+            <TabItem Header="Page 1">
+                <mvvm:View StandardLayout="SimpleForm">
+                    <Label>Last Name:</Label>
+                    <TextBox Text="{Binding LastName}" />
+                    <Label>First Name:</Label>
+                    <TextBox Text="{Binding FirstName}" />
+                    <Label>Company:</Label>
+                    <TextBox Text="{Binding Company}" />
+                </mvvm:View>
+            </TabItem>
+            <TabItem Header="Page 2"/>
+        </TabControl>
 
         <Button HorizontalAlignment="Right"
                 Content="Search..."

@@ -162,7 +162,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <exception cref="System.NotImplementedException"></exception>
         private static void OnSelectedNormalViewChanged(DependencyObject source, DependencyPropertyChangedEventArgs args)
         {
-            if (!(source is Shell shell)) return;
+            if (source is not Shell shell) return;
 
             var viewIndex = -1;
             try
@@ -727,7 +727,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// </summary>
         /// <param name="context">The context.</param>
         /// <param name="viewResult">The view result.</param>
-        private static void OpenNormalViewInWindow(RequestContext context, ViewResult viewResult)
+        private void OpenNormalViewInWindow(RequestContext context, ViewResult viewResult)
         {
             var window = new Window
             {
@@ -738,15 +738,35 @@ namespace CODE.Framework.Wpf.Mvvm
                 WindowStartupLocation = WindowStartupLocation.CenterScreen
             };
 
+            SetViewResult(window, viewResult);
+            SetSetAsActiveShellContextWindow(window, true);
+
+            if (viewResult.IsModal) window.Owner = ContextWindow;
+
+            window.SetBinding(ContentProperty, new Binding("View") { Source = viewResult });
             window.SetBinding(TitleProperty, new Binding("ViewTitle") { Source = viewResult });
 
-            if (viewResult.View is SimpleView simpleView)
-                if (SimpleView.GetSizeStrategy(simpleView) == ViewSizeStrategies.UseMaximumSizeAvailable)
+            // Setting the size strategy
+            var strategy = SimpleView.GetSizeStrategy(viewResult.View);
+            switch (strategy)
+            {
+                case ViewSizeStrategies.UseMinimumSizeRequired:
+                    window.SizeToContent = SizeToContent.WidthAndHeight;
+                    break;
+                case ViewSizeStrategies.UseMaximumSizeAvailable:
                     window.SizeToContent = SizeToContent.Manual;
+                    window.Height = SystemParameters.WorkArea.Height;
+                    window.Width = SystemParameters.WorkArea.Width;
+                    break;
+                case ViewSizeStrategies.UseSuggestedSize:
+                    window.SizeToContent = SizeToContent.Manual;
+                    window.Height = SimpleView.GetSuggestedHeight(viewResult.View);
+                    window.Width = SimpleView.GetSuggestedWidth(viewResult.View);
+                    break;
+            }
 
             viewResult.TopLevelWindow = window;
-            if (context.Result is MessageBoxResult) window.SetResourceReference(StyleProperty, "CODE.Framework.Wpf.Mvvm.Shell-TopLevelMessageBoxWindowStyle");
-            else window.SetResourceReference(StyleProperty, "CODE.Framework.Wpf.Mvvm.Shell-NormalLevelWindowStyle");
+            window.SetResourceReference(StyleProperty, "CODE.Framework.Wpf.Mvvm.Shell-NormalLevelWindowStyle");
             if (viewResult.IsModal) window.ShowDialog();
             else window.Show();
         }

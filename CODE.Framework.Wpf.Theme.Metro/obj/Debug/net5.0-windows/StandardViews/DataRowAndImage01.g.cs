@@ -63,7 +63,7 @@ namespace CODE.Framework.Wpf.Theme.Metro.StandardViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Metro;V5.0.0.0;component/standardviews/datarowandimage0" +
+            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Metro;V5.0.1.0;component/standardviews/datarowandimage0" +
                     "1.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\StandardViews\DataRowAndImage01.xaml"

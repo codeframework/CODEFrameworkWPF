@@ -52,7 +52,7 @@ namespace CODE.Framework.Wpf.Theme.Battleship.Standard {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Battleship;V5.0.0.0;component/standard/notification.xam" +
+            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Battleship;V5.0.1.0;component/standard/notification.xam" +
                     "l", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Standard\Notification.xaml"

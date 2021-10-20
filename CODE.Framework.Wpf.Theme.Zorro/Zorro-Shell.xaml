@@ -1,20 +1,55 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:mvvm="clr-namespace:CODE.Framework.Wpf.Mvvm;assembly=CODE.Framework.Wpf.Mvvm"
-                    xmlns:controls="clr-namespace:CODE.Framework.Wpf.Theme.Zorro.Controls"
-                    xmlns:controls1="clr-namespace:CODE.Framework.Wpf.Controls;assembly=CODE.Framework.Wpf">
+                    xmlns:zorro="clr-namespace:CODE.Framework.Wpf.Theme.Zorro.Controls"
+                    xmlns:controls="clr-namespace:CODE.Framework.Wpf.Controls;assembly=CODE.Framework.Wpf">
+
+    <Style TargetType="Window" x:Key="CODE.Framework.Wpf.Mvvm.Shell-NormalLevelWindowStyle">
+        <Setter Property="Background" Value="{DynamicResource CODE.Framework-Application-BackgroundBrush1}" />
+        <Setter Property="ShowInTaskbar" Value="True" />
+        <Setter Property="SizeToContent"  Value="WidthAndHeight" />
+        <Setter Property="mvvm:Closable.RaiseClosingEvents" Value="True" />
+        <Setter Property="controls:WindowEx.WindowStartupLocationStylable" Value="CenterOwner"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Window}">
+                    <Grid controls:GridEx.RowHeights="Auto,*" Background="{TemplateBinding Background}">
+                        <Grid Background="{DynamicResource CODE.Framework-Application-BackgroundBrush2}">
+                            <mvvm:ViewActionToolbar RootViewActionDisplayMode="All" 
+                                                    Model="{Binding}"
+                                                    x:Name="toolbar" 
+                                                    Margin="7,5" />
+                            <Border BorderBrush="Black" Opacity=".15" BorderThickness="0,0,0,1" Visibility="{Binding ElementName=toolbar, Path=Visibility, Mode=OneWay}"  />
+                        </Grid>
+                        <ContentPresenter Grid.Row="1" Margin="5">
+                            <ContentPresenter.LayoutTransform>
+                                <ScaleTransform ScaleX="{Binding DesiredContentZoomFactor, Source={x:Static mvvm:Shell.Current}, Mode=OneWay}" 
+                                                ScaleY="{Binding DesiredContentZoomFactor, Source={x:Static mvvm:Shell.Current}, Mode=OneWay}" />
+                            </ContentPresenter.LayoutTransform>
+                        </ContentPresenter>
+                        <mvvm:ModelStatusGrid Model="{Binding}" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="8" x:Name="modelStatus" Grid.Row="1">
+                            <mvvm:ModelStatusGrid.Resources>
+                                <mvvm:ModelStatusToVisibleConverter x:Key="ModelStatusToVisibleConverter" />
+                            </mvvm:ModelStatusGrid.Resources>
+                            <ProgressBar Visibility="{Binding Path=ModelStatus, ElementName=modelStatus, Converter={StaticResource ModelStatusToVisibleConverter}}" IsIndeterminate="True" Height="4"/>
+                        </mvvm:ModelStatusGrid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
     <Style TargetType="Window" x:Key="CODE.Framework.Wpf.Mvvm.Shell-TopLevelWindowStyle">
         <Setter Property="Background" Value="{DynamicResource CODE.Framework-Application-BackgroundBrush1}" />
         <Setter Property="ShowInTaskbar" Value="True" />
         <Setter Property="SizeToContent"  Value="WidthAndHeight" />
         <Setter Property="mvvm:Closable.RaiseClosingEvents" Value="True" />
-        <Setter Property="controls1:WindowEx.WindowStartupLocationStylable" Value="CenterScreen"/>
+        <Setter Property="controls:WindowEx.WindowStartupLocationStylable" Value="CenterScreen"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Window}">
                     <Grid Background="{TemplateBinding Background}" Margin="-5">
-                        <Grid Margin="15" controls1:GridEx.RowHeights="Auto,Auto">
+                        <Grid Margin="15" controls:GridEx.RowHeights="Auto,Auto">
                             <ContentPresenter />
                             <mvvm:ActionGrid Grid.Row="1" Model="{Binding}" Margin="0,20,0,0">
                                 <ItemsControl ItemsSource="{Binding Actions}" HorizontalAlignment="Right">
@@ -45,12 +80,12 @@
         <Setter Property="ShowInTaskbar" Value="True" />
         <Setter Property="SizeToContent"  Value="WidthAndHeight" />
         <Setter Property="ResizeMode" Value="NoResize" />
-        <Setter Property="controls1:WindowEx.WindowStartupLocationStylable" Value="CenterOwner"/>
+        <Setter Property="controls:WindowEx.WindowStartupLocationStylable" Value="CenterOwner"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Window}">
                     <Grid Background="{TemplateBinding Background}" Margin="-5" MaxWidth="1000" MaxHeight="700">
-                        <Grid Margin="0" controls1:GridEx.RowHeights="Auto,Auto">
+                        <Grid Margin="0" controls:GridEx.RowHeights="Auto,Auto">
                             <Border Background="White" Padding="10">
                                 <ContentPresenter />
                             </Border>
@@ -80,26 +115,29 @@
 
     <Style TargetType="mvvm:Shell" x:Key="CODE.Framework.Wpf.Mvvm.Shell-Style">
         <Setter Property="Background" Value="{DynamicResource CODE.Framework-Application-BackgroundBrush1}" />
-        <Setter Property="controls1:WindowEx.IsBorderless" Value="False" />
+        <Setter Property="controls:WindowEx.IsBorderless" Value="False" />
         <Setter Property="TopLevelViewLaunchMode" Value="Popup" />
         <Setter Property="NormalViewLaunchMode" Value="Popup" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="mvvm:Shell">
-                    <Grid Background="{TemplateBinding Background}" controls1:GridEx.RowHeights="Auto,Auto,*,Auto">
-                        <controls:ZorroMenu Model="{Binding}" SelectedView="{Binding Path=SelectedItem, ElementName=OpenViews, Mode=OneWay}" />
-                        <Border BorderBrush="Black" Opacity=".15" BorderThickness="0,1,0,0" Visibility="{Binding ElementName=toolbar, Path=Visibility, Mode=OneWay}" Grid.Row="1" />
-                        <mvvm:ViewActionToolbar Model="{Binding}" SelectedView="{Binding Path=SelectedItem, ElementName=OpenViews, Mode=OneWay}" 
-                                                Grid.Row="1" x:Name="toolbar" Margin="7,2,2,2"  />
-                        <TabControl x:Name="OpenViews" Grid.Row="2"
-                                    ItemsSource="{TemplateBinding NormalViews}"
-                                    SelectedIndex="{Binding SelectedNormalView, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"
-                                    Style="{DynamicResource CODE.Framework.Wpf.Mvvm.Shell-NormalViewsHost}"
-                                    />
-                        <Grid VerticalAlignment="Bottom" Height="Auto" Grid.Row="3">
-                            <Rectangle VerticalAlignment="Top" Height="2" Fill="WhiteSmoke" />
+                    <Grid Background="{TemplateBinding Background}" controls:GridEx.RowHeights="Auto,Auto,Auto,Auto,*,Auto">
+                        <zorro:ZorroMenu Model="{Binding}" Margin="0,0,0,1" />
+                        <Border BorderBrush="Black" Opacity="0.25" BorderThickness="0,0,0,1" Grid.Row="1" />
+                        <Grid Background="{DynamicResource CODE.Framework-Application-BackgroundBrush2}" Grid.Row="2">
+                            <mvvm:ViewActionToolbar Model="{Binding}" x:Name="toolbar" Margin="7,3,2,3" />
+                        </Grid>
+                        <Border BorderBrush="Black" Opacity="0.25" BorderThickness="0,0,0,1" Visibility="{Binding ElementName=toolbar, Path=Visibility, Mode=OneWay}" Height="1" Grid.Row="3" />
+                        <Grid VerticalAlignment="Bottom" Height="Auto" Grid.Row="5" controls:GridEx.ColumnWidths="*,Auto">
                             <ContentControl Content="{TemplateBinding CurrentStatusView}" Margin="5,4,5,0" MinHeight="23"
-                                FontFamily="{DynamicResource DefaultFont}" FontSize="{DynamicResource FontSize-Normal}" />
+                                            FontFamily="{DynamicResource DefaultFont}" FontSize="{DynamicResource FontSize-Normal}" />
+                            <zorro:ZorroShellZoomSlider x:Name="zoomSlider"
+                                                        MinimumZoom=".5" MaximumZoom="3"
+                                                        Margin="10,0"
+                                                        VerticalAlignment="Stretch"
+                                                        HorizontalAlignment="Right"
+                                                        Grid.Column="1"
+                                                        Width="120"/>
                         </Grid>
                         <Grid x:Name="notificationsGrid" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Width="385" Grid.RowSpan="4">
                             <Grid.Effect>
@@ -122,34 +160,6 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-    </Style>
-
-    <Style TargetType="TabControl" x:Key="CODE.Framework.Wpf.Mvvm.Shell-NormalViewsHost" >
-        <Setter Property="ContentTemplate">
-            <Setter.Value>
-                <DataTemplate>
-                    <Grid>
-                        <AdornerDecorator>
-                            <ContentControl Content="{Binding View}" />
-                        </AdornerDecorator>
-                        <mvvm:ModelStatusGrid Model="{Binding Model}" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="8" x:Name="modelStatus">
-                            <mvvm:ModelStatusGrid.Resources>
-                                <mvvm:ModelStatusToVisibleConverter x:Key="ModelStatusToVisibleConverter" />
-                            </mvvm:ModelStatusGrid.Resources>
-                            <ProgressBar Visibility="{Binding Path=ModelStatus, ElementName=modelStatus, Converter={StaticResource ModelStatusToVisibleConverter}}" IsIndeterminate="True" Height="4"/>
-                        </mvvm:ModelStatusGrid>
-                    </Grid>
-                </DataTemplate>
-            </Setter.Value>
-        </Setter>
-        <Setter Property="ItemContainerStyle" Value="{DynamicResource CODE.Framework.Wpf.Mvvm.Shell-ViewHost}"/>
-    </Style>
-
-    <Style TargetType="TabItem" x:Key="CODE.Framework.Wpf.Mvvm.Shell-ViewHost">
-        <Setter Property="Header" Value="{Binding ViewTitle}" />
-        <Setter Property="Padding" Value="10,5,15,5" />
-        <Setter Property="FontFamily" Value="{DynamicResource DefaultFont}" />
-        <Setter Property="FontSize" Value="{DynamicResource FontSize-Normal}" />
     </Style>
 
     <Style TargetType="TextBlock" x:Key="CODE.Framework.Wpf.Mvvm.Shell-MessageBox-Text">
@@ -182,7 +192,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="mvvm:ViewActionToolbarButton">
-                    <Grid controls1:GridEx.ColumnWidths="Auto,Auto">
+                    <Grid controls:GridEx.ColumnWidths="Auto,Auto">
                         <Border x:Name="highlight" Background="{DynamicResource CODE.Framework-Application-ToolbarButtonHighlightBrush2}" BorderBrush="{DynamicResource CODE.Framework-Application-ToolbarButtonHighlightBrush1}" BorderThickness="1" Visibility="Hidden" Opacity=".5" Grid.ColumnSpan="2" />
                         <Border x:Name="checked" Background="{DynamicResource CODE.Framework-Application-ToolbarButtonHighlightBrush2}" BorderBrush="{DynamicResource CODE.Framework-Application-ToolbarButtonHighlightBrush1}" BorderThickness="1" Visibility="Hidden" Opacity=".5" Grid.ColumnSpan="2" />
                         <mvvm:ThemeIcon IconResourceKey="{Binding Action.BrushResourceKey, RelativeSource={RelativeSource TemplatedParent}}" Height="23" Width="23" x:Name="icon" Margin="2" />

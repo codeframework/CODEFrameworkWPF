@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.TestBench\obj\Debug\net5.0-windows\
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\obj\Debug\net5.0-windows\
 CODE.Framework.Wpf.TestBench
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.TestBench\App.xaml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\App.xaml
 551862812203
 
 561005739243
-203207387826
+203-1428141641
 AsyncTest.xaml;AutoCompleteTest.xaml;BiStackTest.xaml;BiStackTest2.xaml;BiStackTest3.xaml;BladeTest.xaml;ButtonMenuTest.xaml;CalendarTest.xaml;CanExecuteChangedTest.xaml;CapsLockTest.xaml;ColumnComboBox.xaml;ColumnListBox.xaml;CustomBehaviorWindow.xaml;Disclaimer.xaml;DockContainerTest.xaml;EditFormTest.xaml;EventCommandTest.xaml;ExampleListInRibbon.xaml;FileIcon.xaml;FlowDocumentReaderTest.xaml;FlowFormTest.xaml;FolderIcon.xaml;FontControls.xaml;LazyList.xaml;ListBoxGrid.xaml;ListBoxGridReadOnly.xaml;ListDependencyProperties.xaml;MainWindow.xaml;MetroControls.xaml;MetroListBoxes.xaml;MultiPanelTest.xaml;ObjectHelperTest.xaml;PanelSizeAndVisibilityTest.xaml;PanoramaTest.xaml;PrimarySecondaryHorizontalTest.xaml;ProgressAnimations.xaml;PropertySheetTest.xaml;RangeSliderTest.xaml;RibbonTest.xaml;SaveWindowSettingsTest.xaml;ScaleSliderTest.xaml;SizeAwareContentTest.xaml;SizeCalcEx.xaml;SliderTest.xaml;SpellCheck.xaml;StandardIcons.xaml;StickyNoteTest.xaml;SyncCollectionTest.xaml;SystemMetricsTests.xaml;TabItemsPanelTest.xaml;TextBlockExTest.xaml;TextBoxTest.xaml;TreeViewTest.xaml;ViewActionItemsControlTest.xaml;ViewActionMenuTest.xaml;
 
 False

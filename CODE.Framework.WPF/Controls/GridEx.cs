@@ -22,8 +22,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="e">Event arguments</param>
         private static void ColumnWidthsPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var grid = d as Grid;
-            if (grid == null) return;
+            if (d is not Grid grid) return;
             grid.ColumnDefinitions.Clear();
             var widths = e.NewValue.ToString();
             var parts = widths.Split(',');
@@ -33,7 +32,7 @@ namespace CODE.Framework.Wpf.Controls
                 if (string.IsNullOrEmpty(width)) width = "*";
                 if (width.EndsWith("*"))
                 {
-                    string starWidth = width.Replace("*", string.Empty);
+                    var starWidth = width.Replace("*", string.Empty);
                     if (string.IsNullOrEmpty(starWidth)) starWidth = "1";
                     var stars = double.Parse(starWidth);
                     grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(stars, GridUnitType.Star) });
@@ -52,18 +51,12 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="obj">Object to set the columns widths on</param>
         /// <returns>Column width</returns>
         /// <remarks>This attached property can be attached to any UI Element to define the column width</remarks>
-        public static string GetColumnWidths(DependencyObject obj)
-        {
-            return (string)obj.GetValue(ColumnWidthsProperty);
-        }
+        public static string GetColumnWidths(DependencyObject obj) => (string)obj.GetValue(ColumnWidthsProperty);
 
         /// <summary>Column width</summary>
         /// <param name="obj">Object to set the column widths on</param>
         /// <param name="value">Value to set</param>
-        public static void SetColumnWidths(DependencyObject obj, string value)
-        {
-            obj.SetValue(ColumnWidthsProperty, value);
-        }
+        public static void SetColumnWidths(DependencyObject obj, string value) => obj.SetValue(ColumnWidthsProperty, value);
 
         /// <summary>Attached property to set row heights</summary>
         /// <remarks>This attached property can be attached to any UI Element to define row heights</remarks>
@@ -76,8 +69,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="e">Event arguments</param>
         private static void RowHeightsPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var grid = d as Grid;
-            if (grid == null) return;
+            if (d is not Grid grid) return;
             grid.RowDefinitions.Clear();
             var heights = e.NewValue.ToString();
             var parts = heights.Split(',');
@@ -87,7 +79,7 @@ namespace CODE.Framework.Wpf.Controls
                 if (string.IsNullOrEmpty(height)) height = "*";
                 if (height.EndsWith("*"))
                 {
-                    string starHeight = height.Replace("*", string.Empty);
+                    var starHeight = height.Replace("*", string.Empty);
                     if (string.IsNullOrEmpty(starHeight)) starHeight = "1";
                     var stars = double.Parse(starHeight);
                     grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(stars, GridUnitType.Star) });
@@ -106,25 +98,19 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="obj">Object to set the row heights on</param>
         /// <returns>Column width</returns>
         /// <remarks>This attached property can be attached to any UI Element to define the row height</remarks>
-        public static string GetRowHeights(DependencyObject obj)
-        {
-            return (string)obj.GetValue(RowHeightsProperty);
-        }
+        public static string GetRowHeights(DependencyObject obj) => (string)obj.GetValue(RowHeightsProperty);
 
         /// <summary>Row heights</summary>
         /// <param name="obj">Object to set the row heights on</param>
         /// <param name="value">Value to set</param>
-        public static void SetRowHeights(DependencyObject obj, string value)
-        {
-            obj.SetValue(RowHeightsProperty, value);
-        }
+        public static void SetRowHeights(DependencyObject obj, string value) => obj.SetValue(RowHeightsProperty, value);
 
         /// <summary>If this grid is used within a list box (list item), it can be set to automatically adjust its width to match the exact width available to list items</summary>
         /// <value><c>true</c> if [adjust width to parent list item]; otherwise, <c>false</c>.</value>
         public bool AdjustWidthToParentListItem
         {
-            get { return (bool)GetValue(AdjustWidthToParentListItemProperty); }
-            set { SetValue(AdjustWidthToParentListItemProperty, value); }
+            get => (bool)GetValue(AdjustWidthToParentListItemProperty);
+            set => SetValue(AdjustWidthToParentListItemProperty, value);
         }
 
         /// <summary>If this grid is used within a list box (list item), it can be set to automatically adjust its width to match the exact width available to list items</summary>
@@ -135,8 +121,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="e">Event arguments</param>
         private static void AdjustWidthToParentListItemPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var grid = d as GridEx;
-            if (grid != null)
+            if (d is GridEx grid)
                 if ((bool)e.NewValue) grid.CreateListItemWidthBinding();
         }
 
@@ -165,8 +150,8 @@ namespace CODE.Framework.Wpf.Controls
         /// <value>True of false</value>
         public bool UseItemIndex
         {
-            get { return (bool)GetValue(UseItemIndexProperty); }
-            set { SetValue(UseItemIndexProperty, value); }
+            get => (bool)GetValue(UseItemIndexProperty);
+            set => SetValue(UseItemIndexProperty, value);
         }
 
         /// <summary>If this grid is used within a list box (list item), it can automatically expose an alternation count property that can be used to know if the row is odd or even and the like.</summary>
@@ -178,8 +163,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="e">Event arguments</param>
         private static void UseItemIndexPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var grid = d as GridEx;
-            if (grid != null && (bool)e.NewValue)
+            if (d is GridEx grid && (bool)e.NewValue)
             {
                 var item = FindAncestor<ListBoxItem>(grid);
                 if (item == null) return;
@@ -207,8 +191,8 @@ namespace CODE.Framework.Wpf.Controls
         /// <remarks>For this to have any effect, the list itself must have an alternation count set to something other than 0 or 1</remarks>
         public int ItemIndex
         {
-            get { return (int)GetValue(ItemIndexProperty); }
-            set { SetValue(ItemIndexProperty, value); }
+            get => (int)GetValue(ItemIndexProperty);
+            set => SetValue(ItemIndexProperty, value);
         }
 
         /// <summary>If this grid is used within a list box (list item), and the UseAlternationCount property is set to true, this property will tell the alternation count (such as 0 and 1 for odd and even rows).</summary>
@@ -219,8 +203,8 @@ namespace CODE.Framework.Wpf.Controls
         /// <remarks>Only works if this grid is used in a data template inside of a listbox</remarks>
         public bool IsOddRow
         {
-            get { return (bool)GetValue(IsOddRowProperty); }
-            set { SetValue(IsOddRowProperty, value); }
+            get => (bool)GetValue(IsOddRowProperty);
+            set => SetValue(IsOddRowProperty, value);
         }
         /// <summary>Indicates whether this grid is used in an item in a list control and that item has an odd row index</summary>
         /// <remarks>Only works if this grid is used in a data template inside of a listbox</remarks>
@@ -229,8 +213,8 @@ namespace CODE.Framework.Wpf.Controls
         /// <summary>For internal use only</summary>
         public double ListItemWidth
         {
-            get { return (double)GetValue(ListItemWidthProperty); }
-            set { SetValue(ListItemWidthProperty, value); }
+            get => (double)GetValue(ListItemWidthProperty);
+            set => SetValue(ListItemWidthProperty, value);
         }
         /// <summary>For internal use only</summary>
         public static readonly DependencyProperty ListItemWidthProperty = DependencyProperty.Register("ListItemWidth", typeof(double), typeof(GridEx), new UIPropertyMetadata(0d, OnListItemWidthChanged));
@@ -239,8 +223,7 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="e">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
         private static void OnListItemWidthChanged(DependencyObject source, DependencyPropertyChangedEventArgs e)
         {
-            var grid = source as Grid;
-            if (grid != null)
+            if (source is Grid grid)
             {
                 var newValue = (double)e.NewValue;
                 newValue -= 4;
@@ -278,25 +261,19 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="e">Event arguments</param>
         private static void BackgroundBrushPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var panel = d as Panel;
-            if (panel == null) return;
+            if (d is not Panel panel) return;
             SetBackground(panel, e.NewValue as Brush, GetBackgroundBrushLightFactor(panel), GetBackgroundBrushOpacity(panel));
         }
         /// <summary>Background brush</summary>
         /// <returns>Background brush</returns>
         /// <remarks>This property is similar to the Background property, but can be used in conjunction with BackgroundLightFactor and BackgroundBrushTransparency</remarks>
-        public static Brush GetBackgroundBrush(DependencyObject obj)
-        {
-            return (Brush)obj.GetValue(BackgroundBrushProperty);
-        }
+        public static Brush GetBackgroundBrush(DependencyObject obj) => (Brush)obj.GetValue(BackgroundBrushProperty);
+
         /// <summary>Background brush</summary>
         /// <remarks>This property is similar to the Background property, but can be used in conjunction with BackgroundLightFactor and BackgroundBrushTransparency</remarks>
         /// <param name="obj">Object to set the value on</param>
         /// <param name="value">Value to set</param>
-        public static void SetBackgroundBrush(DependencyObject obj, Brush value)
-        {
-            obj.SetValue(BackgroundBrushProperty, value);
-        }
+        public static void SetBackgroundBrush(DependencyObject obj, Brush value) => obj.SetValue(BackgroundBrushProperty, value);
 
         /// <summary>Background brush light factor</summary>
         public static readonly DependencyProperty BackgroundBrushLightFactorProperty = DependencyProperty.RegisterAttached("BackgroundBrushLightFactor", typeof(double), typeof(GridEx), new PropertyMetadata(1d, BackgroundBrushLightFactorPropertyChanged));
@@ -305,23 +282,16 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="e">Event arguments</param>
         private static void BackgroundBrushLightFactorPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var panel = d as Panel;
-            if (panel == null) return;
+            if (d is not Panel panel) return;
             SetBackground(panel, GetBackgroundBrush(panel), (double)e.NewValue, GetBackgroundBrushOpacity(panel));
         }
         /// <summary>Background brush light factor</summary>
         /// <returns>Background brush light factor</returns>
-        public static double GetBackgroundBrushLightFactor(DependencyObject obj)
-        {
-            return (double)obj.GetValue(BackgroundBrushLightFactorProperty);
-        }
+        public static double GetBackgroundBrushLightFactor(DependencyObject obj) => (double)obj.GetValue(BackgroundBrushLightFactorProperty);
         /// <summary>Background brush light factor</summary>
         /// <param name="obj">Object to set the value on</param>
         /// <param name="value">Value to set</param>
-        public static void SetBackgroundBrushLightFactor(DependencyObject obj, double value)
-        {
-            obj.SetValue(BackgroundBrushLightFactorProperty, value);
-        }
+        public static void SetBackgroundBrushLightFactor(DependencyObject obj, double value) => obj.SetValue(BackgroundBrushLightFactorProperty, value);
 
         /// <summary>Background brush light factor</summary>
         public static readonly DependencyProperty BackgroundBrushOpacityProperty = DependencyProperty.RegisterAttached("BackgroundBrushOpacity", typeof(double), typeof(GridEx), new PropertyMetadata(1d, BackgroundBrushOpacityPropertyChanged));
@@ -330,39 +300,26 @@ namespace CODE.Framework.Wpf.Controls
         /// <param name="e">Event arguments</param>
         private static void BackgroundBrushOpacityPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var panel = d as Panel;
-            if (panel == null) return;
+            if (d is not Panel panel) return;
             SetBackground(panel, GetBackgroundBrush(panel), GetBackgroundBrushLightFactor(panel), (double)e.NewValue);
         }
         /// <summary>Background brush opacity</summary>
         /// <returns>Background brush opacity</returns>
-        public static double GetBackgroundBrushOpacity(DependencyObject obj)
-        {
-            return (double)obj.GetValue(BackgroundBrushOpacityProperty);
-        }
+        public static double GetBackgroundBrushOpacity(DependencyObject obj) => (double)obj.GetValue(BackgroundBrushOpacityProperty);
         /// <summary>Background brush opacity</summary>
         /// <param name="obj">Object to set the value on</param>
         /// <param name="value">Value to set</param>
-        public static void SetBackgroundBrushOpacity(DependencyObject obj, double value)
-        {
-            obj.SetValue(BackgroundBrushOpacityProperty, value);
-        }
+        public static void SetBackgroundBrushOpacity(DependencyObject obj, double value) => obj.SetValue(BackgroundBrushOpacityProperty, value);
 
         /// <summary>
         /// When set to true, this property enables mouse moving of the element using render transforms (translate transform)
         /// </summary>
-        public static bool GetEnableRenderTransformMouseMove(DependencyObject obj, bool value)
-        {
-            return (bool)obj.GetValue(EnableRenderTransformMouseMoveProperty);
-        }
+        public static bool GetEnableRenderTransformMouseMove(DependencyObject obj, bool value) => (bool)obj.GetValue(EnableRenderTransformMouseMoveProperty);
 
         /// <summary>
         /// When set to true, this property enables mouse moving of the element using render transforms (translate transform)
         /// </summary>
-        public static void SetEnableRenderTransformMouseMove(DependencyObject obj, bool value)
-        {
-            obj.SetValue(EnableRenderTransformMouseMoveProperty, value);
-        }
+        public static void SetEnableRenderTransformMouseMove(DependencyObject obj, bool value) => obj.SetValue(EnableRenderTransformMouseMoveProperty, value);
 
         /// <summary>
         /// When set to true, this property enables mouse moving of the element using render transforms (translate transform)
@@ -389,14 +346,11 @@ namespace CODE.Framework.Wpf.Controls
         private static void OnEnableRenderTransformMouseMoveChanged(DependencyObject d, DependencyPropertyChangedEventArgs args)
         {
             if (!(bool)args.NewValue) return;
-
-            var grid = d as Grid;
-            if (grid == null) return;
+            if (d is not Grid grid) return;
 
             grid.MouseLeftButtonDown += (s, e) =>
             {
-                var grid2 = s as Grid;
-                if (grid2 == null) return;
+                if (s is not Grid grid2) return;
                 if (_mouseMoveDownPositions == null) _mouseMoveDownPositions = new Dictionary<DependencyObject, MouseMoveWrapper>();
 
                 var window = GetWindow(grid2);

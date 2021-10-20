@@ -22,10 +22,16 @@
     <Page Update="Views\Customer\List.Vapor.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\Customer\List.Wildcat.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Customer\List.Workplace.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Customer\List.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Customer\List.Zorro.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

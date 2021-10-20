@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "CODE.Framework.Wpf/5.0.0": {
+      "CODE.Framework.Wpf/5.0.1": {
         "runtime": {
           "CODE.Framework.Wpf.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "CODE.Framework.Wpf/5.0.0": {
+    "CODE.Framework.Wpf/5.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

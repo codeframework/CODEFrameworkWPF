@@ -45,26 +45,6 @@ C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Metro.baml
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Universe.baml
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Vapor.baml
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.csproj.AssemblyReference.cache
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Battleship.baml
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Geek.baml
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Metro.baml
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Universe.baml
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Vapor.baml
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Workplace.baml
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.baml
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\User\Login.baml
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\App.baml
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\App.g.cs
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference_MarkupCompile.cache
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.g.resources
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.GeneratedMSBuildEditorConfig.editorconfig
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.AssemblyInfoInputs.cache
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.AssemblyInfo.cs
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.csproj.CoreCompileInputs.cache
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.dll
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\ref\CODE.Framework.Examples.Reference.dll
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin\Debug\net5.0-windows\CODE.Framework.Examples.Reference.exe
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin\Debug\net5.0-windows\CODE.Framework.Examples.Reference.deps.json
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin\Debug\net5.0-windows\CODE.Framework.Examples.Reference.runtimeconfig.json
@@ -92,4 +72,27 @@ C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Zorro.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin\Debug\net5.0-windows\CODE.Framework.Wpf.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.pdb
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.csproj.AssemblyReference.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Battleship.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Geek.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Metro.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Universe.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Vapor.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Wildcat.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Workplace.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\Customer\List.Zorro.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\Views\User\Login.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\App.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\App.g.cs
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference_MarkupCompile.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.g.resources
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.AssemblyInfoInputs.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.AssemblyInfo.cs
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.csproj.CoreCompileInputs.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.dll
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\ref\CODE.Framework.Examples.Reference.dll
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.genruntimeconfig.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.csproj.CopyComplete

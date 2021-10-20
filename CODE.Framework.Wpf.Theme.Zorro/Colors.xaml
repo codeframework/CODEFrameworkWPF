@@ -1,8 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <Color x:Key="CODE.Framework-Application-BackgroundColor1">#EFEFEF</Color>
-    <Color x:Key="CODE.Framework-Application-BackgroundColor2">White</Color>
+    <Color x:Key="CODE.Framework-Application-BackgroundColor1">White</Color>
+    <Color x:Key="CODE.Framework-Application-BackgroundColor2">#EFEFEF</Color>
     <Color x:Key="CODE.Framework-Application-BackgroundColor3">Black</Color>
 
     <Color x:Key="CODE.Framework-Application-ThemeColor1">Silver</Color>

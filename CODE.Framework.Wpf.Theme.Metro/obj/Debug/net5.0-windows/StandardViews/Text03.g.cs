@@ -53,7 +53,7 @@ namespace CODE.Framework.Wpf.Theme.Metro.StandardViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Metro;V5.0.0.0;component/standardviews/text03.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Metro;V5.0.1.0;component/standardviews/text03.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\StandardViews\Text03.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

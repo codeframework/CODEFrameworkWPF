@@ -52,7 +52,7 @@ namespace CODE.Framework.Wpf.Theme.Vapor.Standard {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Vapor;V5.0.0.0;component/standard/largeimage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Vapor;V5.0.1.0;component/standard/largeimage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Standard\LargeImage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

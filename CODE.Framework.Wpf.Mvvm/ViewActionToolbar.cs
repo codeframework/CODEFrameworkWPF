@@ -95,7 +95,25 @@ namespace CODE.Framework.Wpf.Mvvm
         /// Defines which root view actions should be displayed
         /// </summary>
         /// <value>The view action display mode</value>
-        public static readonly DependencyProperty RootViewActionDisplayModeProperty = DependencyProperty.Register("RootViewActionDisplayMode", typeof(ViewActionDisplayMode), typeof(ViewActionToolbar), new PropertyMetadata(ViewActionDisplayMode.HighestSignificance));
+        public static readonly DependencyProperty RootViewActionDisplayModeProperty = DependencyProperty.Register("RootViewActionDisplayMode", typeof(ViewActionDisplayMode), typeof(ViewActionToolbar), new PropertyMetadata(ViewActionDisplayMode.HighestSignificance, OnRootViewActionDisplayModeChanged));
+
+        /// <summary>
+        /// Fires whenever the display mode for root actions changes
+        /// </summary>
+        /// <param name="d">The toolbar the value was set on</param>
+        /// <param name="e">Event arguments</param>
+        private static void OnRootViewActionDisplayModeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            if (d is not ViewActionToolbar toolbar) return;
+
+            if (toolbar.Model is IHaveActions actionsContainer && actionsContainer.Actions != null)
+            {
+                toolbar.Visibility = Visibility.Visible;
+                toolbar.PopulateToolbar(actionsContainer);
+            }
+            else
+                toolbar.Visibility = Visibility.Collapsed;
+        }
 
         /// <summary>
         /// Defines which local view view actions should be displayed
@@ -110,7 +128,25 @@ namespace CODE.Framework.Wpf.Mvvm
         /// Defines which local view view actions should be displayed
         /// </summary>
         /// <value>The view action display mode</value>
-        public static readonly DependencyProperty LocalViewActionDisplayModeProperty = DependencyProperty.Register("LocalViewActionDisplayMode", typeof(ViewActionDisplayMode), typeof(ViewActionToolbar), new PropertyMetadata(ViewActionDisplayMode.BelowNormalSignificanceAndHigher));
+        public static readonly DependencyProperty LocalViewActionDisplayModeProperty = DependencyProperty.Register("LocalViewActionDisplayMode", typeof(ViewActionDisplayMode), typeof(ViewActionToolbar), new PropertyMetadata(ViewActionDisplayMode.BelowNormalSignificanceAndHigher, OnLocalViewActionDisplayModeChanged));
+
+        /// <summary>
+        /// Fires whenever the display mode for local actions changes
+        /// </summary>
+        /// <param name="d">The toolbar the value was set on</param>
+        /// <param name="e">Event arguments</param>
+        private static void OnLocalViewActionDisplayModeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            if (d is not ViewActionToolbar toolbar) return;
+
+            if (toolbar.Model is IHaveActions actionsContainer && actionsContainer.Actions != null)
+            {
+                toolbar.Visibility = Visibility.Visible;
+                toolbar.PopulateToolbar(actionsContainer);
+            }
+            else
+                toolbar.Visibility = Visibility.Collapsed;
+        }
 
         /// <summary>
         /// Populates the current menu with items based on the actions collection

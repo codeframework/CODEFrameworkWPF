@@ -46,10 +46,18 @@
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
 			<DependentUpon>List.xaml</DependentUpon>
 		</Page>
-		<Page Update="Views\Customer\List.Workplace.xaml">
+    <Page Update="Views\Customer\List.Wildcat.xaml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <DependentUpon>List.xaml</DependentUpon>
+    </Page>
+    <Page Update="Views\Customer\List.Workplace.xaml">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
 			<DependentUpon>List.xaml</DependentUpon>
 		</Page>
-	</ItemGroup>
+    <Page Update="Views\Customer\List.Zorro.xaml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <DependentUpon>List.xaml</DependentUpon>
+    </Page>
+  </ItemGroup>
 
 </Project>

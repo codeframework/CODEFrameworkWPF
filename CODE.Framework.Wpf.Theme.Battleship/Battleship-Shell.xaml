@@ -97,7 +97,7 @@
                         <Grid VerticalAlignment="Bottom" Height="Auto" Grid.Row="3">
                             <Rectangle VerticalAlignment="Top" Height="2" Fill="WhiteSmoke" />
                             <ContentControl Content="{TemplateBinding CurrentStatusView}" Margin="5,4,5,0" MinHeight="23"
-                                FontFamily="{DynamicResource DefaultFont}" FontSize="{DynamicResource FontSize-Normal}" />
+                                            FontFamily="{DynamicResource DefaultFont}" FontSize="{DynamicResource FontSize-Normal}" />
                         </Grid>
                         <Grid x:Name="notificationsGrid" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Width="385" Grid.RowSpan="4">
                             <Grid.Effect>

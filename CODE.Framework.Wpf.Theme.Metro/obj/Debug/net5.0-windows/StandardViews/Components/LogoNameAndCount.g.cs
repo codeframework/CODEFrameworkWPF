@@ -62,7 +62,7 @@ namespace CODE.Framework.Wpf.Theme.Metro.StandardViews.Components {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Metro;V5.0.0.0;component/standardviews/components/logon" +
+            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Metro;V5.0.1.0;component/standardviews/components/logon" +
                     "ameandcount.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\StandardViews\Components\LogoNameAndCount.xaml"

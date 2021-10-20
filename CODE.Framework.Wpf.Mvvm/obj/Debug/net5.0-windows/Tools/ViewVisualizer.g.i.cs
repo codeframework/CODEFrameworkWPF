@@ -125,7 +125,7 @@ namespace CODE.Framework.Wpf.Mvvm.Tools {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Mvvm;V5.0.0.0;component/tools/viewvisualizer.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Mvvm;V5.0.1.0;component/tools/viewvisualizer.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Tools\ViewVisualizer.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -54,7 +54,7 @@ namespace CODE.Framework.Wpf.Theme.Vapor.Standard {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Vapor;V5.0.0.0;component/standard/notification.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Vapor;V5.0.1.0;component/standard/notification.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Standard\Notification.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

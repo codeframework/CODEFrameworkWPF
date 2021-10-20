@@ -6,22 +6,22 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "CODE.Framework.Wpf.Theme.Workplace/5.0.0": {
+      "CODE.Framework.Wpf.Theme.Workplace/5.0.1": {
         "dependencies": {
-          "CODE.Framework.Wpf.Mvvm": "5.0.0"
+          "CODE.Framework.Wpf.Mvvm": "5.0.1"
         },
         "runtime": {
           "CODE.Framework.Wpf.Theme.Workplace.dll": {}
         }
       },
-      "CODE.Framework.Wpf/5.0.0": {
+      "CODE.Framework.Wpf/5.0.1": {
         "runtime": {
           "CODE.Framework.Wpf.dll": {}
         }
       },
-      "CODE.Framework.Wpf.Mvvm/5.0.0": {
+      "CODE.Framework.Wpf.Mvvm/5.0.1": {
         "dependencies": {
-          "CODE.Framework.Wpf": "5.0.0"
+          "CODE.Framework.Wpf": "5.0.1"
         },
         "runtime": {
           "CODE.Framework.Wpf.Mvvm.dll": {}
@@ -30,17 +30,17 @@
     }
   },
   "libraries": {
-    "CODE.Framework.Wpf.Theme.Workplace/5.0.0": {
+    "CODE.Framework.Wpf.Theme.Workplace/5.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CODE.Framework.Wpf/5.0.0": {
+    "CODE.Framework.Wpf/5.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CODE.Framework.Wpf.Mvvm/5.0.0": {
+    "CODE.Framework.Wpf.Mvvm/5.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

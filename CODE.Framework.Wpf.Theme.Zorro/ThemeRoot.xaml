@@ -22,6 +22,7 @@
         <ResourceDictionary Source="Zorro-Control-TabControl.xaml"/>
         <ResourceDictionary Source="Zorro-Control-Textbox.xaml"/>
         <ResourceDictionary Source="Zorro-Control-TextBlock.xaml"/>
+        <ResourceDictionary Source="Zorro-Control-ZoomSlider.xaml"/>
 
         <!-- Layout elements (should always be merged in after other styles so static resource can use simpler style components) -->
         <ResourceDictionary Source="Zorro-Layout-BladePanel.xaml"/>

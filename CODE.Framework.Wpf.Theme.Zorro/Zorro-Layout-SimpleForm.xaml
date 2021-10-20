@@ -3,20 +3,36 @@
                     xmlns:Layout="clr-namespace:CODE.Framework.Wpf.Layout;assembly=CODE.Framework.Wpf">
 
     <Style TargetType="ItemsControl" x:Key="CODE.Framework-Layout-SimpleFormLayout">
+        <Style.Resources>
+            <Style TargetType="Label">
+                <Setter Property="Foreground" Value="{DynamicResource CODE.Framework-Application-ForegroundBrush1}"/>
+                <Setter Property="FontSize" Value="{DynamicResource FontSize-Normal}"/>
+                <Setter Property="FontFamily" Value="{DynamicResource DefaultFont}"/>
+                <Setter Property="Padding" Value="0,0,0,3"/>
+            </Style>
+        </Style.Resources>
         <Setter Property="ItemsPanel">
             <Setter.Value>
                 <ItemsPanelTemplate>
-                    <Layout:BidirectionalStackPanel ChildItemMargin="0,0,0,5" />
+                    <Layout:BidirectionalStackPanel ChildItemMargin="0,0,0,8" />
                 </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>
     </Style>
 
     <Style TargetType="ItemsControl" x:Key="CODE.Framework-Layout-SimpleFormToFillLayout">
+        <Style.Resources>
+            <Style TargetType="Label">
+                <Setter Property="Foreground" Value="{DynamicResource CODE.Framework-Application-ForegroundBrush1}"/>
+                <Setter Property="FontSize" Value="{DynamicResource FontSize-Normal}"/>
+                <Setter Property="FontFamily" Value="{DynamicResource DefaultFont}"/>
+                <Setter Property="Padding" Value="0,0,0,3"/>
+            </Style>
+        </Style.Resources>
         <Setter Property="ItemsPanel">
             <Setter.Value>
                 <ItemsPanelTemplate>
-                    <Layout:BidirectionalStackPanel ChildItemMargin="0,0,0,5" LastTopItemFillsSpace="True" />
+                    <Layout:BidirectionalStackPanel ChildItemMargin="0,0,0,8" LastTopItemFillsSpace="True" />
                 </ItemsPanelTemplate>
             </Setter.Value>
         </Setter>

@@ -52,7 +52,7 @@ namespace CODE.Framework.Wpf.Theme.Metro.StandardViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Metro;V5.0.0.0;component/standardviews/dataandimage03.x" +
+            System.Uri resourceLocater = new System.Uri("/CODE.Framework.Wpf.Theme.Metro;V5.0.1.0;component/standardviews/dataandimage03.x" +
                     "aml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\StandardViews\DataAndImage03.xaml"

@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
-      "CODE.Framework.Wpf/5.0.0": {
+      "CODE.Framework.Wpf/5.0.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
@@ -18,7 +18,7 @@
     }
   },
   "libraries": {
-    "CODE.Framework.Wpf/5.0.0": {
+    "CODE.Framework.Wpf/5.0.1": {
       "type": "project",
       "path": "../CODE.Framework.Wpf/CODE.Framework.Wpf.csproj",
       "msbuildProject": "../CODE.Framework.Wpf/CODE.Framework.Wpf.csproj"
@@ -26,14 +26,14 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "CODE.Framework.Wpf >= 5.0.0"
+      "CODE.Framework.Wpf >= 5.0.1"
     ]
   },
   "packageFolders": {
     "C:\\Users\\megge\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "5.0.0",
+    "version": "5.0.1",
     "restore": {
       "projectUniqueName": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Documents\\CODE.Framework.Wpf.Documents.csproj",
       "projectName": "CODE.Framework.Wpf.Documents",

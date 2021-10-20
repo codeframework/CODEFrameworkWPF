@@ -40,6 +40,7 @@ C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.AssemblyInfoInputs.cache
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.AssemblyInfo.cs
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.csproj.CoreCompileInputs.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.csproj.CopyComplete
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Mvvm.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.pdb

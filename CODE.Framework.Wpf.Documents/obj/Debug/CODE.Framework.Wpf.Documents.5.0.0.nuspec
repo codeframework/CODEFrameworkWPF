@@ -24,7 +24,7 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.dll" target="lib\net5.0-windows7.0\CODE.Framework.Wpf.Documents.dll" />
-    <file src="C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Documents\CODEFrameworkLogoSmall.png" target="\CODEFrameworkLogoSmall.png" />
+    <file src="C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Documents\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.dll" target="lib\net5.0-windows7.0\CODE.Framework.Wpf.Documents.dll" />
+    <file src="C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Documents\CODEFrameworkLogoSmall.png" target="\CODEFrameworkLogoSmall.png" />
   </files>
 </package>

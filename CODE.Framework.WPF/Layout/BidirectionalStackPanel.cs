@@ -102,7 +102,7 @@ namespace CODE.Framework.Wpf.Layout
         /// <param name="e">The <see cref="T:System.Windows.Input.MouseWheelEventArgs" /> that contains the event data.</param>
         protected override void OnPreviewMouseWheel(MouseWheelEventArgs e)
         {
-            if (_scrollVertical.Visibility == Visibility.Visible)
+            if (_scrollVertical != null && _scrollVertical.Visibility == Visibility.Visible)
                 if (e.Delta < 0)
                     _scrollVertical.Value += _scrollVertical.SmallChange;
                 else
