@@ -23,7 +23,6 @@ C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\obj\Debug\
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\List.Universe.baml
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.deps.json
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.dll
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\bin\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Mvvm.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\bin\Debug\net5.0-windows\CODE.Framework.Wpf.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\bin\Debug\net5.0-windows\CODE.Framework.Wpf.pdb
@@ -44,3 +43,4 @@ C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Mvvm.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.pdb
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net5.0-windows\refint\CODE.Framework.Wpf.Mvvm.dll

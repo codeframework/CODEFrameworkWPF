@@ -1,20 +1,20 @@
 ﻿CODE.Framework.Wpf.Mvvm
-6.0.0.0
+5.0.2.0
 
 library
 C#
 .cs
-C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Mvvm\obj\Debug\net6.0-windows\
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Mvvm\obj\Debug\net6.0-windows\
 CODE.Framework.Wpf.Mvvm
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 
-1-1292808874
+3-808533349
 
 37-1091667288
-196524473382
-Tools\ViewVisualizer.xaml;
+195488104431
+List.Universe.xaml;List.Wildcat.xaml;Tools\ViewVisualizer.xaml;
 
 False
 

@@ -210,7 +210,6 @@ C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Metro\obj
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Metro\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Metro.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Metro\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Metro.deps.json
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Metro\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Metro.dll
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Metro\bin\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Theme.Metro.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Metro\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Metro.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Metro\bin\Debug\net5.0-windows\CODE.Framework.Wpf.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Metro\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.dll
@@ -418,3 +417,4 @@ C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Metro\obj\De
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Metro\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Metro.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Metro\obj\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Theme.Metro.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Metro\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Metro.pdb
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Metro\obj\Debug\net5.0-windows\refint\CODE.Framework.Wpf.Theme.Metro.dll

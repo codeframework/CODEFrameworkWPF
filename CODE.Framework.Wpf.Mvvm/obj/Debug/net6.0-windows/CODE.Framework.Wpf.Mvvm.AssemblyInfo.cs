@@ -13,11 +13,14 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Markus Egger Inc.")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("6.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("6.0.0-preview")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Markus Egger Inc.")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("CODE Framework WPF MVVM components. For more information, see https://codeframewo" +
+    "rk.io")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("5.0.2.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("5.0.2")]
 [assembly: System.Reflection.AssemblyProductAttribute("CODE Framework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CODE.Framework.Wpf.Mvvm")]
-[assembly: System.Reflection.AssemblyVersionAttribute("6.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("5.0.2.0")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/CODEFramework")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

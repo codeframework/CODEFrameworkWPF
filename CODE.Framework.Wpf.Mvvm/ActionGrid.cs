@@ -21,9 +21,23 @@ namespace CODE.Framework.Wpf.Mvvm
         }
 
         /// <summary>
-        /// Model dependency property
+        /// Model used as the data context
         /// </summary>
         public static readonly DependencyProperty ModelProperty = DependencyProperty.Register("Model", typeof(object), typeof(ActionGrid), new UIPropertyMetadata(null, ModelChanged));
+
+        /// <summary>
+        /// Defines the control's visibility in case the action collection exists, but the action count is 0.
+        /// </summary>
+        public Visibility ZeroActionsVisibility
+        {
+            get => (Visibility)GetValue(ZeroActionsVisibilityProperty);
+            set => SetValue(ZeroActionsVisibilityProperty, value);
+        }
+
+        /// <summary>
+        /// Defines the control's visibility in case the action collection exists, but the action count is 0.
+        /// </summary>
+        public static readonly DependencyProperty ZeroActionsVisibilityProperty = DependencyProperty.Register("ZeroActionsVisibility", typeof(Visibility), typeof(ActionGrid), new PropertyMetadata(Visibility.Visible));
 
         /// <summary>
         /// Change handler for model property
@@ -39,12 +53,23 @@ namespace CODE.Framework.Wpf.Mvvm
                 return;
             }
 
-            grid.Visibility = Visibility.Visible;
+            if (actions.Actions.Count > 0)
+                grid.Visibility = Visibility.Visible;
+            else
+                grid.Visibility = grid.ZeroActionsVisibility;
 
             grid.InputBindings.Clear();
             foreach (var action in actions.Actions)
                 if (action.ShortcutKey != Key.None)
                     grid.InputBindings.Add(new KeyBinding(action, action.ShortcutKey, action.ShortcutModifiers));
+
+            actions.ActionsChanged += (s, e) =>
+            {
+                if (actions.Actions.Count > 0)
+                    grid.Visibility = Visibility.Visible;
+                else
+                    grid.Visibility = grid.ZeroActionsVisibility;
+            };
         }
     }
 
@@ -66,6 +91,7 @@ namespace CODE.Framework.Wpf.Mvvm
         /// Model dependency property
         /// </summary>
         public static readonly DependencyProperty ModelProperty = DependencyProperty.Register("Model", typeof(object), typeof(ActionItemsControl), new UIPropertyMetadata(null, ModelChanged));
+
         /// <summary>
         /// Change handler for model property
         /// </summary>

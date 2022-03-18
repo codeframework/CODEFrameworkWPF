@@ -50,7 +50,6 @@ C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin\Debug\net5.0-windows\CODE.Framework.Examples.Reference.runtimeconfig.json
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin\Debug\net5.0-windows\CODE.Framework.Examples.Reference.runtimeconfig.dev.json
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin\Debug\net5.0-windows\CODE.Framework.Examples.Reference.dll
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin\Debug\net5.0-windows\ref\CODE.Framework.Examples.Reference.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin\Debug\net5.0-windows\CODE.Framework.Examples.Reference.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin\Debug\net5.0-windows\CODE.Framework.Wpf.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.dll
@@ -96,3 +95,4 @@ C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.genruntimeconfig.cache
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\CODE.Framework.Examples.Reference.csproj.CopyComplete
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net5.0-windows\refint\CODE.Framework.Examples.Reference.dll

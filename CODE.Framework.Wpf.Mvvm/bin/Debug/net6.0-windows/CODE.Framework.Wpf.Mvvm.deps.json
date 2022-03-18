@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "CODE.Framework.Wpf.Mvvm/6.0.0-preview": {
+      "CODE.Framework.Wpf.Mvvm/5.0.2": {
         "dependencies": {
-          "CODE.Framework.Wpf": "6.0.0-preview"
+          "CODE.Framework.Wpf": "5.0.2"
         },
         "runtime": {
           "CODE.Framework.Wpf.Mvvm.dll": {}
         }
       },
-      "CODE.Framework.Wpf/6.0.0-preview": {
+      "CODE.Framework.Wpf/5.0.2": {
         "runtime": {
           "CODE.Framework.Wpf.dll": {}
         }
@@ -22,12 +22,12 @@
     }
   },
   "libraries": {
-    "CODE.Framework.Wpf.Mvvm/6.0.0-preview": {
+    "CODE.Framework.Wpf.Mvvm/5.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CODE.Framework.Wpf/6.0.0-preview": {
+    "CODE.Framework.Wpf/5.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

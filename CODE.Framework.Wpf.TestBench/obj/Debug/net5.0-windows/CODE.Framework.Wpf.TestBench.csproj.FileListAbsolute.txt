@@ -154,7 +154,6 @@ C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\bin\Debu
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\bin\Debug\net5.0-windows\CODE.Framework.Wpf.TestBench.runtimeconfig.json
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\bin\Debug\net5.0-windows\CODE.Framework.Wpf.TestBench.runtimeconfig.dev.json
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\bin\Debug\net5.0-windows\CODE.Framework.Wpf.TestBench.dll
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\bin\Debug\net5.0-windows\ref\CODE.Framework.Wpf.TestBench.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\bin\Debug\net5.0-windows\CODE.Framework.Wpf.TestBench.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\bin\Debug\net5.0-windows\CODE.Framework.Wpf.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Documents.dll
@@ -300,3 +299,4 @@ C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\obj\Debu
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\obj\Debug\net5.0-windows\ref\CODE.Framework.Wpf.TestBench.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\obj\Debug\net5.0-windows\CODE.Framework.Wpf.TestBench.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\obj\Debug\net5.0-windows\CODE.Framework.Wpf.TestBench.genruntimeconfig.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.TestBench\obj\Debug\net5.0-windows\refint\CODE.Framework.Wpf.TestBench.dll

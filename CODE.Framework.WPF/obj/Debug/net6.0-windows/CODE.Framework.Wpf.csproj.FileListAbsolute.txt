@@ -31,3 +31,23 @@ C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf\obj\Debug\net6.
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf\obj\Debug\net6.0-windows\Styles\MultiColumnList.baml
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf\obj\Debug\net6.0-windows\CODE.Framework.Wpf.g.resources
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf\obj\Debug\net6.0-windows\Styles\RangeSlider.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\bin\Debug\net6.0-windows\CODE.Framework.Wpf.deps.json
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\bin\Debug\net6.0-windows\CODE.Framework.Wpf.dll
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\bin\Debug\net6.0-windows\CODE.Framework.Wpf.pdb
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\CODE.Framework.Wpf.csproj.AssemblyReference.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\CODE.Framework.Wpf_MarkupCompile.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\CODE.Framework.Wpf_MarkupCompile.lref
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\Styles\MultiColumnList.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\Styles\RangeSlider.baml
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\CODE.Framework.Wpf.g.resources
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\CODE.Framework.Wpf.Resources.resources
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\CODE.Framework.Wpf.csproj.GenerateResource.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\CODE.Framework.Wpf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\CODE.Framework.Wpf.AssemblyInfoInputs.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\CODE.Framework.Wpf.AssemblyInfo.cs
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\CODE.Framework.Wpf.csproj.CoreCompileInputs.cache
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\CODE.Framework.Wpf.dll
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\refint\CODE.Framework.Wpf.dll
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\CODE.Framework.Wpf.pdb
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\ref\CODE.Framework.Wpf.dll

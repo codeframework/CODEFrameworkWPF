@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFramework>net5.0-windows</TargetFramework>
+	  <TargetFramework>net6.0-windows</TargetFramework>
 	  <UseWPF>true</UseWPF>
 	  <LangVersion>preview</LangVersion>
-    <AssemblyVersion>5.0.1.0</AssemblyVersion>
-    <FileVersion>5.0.1.0</FileVersion>
-    <Version>5.0.1</Version>
+    <AssemblyVersion>5.0.2.0</AssemblyVersion>
+    <FileVersion>5.0.2.0</FileVersion>
+    <Version>5.0.2</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Authors>Markus Egger Inc.</Authors>
 	  <Company>Markus Egger Inc.</Company>

@@ -61,7 +61,6 @@ C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Worlplace
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Worlplace\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Workplace.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Worlplace\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Workplace.deps.json
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Worlplace\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Workplace.dll
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Worlplace\bin\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Theme.Workplace.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Worlplace\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Workplace.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Worlplace\bin\Debug\net5.0-windows\CODE.Framework.Wpf.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Worlplace\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.dll
@@ -120,3 +119,4 @@ C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Worlplace\ob
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Worlplace\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Workplace.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Worlplace\obj\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Theme.Workplace.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Worlplace\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Workplace.pdb
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Worlplace\obj\Debug\net5.0-windows\refint\CODE.Framework.Wpf.Theme.Workplace.dll

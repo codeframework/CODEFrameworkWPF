@@ -11,13 +11,17 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("CODE.Framework.Wpf.Theme.Geek")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Markus Egger Inc.")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("CODE.Framework.Wpf.Theme.Geek")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Markus Egger Inc.")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Geek Theme (Visual Studio inspired) for CODE Framework. For more information, see" +
+    " https://codeframework.io")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("5.0.2.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("5.0.2")]
+[assembly: System.Reflection.AssemblyProductAttribute("CODE Framework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CODE.Framework.Wpf.Theme.Geek")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("5.0.2.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/CODEFramework")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 

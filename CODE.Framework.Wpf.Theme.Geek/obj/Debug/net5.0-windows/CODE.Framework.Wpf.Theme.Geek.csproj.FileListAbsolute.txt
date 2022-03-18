@@ -98,7 +98,6 @@ C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Geek\obj\
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf.Theme.Geek\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Geek.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Geek\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Geek.deps.json
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Geek\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Geek.dll
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Geek\bin\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Theme.Geek.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Geek\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Geek.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Geek\bin\Debug\net5.0-windows\CODE.Framework.Wpf.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Geek\bin\Debug\net5.0-windows\CODE.Framework.Wpf.Mvvm.dll
@@ -155,3 +154,4 @@ C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Geek\obj\Deb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Geek\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Geek.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Geek\obj\Debug\net5.0-windows\ref\CODE.Framework.Wpf.Theme.Geek.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Geek\obj\Debug\net5.0-windows\CODE.Framework.Wpf.Theme.Geek.pdb
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf.Theme.Geek\obj\Debug\net5.0-windows\refint\CODE.Framework.Wpf.Theme.Geek.dll

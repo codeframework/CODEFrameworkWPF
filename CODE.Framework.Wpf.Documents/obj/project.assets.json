@@ -1,10 +1,10 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {
-      "CODE.Framework.Wpf/5.0.1": {
+    "net6.0-windows7.0": {
+      "CODE.Framework.Wpf/5.0.2": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/CODE.Framework.Wpf.dll": {}
         },
@@ -18,22 +18,23 @@
     }
   },
   "libraries": {
-    "CODE.Framework.Wpf/5.0.1": {
+    "CODE.Framework.Wpf/5.0.2": {
       "type": "project",
       "path": "../CODE.Framework.Wpf/CODE.Framework.Wpf.csproj",
       "msbuildProject": "../CODE.Framework.Wpf/CODE.Framework.Wpf.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": [
-      "CODE.Framework.Wpf >= 5.0.1"
+    "net6.0-windows7.0": [
+      "CODE.Framework.Wpf >= 5.0.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\megge\\.nuget\\packages\\": {}
+    "C:\\Users\\megge\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "5.0.1",
+    "version": "5.0.2",
     "restore": {
       "projectUniqueName": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Documents\\CODE.Framework.Wpf.Documents.csproj",
       "projectName": "CODE.Framework.Wpf.Documents",
@@ -41,21 +42,26 @@
       "packagesPath": "C:\\Users\\megge\\.nuget\\packages\\",
       "outputPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Documents\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\megge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows7.0"
+        "net6.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://pkgs.dev.azure.com/eps-software/_packaging/EPSPackages/nuget/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0-windows7.0": {
-          "targetAlias": "net5.0-windows",
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
           "projectReferences": {
             "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj": {
               "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj"
@@ -70,8 +76,8 @@
       }
     },
     "frameworks": {
-      "net5.0-windows7.0": {
-        "targetAlias": "net5.0-windows",
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
         "imports": [
           "net461",
           "net462",
@@ -90,7 +96,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300-preview.22154.4\\RuntimeIdentifierGraph.json"
       }
     }
   }

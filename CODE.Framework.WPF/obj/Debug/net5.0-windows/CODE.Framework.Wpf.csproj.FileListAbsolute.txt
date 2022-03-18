@@ -20,7 +20,6 @@ C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf\obj\Debug\net5.
 C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf\obj\Debug\net5.0-windows\CODE.Framework.Wpf.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\bin\Debug\net5.0-windows\CODE.Framework.Wpf.deps.json
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\bin\Debug\net5.0-windows\CODE.Framework.Wpf.dll
-C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\bin\Debug\net5.0-windows\ref\CODE.Framework.Wpf.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\bin\Debug\net5.0-windows\CODE.Framework.Wpf.pdb
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net5.0-windows\CODE.Framework.Wpf.csproj.AssemblyReference.cache
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
@@ -38,3 +37,4 @@ C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net5.0-w
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net5.0-windows\CODE.Framework.Wpf.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net5.0-windows\ref\CODE.Framework.Wpf.dll
 C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net5.0-windows\CODE.Framework.Wpf.pdb
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net5.0-windows\refint\CODE.Framework.Wpf.dll

@@ -1,10 +1,10 @@
 ﻿CODE.Framework.Wpf
-6.0.0.0
+5.0.2.0
 
 library
 C#
 .cs
-C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Wpf\obj\Debug\net6.0-windows\
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Wpf\obj\Debug\net6.0-windows\
 CODE.Framework.Wpf
 none
 false
@@ -12,8 +12,8 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 
 2-636980207
 
-901967679707
-195-1700353856
+1011524601567
+1941905061893
 Styles\MultiColumnList.xaml;Styles\RangeSlider.xaml;
 
 False

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\obj\Debug\net6.0-windows\
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\obj\Debug\net6.0-windows\
 CODE.Framework.Examples.Reference
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Projects\CODE Framework\CODE.Framework.Wpf\CODE.Framework.Examples.Reference\App.xaml
-1411347102
+C:\Projects\CODEFramework\CODEFrameworkWPF\CODE.Framework.Examples.Reference\App.xaml
+10-98319705
 
-8-419167255
-204-1261760937
-Views\User\Login.xaml;
+10-2121509550
+204-448027664
+Views\Customer\List.Battleship.xaml;Views\Customer\List.Geek.xaml;Views\Customer\List.Metro.xaml;Views\Customer\List.Universe.xaml;Views\Customer\List.Vapor.xaml;Views\Customer\List.Wildcat.xaml;Views\Customer\List.Workplace.xaml;Views\Customer\List.xaml;Views\Customer\List.Zorro.xaml;Views\User\Login.xaml;
 
 False
 

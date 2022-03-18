@@ -8,91 +8,91 @@
     ".NETCoreApp,Version=v6.0": {
       "CODE.Framework.Wpf.TestBench/1.0.0": {
         "dependencies": {
-          "CODE.Framework.Wpf.Documents": "5.0.0-preview",
-          "CODE.Framework.Wpf.Theme.Battleship": "5.0.0-preview",
-          "CODE.Framework.Wpf.Theme.Geek": "5.0.0-preview",
-          "CODE.Framework.Wpf.Theme.Metro": "5.0.0-preview",
-          "CODE.Framework.Wpf.Theme.Universe": "5.0.0-preview",
-          "CODE.Framework.Wpf.Theme.Vapor": "5.0.0-preview",
-          "CODE.Framework.Wpf.Theme.Wildcat": "5.0.0-preview",
-          "CODE.Framework.Wpf.Theme.Workplace": "5.0.0-preview"
+          "CODE.Framework.Wpf.Documents": "5.0.2",
+          "CODE.Framework.Wpf.Theme.Battleship": "5.0.2",
+          "CODE.Framework.Wpf.Theme.Geek": "5.0.2",
+          "CODE.Framework.Wpf.Theme.Metro": "5.0.2",
+          "CODE.Framework.Wpf.Theme.Universe": "5.0.2",
+          "CODE.Framework.Wpf.Theme.Vapor": "5.0.2",
+          "CODE.Framework.Wpf.Theme.Wildcat": "5.0.2",
+          "CODE.Framework.Wpf.Theme.Workplace": "5.0.2"
         },
         "runtime": {
           "CODE.Framework.Wpf.TestBench.dll": {}
         }
       },
-      "CODE.Framework.Wpf/5.0.0-preview": {
+      "CODE.Framework.Wpf/5.0.2": {
         "runtime": {
           "CODE.Framework.Wpf.dll": {}
         }
       },
-      "CODE.Framework.Wpf.Documents/5.0.0-preview": {
+      "CODE.Framework.Wpf.Documents/5.0.2": {
         "dependencies": {
-          "CODE.Framework.Wpf": "5.0.0-preview"
+          "CODE.Framework.Wpf": "5.0.2"
         },
         "runtime": {
           "CODE.Framework.Wpf.Documents.dll": {}
         }
       },
-      "CODE.Framework.Wpf.Mvvm/5.0.0-preview": {
+      "CODE.Framework.Wpf.Mvvm/5.0.2": {
         "dependencies": {
-          "CODE.Framework.Wpf": "5.0.0-preview"
+          "CODE.Framework.Wpf": "5.0.2"
         },
         "runtime": {
           "CODE.Framework.Wpf.Mvvm.dll": {}
         }
       },
-      "CODE.Framework.Wpf.Theme.Battleship/5.0.0-preview": {
+      "CODE.Framework.Wpf.Theme.Battleship/5.0.2": {
         "dependencies": {
-          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+          "CODE.Framework.Wpf.Mvvm": "5.0.2"
         },
         "runtime": {
           "CODE.Framework.Wpf.Theme.Battleship.dll": {}
         }
       },
-      "CODE.Framework.Wpf.Theme.Geek/5.0.0-preview": {
+      "CODE.Framework.Wpf.Theme.Geek/5.0.2": {
         "dependencies": {
-          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+          "CODE.Framework.Wpf.Mvvm": "5.0.2"
         },
         "runtime": {
           "CODE.Framework.Wpf.Theme.Geek.dll": {}
         }
       },
-      "CODE.Framework.Wpf.Theme.Metro/5.0.0-preview": {
+      "CODE.Framework.Wpf.Theme.Metro/5.0.2": {
         "dependencies": {
-          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+          "CODE.Framework.Wpf.Mvvm": "5.0.2"
         },
         "runtime": {
           "CODE.Framework.Wpf.Theme.Metro.dll": {}
         }
       },
-      "CODE.Framework.Wpf.Theme.Universe/5.0.0-preview": {
+      "CODE.Framework.Wpf.Theme.Universe/5.0.2": {
         "dependencies": {
-          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+          "CODE.Framework.Wpf.Mvvm": "5.0.2"
         },
         "runtime": {
           "CODE.Framework.Wpf.Theme.Universe.dll": {}
         }
       },
-      "CODE.Framework.Wpf.Theme.Vapor/5.0.0-preview": {
+      "CODE.Framework.Wpf.Theme.Vapor/5.0.2": {
         "dependencies": {
-          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+          "CODE.Framework.Wpf.Mvvm": "5.0.2"
         },
         "runtime": {
           "CODE.Framework.Wpf.Theme.Vapor.dll": {}
         }
       },
-      "CODE.Framework.Wpf.Theme.Wildcat/5.0.0-preview": {
+      "CODE.Framework.Wpf.Theme.Wildcat/5.0.2": {
         "dependencies": {
-          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+          "CODE.Framework.Wpf.Mvvm": "5.0.2"
         },
         "runtime": {
           "CODE.Framework.Wpf.Theme.Wildcat.dll": {}
         }
       },
-      "CODE.Framework.Wpf.Theme.Workplace/5.0.0-preview": {
+      "CODE.Framework.Wpf.Theme.Workplace/5.0.2": {
         "dependencies": {
-          "CODE.Framework.Wpf.Mvvm": "5.0.0-preview"
+          "CODE.Framework.Wpf.Mvvm": "5.0.2"
         },
         "runtime": {
           "CODE.Framework.Wpf.Theme.Workplace.dll": {}
@@ -106,52 +106,52 @@
       "serviceable": false,
       "sha512": ""
     },
-    "CODE.Framework.Wpf/5.0.0-preview": {
+    "CODE.Framework.Wpf/5.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CODE.Framework.Wpf.Documents/5.0.0-preview": {
+    "CODE.Framework.Wpf.Documents/5.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CODE.Framework.Wpf.Mvvm/5.0.0-preview": {
+    "CODE.Framework.Wpf.Mvvm/5.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CODE.Framework.Wpf.Theme.Battleship/5.0.0-preview": {
+    "CODE.Framework.Wpf.Theme.Battleship/5.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CODE.Framework.Wpf.Theme.Geek/5.0.0-preview": {
+    "CODE.Framework.Wpf.Theme.Geek/5.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CODE.Framework.Wpf.Theme.Metro/5.0.0-preview": {
+    "CODE.Framework.Wpf.Theme.Metro/5.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CODE.Framework.Wpf.Theme.Universe/5.0.0-preview": {
+    "CODE.Framework.Wpf.Theme.Universe/5.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CODE.Framework.Wpf.Theme.Vapor/5.0.0-preview": {
+    "CODE.Framework.Wpf.Theme.Vapor/5.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CODE.Framework.Wpf.Theme.Wildcat/5.0.0-preview": {
+    "CODE.Framework.Wpf.Theme.Wildcat/5.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CODE.Framework.Wpf.Theme.Workplace/5.0.0-preview": {
+    "CODE.Framework.Wpf.Theme.Workplace/5.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NedNSHGL7vRKpSK5XSzALc1aUXNbR8vA+v+K6xcju68i9EXLcTQJ6mMMCtQlcQDB9QnchGyeEsVkZ0/oIofruQ==",
+  "dgSpecHash": "994z3LOx7HQtCH7pRhGg8gLIELRnMMYXXfVPhBhdvvKTHCpPYM6JZ7hLOeVQHsZhxt97MZInafIZnNHL4Ghuxg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Examples.Reference\\CODE.Framework.Examples.Reference.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\megge\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
