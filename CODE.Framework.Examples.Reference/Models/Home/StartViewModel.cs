@@ -10,16 +10,16 @@
         {
             Actions.Clear();
 
-            Actions.Add(new ViewAction("Customers", 
-                execute: (a, o) => Controller.Action(nameof(CustomerController), nameof(CustomerController.List)), 
-                significance: ViewActionSignificance.Highest, 
-                category: "File", 
-                categoryAccessKey: 'F', 
-                accessKey: 'C', 
-                brushResourceKey: "CODE.Framework-Icon-Contact2") 
-            { 
-                GroupTitle = "Customers", 
-                ToolTipText = "Open Customer Search UI" 
+            Actions.Add(new ViewAction("Customers",
+                execute: (a, o) => Controller.Action(nameof(CustomerController), nameof(CustomerController.List)),
+                significance: ViewActionSignificance.Highest,
+                category: "File",
+                categoryAccessKey: 'F',
+                accessKey: 'C',
+                brushResourceKey: "CODE.Framework-Icon-Contact2")
+            {
+                GroupTitle = "Customers",
+                ToolTipText = "Open Customer Search UI"
             });
 
             //Actions.Add(new ViewAction("Magazines", execute: (a, o) => Controller.Action("Magazine", "Issues"), significance: ViewActionSignificance.AboveNormal, category: "File", categoryAccessKey: 'F', accessKey: 'M', brushResourceKey: "CODE.Framework-Icon-Settings") { GroupTitle = "Magazines", Image1 = new ImageBrush(new BitmapImage(new Uri("http://www.codemag.com/Magazine/CoverLarge/6291bb27-285a-4e33-964e-26043ad6b093"))) { Stretch = Stretch.UniformToFill } });

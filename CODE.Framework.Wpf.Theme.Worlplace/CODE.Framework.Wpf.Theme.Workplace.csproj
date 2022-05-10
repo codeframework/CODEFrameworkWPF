@@ -4,10 +4,10 @@
 		<TargetFramework>net6.0-windows</TargetFramework>
 		<UseWPF>true</UseWPF>
 		<LangVersion>preview</LangVersion>
-    <AssemblyVersion>5.0.2.0</AssemblyVersion>
-    <FileVersion>5.0.2.0</FileVersion>
-    <Version>5.0.2</Version>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<AssemblyVersion>5.0.3.0</AssemblyVersion>
+		<FileVersion>5.0.3.0</FileVersion>
+		<Version>5.0.3</Version>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>Markus Egger Inc.</Authors>
 		<Company>Markus Egger Inc.</Company>
 		<Product>CODE Framework</Product>
@@ -30,114 +30,114 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Page Update="Colors.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Fonts.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="ThemeRoot.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-Button.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-Calendar.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-CapsLockWarning.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-ComboBox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-DatePicker.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-DockHost.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-Expander.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-FloatingDockWindow.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-Label.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-ListBox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-Menu.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-PasswordBox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-Ribbon.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-ScrollBar.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-TextBlock.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-TextBox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Control-Window.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Icon-MessagetBox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Icon-Standard.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Layout-BladePanel.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Layout-EditForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Layout-FlowForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Layout-MultiPanel.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Layout-OneToManyPanel.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Layout-PrimarySecondaryForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Layout-PropertySheet.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Layout-SimpleForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Layout-StandardForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Layout-Tabs.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Print.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-Shell.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-StandardDataTemplates.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Workplace-StandardTypes.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
+		<Page Update="Colors.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Fonts.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="ThemeRoot.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-Button.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-Calendar.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-CapsLockWarning.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-ComboBox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-DatePicker.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-DockHost.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-Expander.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-FloatingDockWindow.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-Label.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-ListBox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-Menu.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-PasswordBox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-Ribbon.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-ScrollBar.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-TextBlock.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-TextBox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Control-Window.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Icon-MessagetBox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Icon-Standard.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Layout-BladePanel.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Layout-EditForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Layout-FlowForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Layout-MultiPanel.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Layout-OneToManyPanel.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Layout-PrimarySecondaryForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Layout-PropertySheet.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Layout-SimpleForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Layout-StandardForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Layout-Tabs.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Print.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-Shell.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-StandardDataTemplates.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Workplace-StandardTypes.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
 	</ItemGroup>
 
 </Project>

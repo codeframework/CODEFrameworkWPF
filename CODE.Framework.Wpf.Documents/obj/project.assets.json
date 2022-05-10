@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "CODE.Framework.Wpf/5.0.2": {
+      "CODE.Framework.Wpf/5.0.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
@@ -18,7 +18,7 @@
     }
   },
   "libraries": {
-    "CODE.Framework.Wpf/5.0.2": {
+    "CODE.Framework.Wpf/5.0.3": {
       "type": "project",
       "path": "../CODE.Framework.Wpf/CODE.Framework.Wpf.csproj",
       "msbuildProject": "../CODE.Framework.Wpf/CODE.Framework.Wpf.csproj"
@@ -26,7 +26,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "CODE.Framework.Wpf >= 5.0.2"
+      "CODE.Framework.Wpf >= 5.0.3"
     ]
   },
   "packageFolders": {
@@ -34,7 +34,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "5.0.2",
+    "version": "5.0.3",
     "restore": {
       "projectUniqueName": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Documents\\CODE.Framework.Wpf.Documents.csproj",
       "projectName": "CODE.Framework.Wpf.Documents",
@@ -96,7 +96,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300-preview.22154.4\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300-preview.22204.3\\RuntimeIdentifierGraph.json"
       }
     }
   }

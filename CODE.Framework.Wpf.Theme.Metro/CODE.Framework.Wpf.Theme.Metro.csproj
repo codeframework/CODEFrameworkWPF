@@ -4,10 +4,10 @@
 		<TargetFramework>net6.0-windows</TargetFramework>
 		<UseWPF>true</UseWPF>
 		<LangVersion>preview</LangVersion>
-    <AssemblyVersion>5.0.2.0</AssemblyVersion>
-    <FileVersion>5.0.2.0</FileVersion>
-    <Version>5.0.2</Version>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<AssemblyVersion>5.0.3.0</AssemblyVersion>
+		<FileVersion>5.0.3.0</FileVersion>
+		<Version>5.0.3</Version>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>Markus Egger Inc.</Authors>
 		<Company>Markus Egger Inc.</Company>
 		<Product>CODE Framework</Product>
@@ -30,147 +30,147 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Page Update="Metro-ApplicationLogos.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-AppBarButton.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-Button.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-Calendar.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-CapsLockWarning.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-Checkbox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-ComboBox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-DatePicker.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-FlowDocumentReader.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-GroupBox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-Label.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-ListBox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-Menu.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-MetroTiles.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-PasswordBox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-RadioButton.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-RichTextBox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-ScrollBar.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-Slider.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-TabControl.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-Textblock.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-Textbox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Control-ViewActionItemsControl.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Icon-Arrow.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Icon-Standard.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Layout-BladePanel.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Layout-EditForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Layout-FlowForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Layout-MultiPanel.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Layout-OneToManyPanel.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Layout-PrimarySecondaryForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Layout-SimpleForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Layout-StandardForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Layout-Tabs.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-MessageBox-Icon-Asterisk.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-MessageBox-Icon-Error.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-MessageBox-Icon-Exclamation.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-MessageBox-Icon-Hand.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-MessageBox-Icon-Information.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-MessageBox-Icon-Question.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-MessageBox-Icon-Stop.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-MessageBox-Icon-Warning.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Print.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-Shell.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-StandardDataTemplates.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Metro-StandardTypes.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="ThemeRoot.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
+		<Page Update="Metro-ApplicationLogos.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-AppBarButton.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-Button.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-Calendar.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-CapsLockWarning.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-Checkbox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-ComboBox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-DatePicker.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-FlowDocumentReader.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-GroupBox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-Label.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-ListBox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-Menu.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-MetroTiles.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-PasswordBox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-RadioButton.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-RichTextBox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-ScrollBar.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-Slider.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-TabControl.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-Textblock.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-Textbox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Control-ViewActionItemsControl.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Icon-Arrow.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Icon-Standard.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Layout-BladePanel.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Layout-EditForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Layout-FlowForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Layout-MultiPanel.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Layout-OneToManyPanel.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Layout-PrimarySecondaryForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Layout-SimpleForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Layout-StandardForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Layout-Tabs.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-MessageBox-Icon-Asterisk.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-MessageBox-Icon-Error.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-MessageBox-Icon-Exclamation.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-MessageBox-Icon-Hand.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-MessageBox-Icon-Information.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-MessageBox-Icon-Question.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-MessageBox-Icon-Stop.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-MessageBox-Icon-Warning.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Print.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-Shell.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-StandardDataTemplates.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Metro-StandardTypes.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="ThemeRoot.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
 	</ItemGroup>
 
 </Project>

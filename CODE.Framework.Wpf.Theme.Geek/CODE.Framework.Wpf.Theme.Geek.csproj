@@ -4,10 +4,10 @@
 		<TargetFramework>net6.0-windows</TargetFramework>
 		<UseWPF>true</UseWPF>
 		<LangVersion>preview</LangVersion>
-    <AssemblyVersion>5.0.2.0</AssemblyVersion>
-    <FileVersion>5.0.2.0</FileVersion>
-    <Version>5.0.2</Version>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<AssemblyVersion>5.0.3.0</AssemblyVersion>
+		<FileVersion>5.0.3.0</FileVersion>
+		<Version>5.0.3</Version>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>Markus Egger Inc.</Authors>
 		<Company>Markus Egger Inc.</Company>
 		<Product>CODE Framework</Product>
@@ -30,114 +30,114 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Page Update="Colors.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Fonts.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Control-Button.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Control-CapsLockWarning.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Control-ComboBox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Control-FlowDocumentReader.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Control-Label.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Control-ListBox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Control-Menu.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Control-PasswordBox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Control-TextBlock.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Control-Textbox.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Control-ZoomSlider.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Icon-Standard.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Layout-BladePanel.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Layout-EditForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Layout-FlowForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Layout-MultiPanel.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Layout-OneToManyPanel.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Layout-PrimarySecondaryForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Layout-SimpleForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Layout-StandardForm.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Layout-Tabs.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-MessageBox-Icon-Asterisk.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-MessageBox-Icon-Error.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-MessageBox-Icon-Exclamation.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-MessageBox-Icon-Hand.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-MessageBox-Icon-Information.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-MessageBox-Icon-Question.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-MessageBox-Icon-Stop.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-MessageBox-Icon-Warning.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Print.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-Shell.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-StandardDataTemplates.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="Geek-StandardTypes.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
-	  <Page Update="ThemeRoot.xaml">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Page>
+		<Page Update="Colors.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Fonts.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Control-Button.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Control-CapsLockWarning.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Control-ComboBox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Control-FlowDocumentReader.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Control-Label.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Control-ListBox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Control-Menu.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Control-PasswordBox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Control-TextBlock.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Control-Textbox.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Control-ZoomSlider.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Icon-Standard.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Layout-BladePanel.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Layout-EditForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Layout-FlowForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Layout-MultiPanel.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Layout-OneToManyPanel.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Layout-PrimarySecondaryForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Layout-SimpleForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Layout-StandardForm.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Layout-Tabs.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-MessageBox-Icon-Asterisk.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-MessageBox-Icon-Error.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-MessageBox-Icon-Exclamation.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-MessageBox-Icon-Hand.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-MessageBox-Icon-Information.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-MessageBox-Icon-Question.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-MessageBox-Icon-Stop.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-MessageBox-Icon-Warning.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Print.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-Shell.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-StandardDataTemplates.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="Geek-StandardTypes.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
+		<Page Update="ThemeRoot.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Page>
 	</ItemGroup>
 
 </Project>

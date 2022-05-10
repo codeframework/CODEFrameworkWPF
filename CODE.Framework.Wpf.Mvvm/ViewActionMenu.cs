@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -234,6 +235,8 @@ namespace CODE.Framework.Wpf.Mvvm
         /// <param name="indentLevel">Current hierarchical indentation level</param>
         protected virtual void PopulateSubCategories(MenuItem menuItem, ViewActionCategory category, IEnumerable<IViewAction> actions, int indentLevel = 0)
         {
+            //if (category.Caption == "Output") Debugger.Break();
+
             var populatedCategories = new List<string>();
             if (actions == null) return;
             var viewActions = actions as IViewAction[] ?? actions.ToArray();
@@ -243,8 +246,9 @@ namespace CODE.Framework.Wpf.Mvvm
             {
                 if (addedMenuItems > 0 && matchingAction.BeginGroup) menuItem.Items.Add(new Separator());
 
-                if (matchingAction.Categories != null && matchingAction.Categories.Count > indentLevel + 1 && !populatedCategories.Contains(matchingAction.Categories[indentLevel].Id)) // This is further down in a sub-category even
+                if (matchingAction.Categories != null && matchingAction.Categories.Count > indentLevel + 1 && !populatedCategories.Contains(matchingAction.Categories[indentLevel].Id))
                 {
+                    // This is further down in a sub-category even, so we need to go and populate a sub-menu
                     populatedCategories.Add(matchingAction.Categories[indentLevel].Id);
                     var newMenuItem = new ViewActionMenuItem { Header = matchingAction.Categories[indentLevel + 1].Caption };
                     var icon = new ThemeIcon { UseFallbackIcon = false };
@@ -255,7 +259,7 @@ namespace CODE.Framework.Wpf.Mvvm
                     menuItem.Items.Add(newMenuItem);
                     addedMenuItems++;
                 }
-                else
+                else if (!(matchingAction.Categories?.Count > indentLevel + 1))
                 {
                     var newMenuItem1 = new ViewActionMenuItem { Header = GetMenuTitle(matchingAction), Command = matchingAction, DataContext = matchingAction };
                     HandleMenuShortcutKey(newMenuItem1, matchingAction);

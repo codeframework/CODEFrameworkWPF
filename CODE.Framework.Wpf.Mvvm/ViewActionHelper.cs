@@ -204,7 +204,7 @@ namespace CODE.Framework.Wpf.Mvvm
 
             foreach (var action in actions)
             {
-                if (indentLevel == 0 && ((category.Id == emptyCategory || string.IsNullOrEmpty(category.Id)) && (action.Categories == null || action.Categories.Count == 0))) // If no other category is assigned, then we consider items to be on the file menu
+                if (indentLevel == 0 && (category.Id == emptyCategory || string.IsNullOrEmpty(category.Id)) && (action.Categories == null || action.Categories.Count == 0)) // If no other category is assigned, then we consider items to be on the file menu
                     result.Add(action);
                 else if (action.Categories != null && action.Categories.Count > indentLevel && action.Categories[indentLevel].Id == category.Id)
                     result.Add(action);

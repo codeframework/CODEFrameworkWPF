@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj": {
-      "version": "5.0.2",
+      "version": "5.0.3",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj",
         "projectName": "CODE.Framework.Wpf.Mvvm",
@@ -67,12 +67,12 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300-preview.22154.4\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300-preview.22204.3\\RuntimeIdentifierGraph.json"
         }
       }
     },
     "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Metro\\CODE.Framework.Wpf.Theme.Metro.csproj": {
-      "version": "5.0.2",
+      "version": "5.0.3",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Metro\\CODE.Framework.Wpf.Theme.Metro.csproj",
         "projectName": "CODE.Framework.Wpf.Theme.Metro",
@@ -134,12 +134,12 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300-preview.22154.4\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300-preview.22204.3\\RuntimeIdentifierGraph.json"
         }
       }
     },
     "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj": {
-      "version": "5.0.2",
+      "version": "5.0.3",
       "restore": {
         "projectUniqueName": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf\\CODE.Framework.Wpf.csproj",
         "projectName": "CODE.Framework.Wpf",
@@ -197,7 +197,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300-preview.22154.4\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300-preview.22204.3\\RuntimeIdentifierGraph.json"
         }
       }
     }
