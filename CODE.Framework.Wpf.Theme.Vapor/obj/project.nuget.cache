@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "N6gv15/dlK+YjpEKJCY5ERG6lWgIeYcKrZkpHNqMbrJZ3E+Rwf1T0mlyZ1DfCor3GvacvZ4QanBGtivIJc5+8Q==",
+  "dgSpecHash": "151h/a+YRNhfeWTEAjRpym6sQ/RENfPvQnHTa9RguD2aWxMgSjIkG5Fw8DI0TcRsHEn5FCVPAnSmVQuMM7quuw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Vapor\\CODE.Framework.Wpf.Theme.Vapor.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf\\5.0.3\\code.framework.wpf.5.0.3.nupkg.sha512",
+    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.mvvm\\5.0.3\\code.framework.wpf.mvvm.5.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

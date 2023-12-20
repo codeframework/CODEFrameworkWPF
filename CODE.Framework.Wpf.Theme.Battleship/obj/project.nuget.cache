@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "JP3Ty6afhVbJ6/RGnNwix/qDZhyTVRJBpO34TW0et1YUdNLlcu/Bw42rrPcJNvVSZSo0C5xV7rSalL/REKb2kA==",
+  "dgSpecHash": "is3t7VFBrJ/yCpvuBMsobGeg6p/iOi4jyx5aPkjrA6g0DpUtWf3+GIk19nFfeeILKai5z6JDypvBI7Fma7oFkQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf\\5.0.3\\code.framework.wpf.5.0.3.nupkg.sha512",
+    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.mvvm\\5.0.3\\code.framework.wpf.mvvm.5.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

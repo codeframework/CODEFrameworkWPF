@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "7h5bRFojKwL52eqlSd7sMPokqLxfEYTlpmcPQ4ddLZgKpSj/Tbs0K53B8MyHuvcc3LgDw0hAzFK7rKG4WuuUkw==",
+  "dgSpecHash": "Mo5QL+ydBUuX4QYjqm+TWgiWjd4BFsUgLUeppBtLf9+Jby48pS0bDXZx4a4onuq2yBsuaZErbp3RMn0s1AFOJw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Wildcat\\CODE.Framework.Wpf.Theme.Wildcat.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf\\5.0.3\\code.framework.wpf.5.0.3.nupkg.sha512",
+    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.mvvm\\5.0.3\\code.framework.wpf.mvvm.5.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

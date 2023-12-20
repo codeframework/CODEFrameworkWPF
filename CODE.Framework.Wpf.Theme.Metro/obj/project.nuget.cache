@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "sxVLCDHoJtGn2kO3anVrsyW0nWv5myyrzR/H/RdTKq17GJxavkOqlMEbIV3rKSnzux0Lp/3mehKQD8zthrbvlg==",
+  "dgSpecHash": "XYUcvHv6Sjd/iLzIY3bVPiWcC7rx7LDUB4sCh5tyiOyS9fFUDsTNfrC/T/AWyV8Ac6YjrKBIpufnErzPHKRFnA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Metro\\CODE.Framework.Wpf.Theme.Metro.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf\\5.0.3\\code.framework.wpf.5.0.3.nupkg.sha512",
+    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.mvvm\\5.0.3\\code.framework.wpf.mvvm.5.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

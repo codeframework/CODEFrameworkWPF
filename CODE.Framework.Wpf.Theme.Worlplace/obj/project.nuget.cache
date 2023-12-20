@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "FqdyOelrxjwWsF5PvE1vWUaEkkS+Tovsd0wmNL513JaX7zn4q62HisryfBuGFti99t/CbfT3Of5ZBgqxJwq89g==",
+  "dgSpecHash": "4hmbDo/cOpgtUOhPG88ZfVpyWYxWoYjNrEba1EV0JdFkx5Wrjshv8b1VuZPwTr182awbeohGTWcriB30CcSVEA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Worlplace\\CODE.Framework.Wpf.Theme.Workplace.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf\\5.0.3\\code.framework.wpf.5.0.3.nupkg.sha512",
+    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.mvvm\\5.0.3\\code.framework.wpf.mvvm.5.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
