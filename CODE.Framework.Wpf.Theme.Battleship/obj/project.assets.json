@@ -1,10 +1,10 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {
-      "CODE.Framework.Wpf/5.0.3": {
+    "net8.0-windows7.0": {
+      "CODE.Framework.Wpf/5.1.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
           "bin/placeholder/CODE.Framework.Wpf.dll": {}
         },
@@ -15,11 +15,11 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "CODE.Framework.Wpf.Mvvm/5.0.3": {
+      "CODE.Framework.Wpf.Mvvm/5.1.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "CODE.Framework.Wpf": "5.0.3"
+          "CODE.Framework.Wpf": "5.1.0"
         },
         "compile": {
           "bin/placeholder/CODE.Framework.Wpf.Mvvm.dll": {}
@@ -34,20 +34,20 @@
     }
   },
   "libraries": {
-    "CODE.Framework.Wpf/5.0.3": {
+    "CODE.Framework.Wpf/5.1.0": {
       "type": "project",
       "path": "../CODE.Framework.Wpf/CODE.Framework.Wpf.csproj",
       "msbuildProject": "../CODE.Framework.Wpf/CODE.Framework.Wpf.csproj"
     },
-    "CODE.Framework.Wpf.Mvvm/5.0.3": {
+    "CODE.Framework.Wpf.Mvvm/5.1.0": {
       "type": "project",
       "path": "../CODE.Framework.Wpf.Mvvm/CODE.Framework.Wpf.Mvvm.csproj",
       "msbuildProject": "../CODE.Framework.Wpf.Mvvm/CODE.Framework.Wpf.Mvvm.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": [
-      "CODE.Framework.Wpf.Mvvm >= 5.0.3"
+    "net8.0-windows7.0": [
+      "CODE.Framework.Wpf.Mvvm >= 5.1.0"
     ]
   },
   "packageFolders": {
@@ -55,7 +55,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "5.0.3",
+    "version": "5.1.0",
     "restore": {
       "projectUniqueName": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Battleship\\CODE.Framework.Wpf.Theme.Battleship.csproj",
       "projectName": "CODE.Framework.Wpf.Theme.Battleship",
@@ -72,7 +72,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net8.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -81,8 +81,8 @@
         "https://pkgs.dev.azure.com/eps-software/_packaging/EPSPackages/nuget/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
           "projectReferences": {
             "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj": {
               "projectPath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Mvvm\\CODE.Framework.Wpf.Mvvm.csproj"
@@ -102,8 +102,8 @@
       }
     },
     "frameworks": {
-      "net6.0-windows7.0": {
-        "targetAlias": "net6.0-windows",
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
         "imports": [
           "net461",
           "net462",
@@ -123,7 +123,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

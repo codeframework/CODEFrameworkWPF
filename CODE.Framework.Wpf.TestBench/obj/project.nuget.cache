@@ -1,19 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2ZCcqeVJIB21OBsvLse+j1fYlcWCi1l5/eeDc3G83Q9JP4WicXND2XDJVfqgS4LgrMHwwVXiYdKBaas5b+HKmQ==",
+  "dgSpecHash": "N/BPnsoFWBqWeepm42qvcPfUZT6/Fuvsrw6na6bp1K2kDJZHmOjmNg99Q+3+Kp7jPiR8z6f1krIljmR6VLJC+Q==",
   "success": true,
   "projectFilePath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.TestBench\\CODE.Framework.Wpf.TestBench.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf\\5.0.3\\code.framework.wpf.5.0.3.nupkg.sha512",
-    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.documents\\5.0.3\\code.framework.wpf.documents.5.0.3.nupkg.sha512",
-    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.mvvm\\5.0.3\\code.framework.wpf.mvvm.5.0.3.nupkg.sha512",
-    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.theme.battleship\\5.0.3\\code.framework.wpf.theme.battleship.5.0.3.nupkg.sha512",
-    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.theme.geek\\5.0.3\\code.framework.wpf.theme.geek.5.0.3.nupkg.sha512",
-    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.theme.metro\\5.0.3\\code.framework.wpf.theme.metro.5.0.3.nupkg.sha512",
-    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.theme.universe\\5.0.3\\code.framework.wpf.theme.universe.5.0.3.nupkg.sha512",
-    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.theme.vapor\\5.0.3\\code.framework.wpf.theme.vapor.5.0.3.nupkg.sha512",
-    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.theme.wildcat\\5.0.3\\code.framework.wpf.theme.wildcat.5.0.3.nupkg.sha512",
-    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.theme.workplace\\5.0.3\\code.framework.wpf.theme.workplace.5.0.3.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

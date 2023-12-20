@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fUC0a9Pen1AfS/T0ObKgb7BvXJxNdj9fc3xBKZOARt3dwX4HW8HgYoZYDFPjA4eP3iJHpyfhDpocVAxtyg7IUw==",
+  "dgSpecHash": "tvzOSwksu1GareQR+swT3XJqxnPlx8gxnY+7YIXE2FmsNhHt6finLMt1tjzXa2RT5klWBLgA/rvwr35+X1Z2Gw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Documents\\CODE.Framework.Wpf.Documents.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf\\5.0.3\\code.framework.wpf.5.0.3.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

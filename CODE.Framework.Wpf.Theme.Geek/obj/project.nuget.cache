@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7gKObpqdJ9OgurEAasGtPq1HsGr95XzDci8aTClFEFsP4XM8puadZluqTfG9uYztbZI3TQw85ldC3JdKFHLFgA==",
+  "dgSpecHash": "+y1Qqjd+Ytnesgzw3DMOLVOSkaqj2TBXNayZCVyIoBdp5HqCcUI0ZG0ESXjQP1/nTtD0coWJ9DKZ9VQJDEu6tg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\CODEFramework\\CODEFrameworkWPF\\CODE.Framework.Wpf.Theme.Geek\\CODE.Framework.Wpf.Theme.Geek.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf\\5.0.3\\code.framework.wpf.5.0.3.nupkg.sha512",
-    "C:\\Users\\megge\\.nuget\\packages\\code.framework.wpf.mvvm\\5.0.3\\code.framework.wpf.mvvm.5.0.3.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
